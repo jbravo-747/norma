@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<!--<data> -->
+	<data noupdate="1" >
+
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Todos los objetos -->
+		
+		<record model="ir.module.category" id="module_category_imco_general">
+			<field name="name">Permisos generales de todo el IMCO</field>
+			<field name="description">Son los usuarios con permisos generales de todo el IMCO.</field>
+			<field name="sequence">2</field>
+		</record>
+		
+		<record id="group_imco_general_manager" model="res.groups">
+			<field name="name">Manager General</field>
+			<field name="category_id" ref="module_category_imco_general"/>
+		</record>
+	
+		<record id="group_imco_general_user" model="res.groups">
+			<field name="name">Usuario General</field>
+			<field name="category_id" ref="module_category_imco_general"/>
+		</record>
+		
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Objetos de modulo general-->
+		<record model="ir.module.category" id="module_category_imco_general_general">
+			<field name="name">IMCO General - Permisos generales</field>
+			<field name="description">Son los usuarios con permisos generales en el modulo general.</field>
+			<field name="sequence">10</field>
+		</record>
+		
+		<record id="group_imco_general_general_manager" model="res.groups">
+			<field name="name">Manager General</field>
+			<field name="category_id" ref="module_category_imco_general_general"/>
+		</record>
+	
+		<record id="group_imco_general_general_user" model="res.groups">
+			<field name="name">Usuario General</field>
+			<field name="category_id" ref="module_category_imco_general_general"/>
+		</record>
+		
+		
+	</data>
+</openerp>

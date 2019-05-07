@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	
+	<data noupdate="1" >
+
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- TIPOS DE USUARIOS -->
+		<record model="ir.module.category" id="module_category_imco_tipos_usuario">
+			<field name="name">Tipos de Usuarios</field>
+			<field name="description">Tipos de Usuarios</field>
+			<field name="sequence">1</field>
+		</record>
+		<record id="group_imco_tipo_usuario_admin" model="res.groups">
+			<field name="name">Administrador</field>
+			<field name="category_id" ref="module_category_imco_tipos_usuario"/>
+		</record>
+		<record id="group_imco_tipo_usuario_director" model="res.groups">
+			<field name="name">Director</field>
+			<field name="category_id" ref="module_category_imco_tipos_usuario"/>
+		</record>
+		<record id="group_imco_tipo_usuario_analista" model="res.groups">
+			<field name="name">Analista</field>
+			<field name="category_id" ref="module_category_imco_tipos_usuario"/>
+		</record>
+		
+	</data>
+</openerp>

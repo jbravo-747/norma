@@ -1,0 +1,205 @@
+/* ==========================================================================
+ Estilos Footer Norma
+========================================================================== */
+.footer-como-ayudarte-section{
+	margin-top: 40px;
+	color: #5D5B5D;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+.list-footer li{
+	list-style-type: none;
+	color: #ffffff;
+	padding-bottom: .5em;
+}
+.list-footer li a{
+	color: #ffffff;
+}
+.list-footer li::before{
+	content: "\2022";
+	color: #FF3C87;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+.cudc-logo {
+	width: auto;
+	height: 70px;
+	/* padding-left: 50%; */
+}
+.consejo-logo {
+	width: auto;
+	height: 70px;
+	/* padding-right: 50%; */
+}
+.imco-logo{
+	/* width: auto; */
+	height: auto;
+	width: 180px;
+	padding-bottom: 30px;
+}
+#copyright{
+	background: #000000;
+}
+.social-icon a{
+	border-radius: 50%;
+}
+#copyright > .container{
+	margin-left: 5px !important;
+}
+
+.footer-norma{
+	padding: 0 !important;
+	/* text-align: left !important; */
+	/* color: #fff !important; */
+	background: #000 !important;
+}
+.footer-norma p{
+	line-height: 42px;
+	font-weight: bold;
+	color: #fff !important;
+	text-align: left !important;
+	/* margin: 0 */
+	padding-left: 15px;
+}
+
+.apoyo-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr; */
+  /* grid-template-areas: "container-cudc-logo container-consejo-logo"; */
+}
+
+/* .container-cudc-logo { grid-area: container-cudc-logo; } */
+
+/* .container-consejo-logo { grid-area: container-consejo-logo; } */
+
+
+#social-icons{
+		width: 100%
+}
+.footer-p{
+	padding-left: 50px;
+	padding-right: 40px;
+	padding-top: 15px;
+	background: #343232;
+	color: #fff;
+}
+.norma-li li{
+	list-style: disc !important;
+	color: #FF3C87 !important;
+}
+.norma-li a{
+	list-style: disc !important;
+	color: #fff !important;
+}
+
+.text-n{
+	font-family: 'Seravek' !important;
+	font-weight: bold !important;
+	font-size: 1.125em !important;
+}
+
+.apoyo{
+	font-family: 'Seravek' !important;
+	font-weight: bold !important;
+	font-size: 20px !important;
+	color: #ffffff !important;
+}
+
+.text-r{
+	font-family: 'Seravek' !important;
+	/* font-weight: bold !important; */
+	font-size: 18px !important;
+	color: #ffffff !important;
+}
+
+.
+
+.border-bottom-n{
+	margin-bottom: 0px;
+}
+
+#footer > .text-r .apoyo p{
+	color: #ffffff !important;
+}
+
+.footer-border{
+	/* border-left: 2px solid #414042;
+	border-right: 2px solid #414042; */
+}
+.title-footer{
+	border-bottom: 2px solid #414042;
+	margin-bottom: 20px;
+}
+
+/* ==========================================================================
+ Dispositivos desktops
+========================================================================== */
+/* Navbar desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ==========================================================================
+ Dispositivos moviles
+========================================================================== */
+@media (max-width: 767px) {
+	.copyright-content p{
+		font-size: .7em !important;
+	}
+
+	#copyright > .container {
+		margin-left: 0px !important;
+	}
+	.cudc-logo {
+		/* padding-left: 40px; */
+	}
+	.consejo-logo {
+		/* padding-right: 0px; */
+	}
+
+	.footer-border{
+		border-top: 2px solid #414042;
+		border-bottom: 2px solid #414042;
+		border-left: 0px solid #414042;
+		border-right: 0px solid #414042;
+	}
+	.imco-logo{
+		height: auto;
+	}
+	.padding-footer{
+		padding: 30px 10px 30px 20px;
+	}
+
+}
+@media (max-width: 991px) {
+	#footer{
+		padding-top: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.apoyo-container {
+	  grid-template-columns: 1fr 1fr;
+	  grid-gap: 1em;
+	  /* grid-template-rows: 1fr; */
+	  /* grid-template-areas: "container-cudc-logo container-consejo-logo"; */
+	}
+	.list-footer li a{
+		font-size: 15px !important;
+	}
+	.imco-logo{
+		/* width: auto; */
+		height: auto;
+		width: 250px;
+		padding-bottom: 30px;
+	}
+}
+/* ==========================================================================
+Termina Estilos Footer Norma
+========================================================================== */

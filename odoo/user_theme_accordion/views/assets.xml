@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+	<data>
+		<template id="assets_backend" name="Backend Theme" inherit_id="web.assets_backend">
+			<xpath expr=".">
+				<link rel="stylesheet" href="/backend_theme_v11/static/src/less/variables.less"/>
+				<link rel="stylesheet" href="/opit_backend_res_groups_accordion/static/accordion.less"/>
+			</xpath>
+		</template>
+	</data>
+</odoo>

@@ -1,0 +1,223 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 649 346" style="" xml:space="preserve">
+	<style type="text/css">
+		.st0 {
+			fill: #FFFFFF;
+			stroke: #55C1F0;
+			stroke-width: 9.3789;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+		.st1 {
+			fill: none;
+			stroke: #55C1F0;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+		.st2 {
+			fill: none;
+			stroke: #000000;
+			stroke-width: 5.4959;
+			stroke-miterlimit: 10;
+		}
+		.st3 {
+			fill: none;
+			stroke: #000000;
+			stroke-width: 2.6239;
+			stroke-miterlimit: 10;
+		}
+		.st4 {
+			fill: none;
+			stroke: #56C1EF;
+			stroke-width: 13;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+		.st5 {
+			fill: #56C1EF;
+		}
+		.st6 {
+			fill: #55C1F0 ;
+			stroke: #FFFFFF;
+			stroke-width: 10;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+		.st7 {
+			fill: #55C1F0;
+			stroke: #55C1F0;
+			stroke-width: 2;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+	</style>
+	<path class="st0 UzXKwGJh_0" d="M51.5,220.5A98.5,98.5 0,1,1 248.5,220.5A98.5,98.5 0,1,1 51.5,220.5"></path>
+	<path
+		class="st6 UzXKwGJh_1"
+		d="M290.4,74.8c-30.4,0-55.2,24.8-55.2,55.2c0,25.3,17.1,47.3,41.5,53.5c1.8,0.4,3.2,1.6,4.1,3.2
+	c0.9,1.6,1,3.5,0.4,5.2l-5.8,17l36.1-22.8c1-0.7,2.2-1,3.5-1h215.9c30.4,0,55.2-24.8,55.2-55.2c-0.1-30.4-24.9-55.1-55.2-55.1H290.4
+	z"></path>
+	<g>
+		<path class="st2 UzXKwGJh_2" d="M123.3,281.3c-2.4-5.7-21.6-97,23.2-101.5c25.2-1.4,27.2-31.4,27.2-31.4s-113-29.6-88.4,106.5
+		c1.7,9.1,19.3,20.3,27.5,25.7C122.3,286.9,127.7,291.7,123.3,281.3z"></path>
+		<path class="st2 UzXKwGJh_3" d="M177.4,149.5c0,0,72.3,20.9,24.5,142c-2,5.2-9.3,3.2-9.3-2.4c0.2-32.5,3.7-88-14.1-99.9
+		C158.4,176.4,177.4,149.5,177.4,149.5z"></path>
+		<path class="st3 UzXKwGJh_4" d="M119.9,259c1.3,2.1,2.7,4.1,4.2,6.1c2.4,3.3,5.1,6.4,8,9.2c2.9,2.8,6.1,5.4,9.7,7.5c3.6,2,7.6,3.5,11.8,3.8
+		h0.6c4.2-0.3,8.2-1.8,11.8-3.8s6.8-4.6,9.7-7.5c2.9-2.8,5.5-6,8-9.2c4.1-5.5,7.5-11.4,10.6-17.4"></path>
+	</g>
+	<g>
+		<g>
+			<path class="st7 UzXKwGJh_5" d="M147.7,234.6l-25.8-0.2v-0.5c0-3.4,1.4-6.7,3.9-9.1c2.5-2.4,5.7-3.8,9.2-3.7c3.4,0,6.7,1.4,9.1,3.9
+			s3.7,5.7,3.7,9.2L147.7,234.6z"></path>
+		</g>
+		<g>
+			<path class="st7 UzXKwGJh_6" d="M188.1,234.7l-25.8-0.2V234c0-3.4,1.4-6.7,3.9-9.1c2.4-2.4,5.6-3.7,9-3.7h0.1c3.4,0,6.7,1.4,9.1,3.9
+			s3.7,5.7,3.7,9.2V234.7z"></path>
+		</g>
+	</g>
+	<style>
+		.UzXKwGJh_0 {
+			stroke-dasharray: 619 621;
+			stroke-dashoffset: 620;
+			animation: UzXKwGJh_draw_0 6700ms ease-out 0ms forwards,UzXKwGJh_fade 6700ms linear 0ms forwards;
+		}
+		.UzXKwGJh_1 {
+			fill-opacity:0;
+			stroke-dasharray: 865 867;
+			stroke-dashoffset: 866;
+			animation: UzXKwGJh_draw_1 6700ms ease-out 0ms forwards,FillIn 6700ms ease-out 0ms forwards,UzXKwGJh_fade 6700ms linear 0ms forwards;
+		}
+		.UzXKwGJh_2 {
+			stroke-dasharray: 395 397;
+			stroke-dashoffset: 396;
+			animation: UzXKwGJh_draw_2 6700ms ease-out 0ms forwards,UzXKwGJh_fade 6700ms linear 0ms forwards;
+		}
+		.UzXKwGJh_3 {
+			stroke-dasharray: 323 325;
+			stroke-dashoffset: 324;
+			animation: UzXKwGJh_draw_3 6700ms ease-out 0ms forwards,UzXKwGJh_fade 6700ms linear 0ms forwards;
+		}
+		.UzXKwGJh_4 {
+			stroke-dasharray: 103 105;
+			stroke-dashoffset: 104;
+			animation: UzXKwGJh_draw_4 6700ms ease-out 0ms forwards,UzXKwGJh_fade 6700ms linear 0ms forwards;
+		}
+		.UzXKwGJh_5 {
+			fill-opacity: 0;
+			stroke-dasharray: 68 70;
+			stroke-dashoffset: 69;
+			animation: UzXKwGJh_draw_5 6700ms ease-out 0ms forwards, FillIn 6700ms ease-out 0ms forwards, UzXKwGJh_fade 6700ms linear 0ms forwards;
+		}
+		.UzXKwGJh_6 {
+			fill-opacity: 0;
+			stroke-dasharray: 68 70;
+			stroke-dashoffset: 69;
+			animation: UzXKwGJh_draw_5 6700ms ease-out 0ms forwards, FillIn 6700ms ease-out 0ms forwards, UzXKwGJh_fade 6700ms linear 0ms forwards;
+		}
+		@keyframes UzXKwGJh_draw {
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes UzXKwGJh_fade {
+			0% {
+				stroke-opacity: 1;
+			}
+
+			100% {
+				stroke-opacity: 1;
+			}
+		}
+		@keyframes UzXKwGJh_draw_0 {
+			1.4925373134328357% {
+				stroke-dashoffset: 620;
+			}
+			53.73134328358209% {
+				stroke-dashoffset: 0;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes UzXKwGJh_draw_1 {
+			1.4925373134328357% {
+				stroke-dashoffset: 866;
+			}
+			53.73134328358209% {
+				stroke-dashoffset: 0;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes UzXKwGJh_draw_2 {
+			1.4925373134328357% {
+				stroke-dashoffset: 396;
+			}
+			53.73134328358209% {
+				stroke-dashoffset: 0;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes UzXKwGJh_draw_3 {
+			1.4925373134328357% {
+				stroke-dashoffset: 324;
+			}
+			53.73134328358209% {
+				stroke-dashoffset: 0;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes UzXKwGJh_draw_4 {
+			1.4925373134328357% {
+				stroke-dashoffset: 104;
+			}
+			53.73134328358209% {
+				stroke-dashoffset: 0;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes UzXKwGJh_draw_5 {
+			1.4925373134328357% {
+				stroke-dashoffset: 69;
+			}
+			53.73134328358209% {
+				stroke-dashoffset: 0;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes UzXKwGJh_draw_6 {
+			1.4925373134328357% {
+				stroke-dashoffset: 69;
+			}
+			53.73134328358209% {
+				stroke-dashoffset: 0;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes FillIn {
+			from {
+				fill-opacity: 0;
+			}
+			to {
+				fill-opacity: 1;
+			}
+		}
+	</style>
+</svg>

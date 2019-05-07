@@ -1,0 +1,9 @@
+para el correcto funcionamiento de este modulo se debe hacer lo siguiente
+1.- sustituir el metodo "_update_user_groups_view" en el archivo 
+	/odoo/odoo/addons/base/models/res_users.py 
+	odoo_stable/odoo/addons/base/res/res_users.py
+	apartir de la linea 755 por el contenido de opit_theme_accordion/views/res_user.py
+2.- instalar este modulo
+3.- reiniciar odoo agregando el parametro "-u all"
+
+LISTO!!

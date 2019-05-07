@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<openerp>
+	<data>	
+		
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<record id="imco_norma_delitos_search" model="ir.ui.view">
+			<field name="name">imco.norma.delitos.search</field>
+			<field name="model">imco.norma.delitos</field>
+			<field name="arch" type="xml">
+				<search string="Delitos">
+					<field name="name" string="Delito"/>
+					<field name="fuero_delito" string="Fuero del delito"/>
+					<separator/>
+					<group expand="0" string="Group By...">
+						<filter name="group_by_asesoria" string="¿Se brinda asesoría?" domain="[]" context="{'group_by':'asesoria'}"/>
+						<filter name="group_by_canalizacion" string="¿Se canaliza el delito?" domain="[]" context="{'group_by':'canalizacion'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+		
+		<record id="imco_norma_delitos_tree" model="ir.ui.view">
+			<field name="name">imco.norma.delitos.tree</field>
+			<field name="model">imco.norma.delitos</field>
+			<field name="arch" type="xml">
+				<tree string="Delitos">
+					<field name="name" /> 
+					<field name="fuero_delito" string="Fuero del delito" /> 
+					<field name="asesoria" string="¿Se brinda asesoría?"/>
+					<field name="canalizacion" string="¿Se canaliza el delito?"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="imco_norma_delitos_form" model="ir.ui.view">
+			<field name="name">imco.norma.delitos.form</field> 
+			<field name="model">imco.norma.delitos</field>
+			<field name="arch" type="xml">
+				<form string="Delitos">
+					<header>
+					</header>
+					<sheet>
+						<div class="oe_title">
+							<h1>
+								<label for="name"/>
+								<field name="name" /> 
+							</h1>
+						</div>
+						<group>
+							<field name="codigo" string="Código del delito"/>
+							<field name="fuero_delito" string="Fuero del delito"/>
+							<field name="asesoria" string="¿Se brinda asesoría?"/>
+							<field name="canalizacion" string="¿Se canaliza el delito?" 
+								attrs="{'invisible':[('asesoria','=',True)]}"/>
+						</group>
+						<group attrs="{'invisible':['|',('asesoria','=',True),('canalizacion','!=',True)]}">
+							<field name="mensaje_canalizacion" 
+								string="Mensaje de canalización a otra institución" />
+						</group>
+						<group attrs="{'invisible':['|',('asesoria','=',True),('canalizacion','=',True)]}">
+							<field name="mensaje_no_asesoria" 
+								string="Mensaje predeterminado si no se ofrece asesoría ni canalización" />
+						</group>
+						<newline />
+						<notebook>
+							<page string="Jurisdicciones" attrs="{'invisible':[('asesoria','!=',True)]}"> 
+								<group >
+									<field name="mensaje_jurisdiccion_no_aplica" 
+										string="Mensaje predeterminado si no se ofrece asesoría en la jurisdicción detectada"/>
+								</group>
+								<group>
+									<field name="jurisdicciones_delitos_ids" context="{'default_delito_id':id}">
+										<tree string="Delitos - Jurisdicciones">
+											<field name="delito_id" invisible="1"/>
+											<field name="jurisdiccion_id" string="Jurisdiccion"/>
+										</tree>
+										<form string="Delitos - Jurisdicciones">
+											<header>
+											</header>
+											<sheet>
+												<div class="oe_title">
+													<h1>
+														<label for="name"/>
+														<field name="name" readonly="1" /> 
+													</h1>
+												</div>
+												<group>
+													<field name="delito_id" invisible="1"/>
+													<field name="jurisdiccion_id" string="Jurisdicción asociada"/>
+													<field name="recomendacion_sin_variante" string="Recomendación si no se detecta variante"/>
+												</group>
+												<newline />
+												<notebook>
+													<page string="Entidades requeridas del delito en la jurisdicción"> 
+														<field name="entidades_requeridas_ids" 
+															context="{'default_delito_jurisdiccion_id':id, 'default_delito_id':delito_id, 'default_jurisdiccion_id':jurisdiccion_id}">
+															<tree string="Entidades requeridas" >
+																<field name="sequence" string="Secuencia"/>
+																<field name="name" invisible="1"/>
+																<field name="delito_id" invisible="1"/>
+																<field name="jurisdiccion_id" invisible="1"/>
+																<field name="delito_jurisdiccion_id" invisible="1"/>
+																<field name="entidad_id" string="Entidad asociada"/>
+																<field name="tipo_analisis" string="Tipo de análisis"/>
+																<field name="funcion_analisis_interno" string="Funcion de analisis interno"
+																	attrs="{'invisible':[('tipo_analisis','!=','interno')]}" />
+															</tree>
+															<form string="Entidades requeridas del delito en la jurisdicción">
+																<header>
+																</header>
+																<sheet>
+																	<div class="oe_title">
+																		<h1>
+																			<label for="name"/>
+																			<field name="name" readonly="1" /> 
+																		</h1>
+																	</div>
+																	<group>
+																		<field name="delito_id" invisible="1"/>
+																		<field name="jurisdiccion_id" invisible="1"/>
+																		<field name="delito_jurisdiccion_id" invisible="1"/> 
+																		<field name="sequence" string="Secuencia"/>
+																		<field name="entidad_id" string="Entidad asociada"/>
+																		<field name="tipo_analisis" string="Tipo de análisis"/>
+																		<field name="funcion_analisis_interno" string="Funcion de analisis interno"
+																			attrs="{'invisible':[('tipo_analisis','!=','interno')]}" />
+																	</group>
+																	<newline />
+																	<notebook>
+																		<page string="Preguntas disponibles">
+																			<field name="preguntas_ids" 
+																				context="{'default_delito_jurisdiccion_entidad_id':id,'default_delito_jurisdiccion_id':delito_jurisdiccion_id, 'default_delito_id':delito_id, 'default_jurisdiccion_id':jurisdiccion_id, 'default_entidad_id':entidad_id}">
+																				<tree string="Preguntas asociadas" editable="bottom">
+																					<field name="sequence" string="Secuencia"/>
+																					<field name="name" string="Pregunta"/>
+																					<field name="entidad_id" invisible="1"/>
+																					<field name="delito_id" invisible="1"/>
+																					<field name="jurisdiccion_id" invisible="1"/>
+																					<field name="delito_jurisdiccion_id" invisible="1"/>
+																					<field name="delito_jurisdiccion_entidad_id" invisible="1"/>
+																					<field name="notas" string="Notas"/>
+																				</tree>
+																				<form string="Entidades requeridas del delito en la jurisdicción">
+																					<header>
+																					</header>
+																					<sheet>
+																						<div class="oe_title">
+																							<h1>
+																								<label for="name"/>
+																								<field name="name" nolabel="1" /> 
+																							</h1>
+																						</div>
+																						<group>
+																							<field name="sequence" string="Secuencia"/>
+																							<field name="delito_id" invisible="1"/>
+																							<field name="jurisdiccion_id" invisible="1"/>
+																							<field name="delito_jurisdiccion_id" invisible="1"/> 
+																							<field name="delito_jurisdiccion_entidad_id" invisible="1"/>
+																							<field name="entidad_id" invisible="1"/>
+																						</group>
+																						<newline />
+																						<notebook>
+																							<page string="Notas">
+																								<field name="notas" nolabel="1" />
+																							</page>
+																						</notebook>
+																					</sheet>
+																				</form>
+																			</field>
+																		</page>
+																		<page string="Notas">
+																			<field name="notas" nolabel="1" />
+																		</page>
+																	</notebook>
+																</sheet>
+															</form>
+														</field>
+													</page>
+													<page string="Variantes del delito en la jurisdicción"> 
+														<field name="variantes_ids" 
+															context="{'default_delito_jurisdiccion_id':id, 'default_delito_id':delito_id, 'default_jurisdiccion_id':jurisdiccion_id}">
+															<tree string="Variantes del delito">
+																<field name="delito_id" invisible="1"/>
+																<field name="jurisdiccion_id" invisible="1"/>
+																<field name="delito_jurisdiccion_id" invisible="1"/>
+																<field name="nombre_variante" string="Variante del delito"/>
+															</tree>
+															<form string="Variante del delito en la jurisdicción">
+																<header>
+																</header>
+																<sheet>
+																	<div class="oe_title">
+																		<h1>
+																			<label for="name"/>
+																			<field name="name" readonly="1" /> 
+																		</h1>
+																	</div>
+																	<group>
+																		<field name="delito_id" invisible="1"/>
+																		<field name="jurisdiccion_id" invisible="1"/>
+																		<field name="delito_jurisdiccion_id" invisible="1"/> 
+																		<field name="nombre_variante" string="Variante del delito"/>
+																	</group>
+																	<newline />
+																	<notebook>
+																		<page string="Entidades presentes para variante (circunstancias)"> 
+																			<field name="variantes_entidades_ids" 
+																				context="{'variante_id':id, 'default_delito_jurisdiccion_id':delito_jurisdiccion_id, 'default_delito_id':delito_id, 'default_jurisdiccion_id':jurisdiccion_id}">
+																				<tree string="Variantes del delito" editable="bottom">
+																					<field name="delito_id" invisible="1"/>
+																					<field name="jurisdiccion_id" invisible="1"/>
+																					<field name="delito_jurisdiccion_id" invisible="1"/>
+																					<field name="variante_id" invisible="1"/>
+																					<field name="entidad_id" string="Entidad asociada"/>
+																					<field name="valor" string="Valor"/>
+																				</tree>
+																			</field>
+																		</page>
+																		<page string="Recomendación">
+																			<group>
+																				<field name="recomendacion" nolabel="1" />
+																			</group>
+																		</page>
+																		<page string="Notas adicionales">
+																			<group>
+																				<field name="notas" nolabel="1" />
+																			</group>
+																		</page>
+																	</notebook>
+																</sheet>
+															</form>
+														</field>
+													</page>
+													<page string="Notas adicionales">
+														<field name="notas" nolabel="1" />
+													</page>
+												</notebook>
+											</sheet>
+										</form>
+									</field>
+								</group>
+							</page>
+							<page string="Notas adicionales">
+								<field name="notas" nolabel="1" />
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+	</data>
+</openerp>

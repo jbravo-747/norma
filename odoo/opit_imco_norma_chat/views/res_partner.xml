@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<openerp>
+	<data>
+		
+		<record id="res_users_imco_norma_form" model="ir.ui.view">
+			<field name="name">res.users.imco.norma.form</field>
+			<field name="model">res.users</field>
+			<field name="inherit_id" ref="base.view_users_form" />
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='partner_id']" position="after" > 
+					<field name="codigo_chat" />
+				</xpath>
+			</field>
+        </record>
+	
+	</data>
+	
+</openerp>

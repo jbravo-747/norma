@@ -1,0 +1,13 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+<openerp>
+  <data>
+  
+		<menuitem
+			name="Analítica de API"
+			id="menu_analytics_root"
+			icon="fa-user"
+			web_icon="opit_imco_analytics,static/description/icon_analytics.png"
+			sequence="21" /> 		
+			
+	</data>
+</openerp>

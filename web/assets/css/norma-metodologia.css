@@ -1,0 +1,443 @@
+@import url("font_face.css");
+
+body{
+	z-index:0;
+	font-family: 'Seravek';
+}
+
+/* ==========================================================================
+OTROS
+========================================================================== */
+
+.nav-norma-padding{
+	padding: 20px !important;
+}
+
+.nav-norma-middle a{
+	color: #fff !important;
+	font-weight: bold !important;
+	font-size: 18px;
+}
+.line-right{
+	border-right: 2px solid white;
+	padding-right: 50px !important;
+}
+
+.norma-center{
+	text-align: center;
+}
+
+.container-norma-text-vcenter{
+	padding-top: 10px;
+}
+
+.p-intro{
+	padding: 20px;
+}
+
+.div-reverse{
+	display: flex;
+	flex-flow: row-reverse  wrap-reverse;
+}
+
+.home-reverse{
+	display: flex;
+  flex-flow: row-reverse  wrap-reverse;
+}
+
+.nav-norma-middle > .navbar-expand-md .navbar-nav .active > .nav-link, .navbar-expand-md .navbar-nav .nav-link.active, .navbar-expand-md .navbar-nav .nav-link.open, .navbar-expand-md .navbar-nav .open > .nav-link{
+	color: #fff !important
+}
+
+
+.separacion-nav > .navbar-expand-md .navbar-nav .nav-item {
+	padding-left: 0 !important;
+}
+
+.separacion-nav{
+	padding-left: 5% !important;
+}
+
+.separacion-nav-n{
+	/* padding-right: 0px !important; */
+}
+
+.separacion-navbar{
+	padding-right: 5% !important;
+}
+
+#copyright > .container{
+	margin-left: 5px !important;
+}
+
+.container-norma-center{
+	text-align: center;
+	
+}
+
+.nav-norma-middle > .navbar-expand-md .navbar-nav .nav-item {
+	padding-left: 2px !important;
+}
+
+/* ==========================================================================
+HEADER
+========================================================================== */
+
+/* Color cuando el navbar está en top */
+#metodologia-header  .nav-link {
+ color: #4C37A7 !important;
+}
+
+#metodologia-header .logo_header_normal{
+	display:none;
+}
+
+#metodologia-header .logo_header_blanco{
+	display:block;
+}
+
+#metodologia-header.top-nav-collapse  .logo_header_normal{
+	display:block;
+}
+
+#metodologia-header.top-nav-collapse  .logo_header_blanco{
+	display:none;
+}
+
+/* ==========================================================================
+SECCION INICIAL
+========================================================================== */
+#metodologia-main-section {
+	background-image: url(../img/backgrounds/bg-metodologia.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+#metodologia-main-section .main-seccion-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#metodologia-main-section .contenido-main-section{
+	padding: 100px 0 0 0;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#metodologia-main-section .contenido-main-section .header-button {
+	margin-top: 20px;
+	color: #222222;
+}
+
+#metodologia-main-section .contenido-main-section .header-button .btn {
+	margin-right: 10px;
+}
+#metodologia-main-section .subtitle-1{
+	padding: 30px 0 10px 0;
+}
+#metodologia-main-section .img-movil{
+	display: none!important;
+}
+
+#metodologia-main-section .btn{
+	margin-top: 20px;
+	letter-spacing: 2px;
+	padding: 10px 40px;
+	font-weight: bold !important;
+}
+#metodologia-main-section .btn-main-section{
+	width: 40%;
+	display: grid;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+/* ==========================================================================
+MENU INTERMEDIO
+========================================================================== */
+.ul-norma{
+	justify-content: center !important;
+}
+
+.nav-norma-middle{
+	position: absolute;
+	z-index: 1;
+	border-radius: 15px;
+	margin-top: -35px;
+	margin-left: 17%;
+	width: 70%;
+	max-width: 880px;
+	text-align: center;
+}
+/* ==========================================================================
+SECCION COMO FUE CREADA
+========================================================================== */
+#create-norma{
+		background: rgba(228, 228, 228, 0.3);
+		background-image: url(../img/backgrounds/bg-comosecreo.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 650px;
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 20px;
+		padding-top: 100px;
+}
+
+#create-norma .img-movil img{
+	width:100%;
+}
+
+/* ==========================================================================
+SECCION QUIEN ESTA DETRAS
+========================================================================== */
+#back-norma{
+		background-image: url(../img/backgrounds/bg-quienesdetras.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 650px;
+		position: relative;
+		overflow: hidden;
+}
+
+#back-norma .img-movil img{
+	width:100%;
+}
+
+/* ==========================================================================
+SECCION DESARROLLO
+========================================================================== */
+#dev-norma{
+	padding: 20px 0px;
+	background: rgba(228, 228, 228, 0.3);
+	background-image: url(../img/backgrounds/bg-deasarrollo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:250px;
+}
+
+#dev-norma p{
+	margin: 15px 0 !important;
+}
+/* ==========================================================================
+DISPOSITIVOS: PANTALLAS GRANDES
+========================================================================== */
+/* Navbar laptop 2*/
+@media (min-width: 1441px){
+	#metodologia-main-section {
+		min-height: 700px;
+	}
+	.nav-norma-middle{
+		margin-left: 20.7%;
+	}
+}
+/* Navbar laptop 1*/
+@media (min-width: 1025px) and (max-width: 1440px){
+	#metodologia-main-section {
+		min-height: 670px;
+	}
+
+	.nav-norma-middle{
+		margin-left: 17%;
+	}
+}
+/* Navbar desktops */
+@media (min-width: 992px) and (max-width: 1024px) {
+	#metodologia-main-section {
+		min-height: 670px;
+	}
+	.nav-norma-middle{
+		position: absolute;
+		z-index: 1;
+		border-radius: 15px;
+		margin-top: -35px;
+		margin-left: 15%;
+	}
+}
+
+
+/* ==========================================================================
+DISPOSITIVOS: TABLETS
+========================================================================== */
+@media (max-width: 991px) {
+	h1, h2, h3, h4, h5, p{
+		text-align: center;
+	}
+	#metodologia-main-section {
+		padding-top: 50px;
+	}
+	.nav-norma-middle{
+		display: none !important;
+	}
+
+	#metodologia-header .logo_header_normal{
+		display:block;
+	}
+	#metodologia-header .logo_header_blanco{
+		display:none;
+	}
+
+	#metodologia-main-section .main-seccion-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-columns: none;
+	}
+	#metodologia-main-section {
+		background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
+	}
+	#metodologia-main-section .subtitle-1{
+		padding: 29px 0 10px 0;
+	}
+	#metodologia-main-section .img-movil{
+		display: block !important;
+		text-align:center;
+		padding:20px 0px;
+	}
+	#metodologia-main-section .img-movil img{
+		width: 400px;
+		height: auto;
+	}
+	#metodologia-main-section .btn-main-section{
+		width: 100%;
+	}
+
+	#create-norma{
+		padding-top: 40px;
+	}
+
+	#create-norma .img-movil {
+		text-align:center;
+	}
+
+	#create-norma .img-movil img{
+		width:60%;
+	}
+
+	#back-norma .img-movil {
+		text-align:center;
+	}
+
+	#back-norma .img-movil img{
+		width:60%;
+	}
+
+	.div-reverse{
+		display: block;
+		flex-flow: none;
+	}
+	.container-norma-center{
+		/* text-align: justify; */
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.container-norma-text-vcenter{
+		padding-top: 20px;
+	}
+
+	.separacion-navbar{
+		padding-right: 0 !important;
+	}
+}
+
+/* ==========================================================================
+DISPOSITIVOS: CELULARES
+========================================================================== */
+@media (max-width: 767px) {
+	h1, h2, h3, h4, h5, p{
+		text-align: center;
+	}
+	#metodologia-header .logo_header_normal{
+		display:block;
+	}
+	#metodologia-header .logo_header_blanco{
+		display:none;
+	}
+	#metodologia-main-section .main-seccion-container{
+		grid-template-columns: 1fr;
+	}
+	#metodologia-main-section .contenido-main-section {
+		grid-column-start: 1;
+	}
+	#metodologia-main-section {
+		background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
+		padding-top: 20px;
+	}
+	#metodologia-main-section .subtitle-1{
+		padding: 29px 0 10px 0;
+	}
+	#metodologia-main-section .img-movil{
+		display: block !important;
+	}
+	#metodologia-main-section .img-movil img{
+		width: 320px;
+		height: auto;
+	}
+	#metodologia-main-section .btn-main-section{
+		width: 100%;
+	}
+
+	#create-norma{
+		padding-top: 40px;
+	}
+
+	#create-norma .img-movil {
+		text-align:center;
+	}
+
+	#create-norma .img-movil img{
+		width:60%;
+	}
+
+	#back-norma{
+		background-image: url(../img/backgrounds/bg-quienesdetras.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 650px;
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 20px;
+		padding-top: 40px;
+	}
+
+	#back-norma .img-movil {
+		text-align:center;
+	}
+
+	#back-norma .img-movil img{
+		width:60%;
+	}
+
+	#dev-norma{
+		padding-top: 40px;
+		background-image: url(../img/backgrounds/bg-deasarrollo.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 20px;
+	}
+
+	.div-reverse{
+		display: block;
+		flex-flow: none;
+	}
+	.container-norma-center{
+		/* text-align: justify; */
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.container-norma-text-vcenter{
+		padding-top: 20px;
+	}
+
+	.separacion-navbar{
+		padding-right: 0 !important;
+	}
+}

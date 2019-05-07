@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+	<t t-name="norma_livechat.FeedBack">
+		<div class="o_livechat_rating">
+			<div class="o_livechat_rating_feedback_text">
+				<h2>¿Fuí de utilidad?<br/>
+					<small>Ayúdame a mejorar</small>
+				</h2>
+			</div>
+			<div class="o_livechat_rating_choices">
+				<div class="o_livechat_img" data-value="10">
+					<img t-att-src="widget.server_origin + '/opit_imco_norma_chat/static/src/img/logo_verde.png'" alt="Bien"  />
+					<span class="verde">Fuí muy útil</span>
+				</div>
+				<div class="o_livechat_img" data-value="5">
+					<img t-att-src="widget.server_origin + '/opit_imco_norma_chat/static/src/img/logo_amarillo.png'" alt="OK"  />
+					<span class="amarillo">Fuí Regular</span>
+				</div>
+				<div class="o_livechat_img" data-value="1">
+					<img t-att-src="widget.server_origin + '/opit_imco_norma_chat/static/src/img/logo_rojo.png'" alt="Mal" />
+					<span class="rojo">No fuí útil</span>
+				</div>
+			</div>
+			<!-- 
+			<div class="o_livechat_no_feedback text-muted">
+				<em>No deseo calificar la conversación </em>
+			</div> 
+			-->
+			<!--
+			<div class="o_livechat_send_button">
+				<a href="#" class="btn btn-primary">Calificar y Terminar</a>
+			</div>
+			-->
+			<div class="o_livechat_rating_reason">
+				<textarea id="reason" placeholder="Explain your note"></textarea>
+				<div class="o_livechat_rating_reason_button">
+					<input type="button" class="o_rating_submit_button" value="Send" />
+				</div>
+			</div>
+		</div>
+	</t>
+
+</templates>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<!--<data> -->
+	<data noupdate="1" >
+
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!--  Jurisdicciones -->
+		<record model="ir.module.category" id="module_category_imco_norma_jurisdicciones">
+			<field name="name">Norma - Jurisdicciones</field>
+			<field name="description">Norma - Jurisdicciones</field>
+			<field name="sequence">42</field>
+		</record>
+		<record id="group_imco_norma_jurisdicciones_manager" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="category_id" ref="module_category_imco_norma_jurisdicciones"/>
+		</record>
+		<record id="group_imco_norma_jurisdicciones_user_read" model="res.groups">
+			<field name="name">Usuario Visualizacion</field>
+			<field name="category_id" ref="module_category_imco_norma_jurisdicciones"/>
+		</record>
+		<record id="group_imco_norma_jurisdicciones_user_write" model="res.groups">
+			<field name="name">Usuario Edicion</field>
+			<field name="category_id" ref="module_category_imco_norma_jurisdicciones"/>
+		</record>
+		<record id="group_imco_norma_jurisdicciones_user_create" model="res.groups">
+			<field name="name">Usuario Creacion</field>
+			<field name="category_id" ref="module_category_imco_norma_jurisdicciones"/>
+		</record>
+		<record id="group_imco_norma_jurisdicciones_user_delete" model="res.groups">
+			<field name="name">Usuario Eliminacion</field>
+			<field name="category_id" ref="module_category_imco_norma_jurisdicciones"/>
+		</record>
+		
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!--  Delitos -->
+		<record model="ir.module.category" id="module_category_imco_norma_delitos">
+			<field name="name">Norma - Delitos</field>
+			<field name="description">Norma - Delitos</field>
+			<field name="sequence">43</field>
+		</record>
+		<record id="group_imco_norma_delitos_manager" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="category_id" ref="module_category_imco_norma_delitos"/>
+		</record>
+		<record id="group_imco_norma_delitos_user_read" model="res.groups">
+			<field name="name">Usuario Visualizacion</field>
+			<field name="category_id" ref="module_category_imco_norma_delitos"/>
+		</record>
+		<record id="group_imco_norma_delitos_user_write" model="res.groups">
+			<field name="name">Usuario Edicion</field>
+			<field name="category_id" ref="module_category_imco_norma_delitos"/>
+		</record>
+		<record id="group_imco_norma_delitos_user_create" model="res.groups">
+			<field name="name">Usuario Creacion</field>
+			<field name="category_id" ref="module_category_imco_norma_delitos"/>
+		</record>
+		<record id="group_imco_norma_delitos_user_delete" model="res.groups">
+			<field name="name">Usuario Eliminacion</field>
+			<field name="category_id" ref="module_category_imco_norma_delitos"/>
+		</record>
+		
+		
+	</data>
+</openerp>

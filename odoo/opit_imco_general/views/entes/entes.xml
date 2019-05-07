@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<openerp>
+	<data>	
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////  INFORMACION GEOGRAFICA  ////////////////////////////////// -->
+		
+		<record id="imco_general_entes_geograficos_search" model="ir.ui.view">
+			<field name="name">imco.general.entes.geograficos.search</field>
+			<field name="model">imco.general.entes.geograficos</field>
+			<field name="arch" type="xml">
+				<search string="Entes geográficos">
+					<field name="name" string="Nombre del ente"  filter_domain="[('name','ilike',self)]" />
+					<field name="tipo_ente" />
+					<field name="clave_completa" />
+					<field name="padre_id" string="Nombre del ente padre" filter_domain="[('padre_id','ilike',self)]" />
+					<separator/>
+					<filter name="estado" string="Estados" domain="[('tipo_ente','=','estado')]" />
+					<filter name="filter_municipio" string="Municipios" domain="[('tipo_ente','=','municipio')]" />
+					<separator/>
+					<filter name="filter_activo" string="Activo" domain="[('activo','=',True)]" />
+					<filter name="filter_inactivo" string="Inactivo" domain="[('activo','!=',True)]" />
+					<separator/>
+					<group expand="0" string="Agrupar por...">
+						<filter name="group_by_tipo_ente" string="Tipo de ente" domain="[]" context="{'group_by':'tipo_ente'}" />
+						<filter name="group_by_padre_id" string="Entidad Padre" domain="[]" context="{'group_by':'padre_id'}" />
+						<filter name="group_by_activo" string="¿Está activo?" domain="[]" context="{'group_by':'activo'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<record id="imco_general_entes_geograficos_tree" model="ir.ui.view">
+			<field name="name">imco.general.entes.geograficos.tree</field>
+			<field name="model">imco.general.entes.geograficos</field>
+			<field name="priority">2</field>
+			<field name="arch" type="xml">
+			<tree string="Entes geográficos" >
+				<field name="tipo_ente" string="Tipo de ente" />
+				<field name="padre_id" string="Entidad padre" />
+				<field name="acronimo" string="Acrónimo del ente" />
+				<field name="name" />
+				<field name="clave_age" string="Clave AGE (Inegi)" />
+				<field name="activo" string="¿Está activo?" />
+				</tree>
+			</field>
+		</record>
+		
+		<record id="imco_general_entes_geograficos_form" model="ir.ui.view">
+			<field name="name">imco.general.entes.geograficos.form</field>
+			<field name="model">imco.general.entes.geograficos</field>
+			<field name="arch" type="xml">
+				<form string="Entes geográficos">
+					<header>
+					</header>
+					<sheet>
+						 <div class="oe_button_box" name="button_box">
+							<button name="cambio_activo" type="object"  class="oe_stat_button" icon="fa-archive">
+								<field name="activo" widget="boolean_button" options="{'terminology': 'active'}"/>
+							</button>
+						</div>
+						<div class="oe_title">
+							<h1>
+								<label for="name"/>
+								<field name="name" />
+							</h1>
+						</div>
+						<newline />
+						<group string="Información adicional">
+							<group>
+								<field name="tipo_ente" 
+									options="{'no_create_edit':True}" 
+									string="Tipo de ente"/>
+								<field name="padre_id" 
+									options="{'no_create_edit':True}"
+									string="Entidad padre"/>
+								<field name="acronimo" string="Acrónimo del estado"/>
+							</group>
+							<group>
+								<field name="clave_completa" string="Clave Completa (Inegi)" />
+								<field name="clave_age" string="Clave AGE (Inegi)" />
+							</group>
+						</group>
+						<newline />
+						<notebook>
+							<page string="Entidades hijas">
+								<field name="hijos_ids" nolabel="1" readonly="1">
+									<tree>
+										<field name="acronimo" />
+										<field name="name" />
+										<field name="clave_completa" />
+									</tree>
+								</field>
+							</page>
+							<page string="Alias de la entidad">
+								<field name="alias_ids" nolabel="1" context="{'default_ente_id':id}">
+									<tree editable="bottom">
+										<field name="ente_id" invisible="1"/>
+										<field name="name" />
+									</tree>
+								</field>
+							</page>
+							<page string="Notas adicionales">
+								<field name="note" nolabel="1" />
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</openerp>

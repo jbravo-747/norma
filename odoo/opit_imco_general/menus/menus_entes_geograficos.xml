@@ -1,0 +1,103 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+<openerp>
+  <data>
+		
+		<!-- Datos generales: Entidades -->
+		<menuitem id="imco_general_entes_menu"  
+			name="Entes geográficos" 
+			parent="menu_imco_general_root" 
+			sequence="50" />
+		
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- INEGI -->
+		<menuitem 
+			id="imco_general_entes_inegi_menu"  
+			parent="imco_general_entes_menu" 
+			name="INEGI"
+			sequence="1" 
+			/>
+			
+		<record id="imco_general_entidades_todos_action" model="ir.actions.act_window">
+			<field name="name">Ver todas las entidades </field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.general.entes.geograficos</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="imco_general_entes_geograficos_search" />
+		</record>
+		
+		<record id="imco_general_entidades_estados_action" model="ir.actions.act_window">
+			<field name="name">Ver estados</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.general.entes.geograficos</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="domain">[('tipo_ente','=','estado')]</field>
+			<field name="search_view_id" ref="imco_general_entes_geograficos_search" />
+		</record>
+
+		<record id="imco_general_entidades_municipios_action" model="ir.actions.act_window">
+			<field name="name">Ver municipios</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.general.entes.geograficos</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="domain">[('tipo_ente','=','municipio')]</field>
+			<field name="search_view_id" ref="imco_general_entes_geograficos_search" />
+		</record>
+
+		<menuitem 
+			id="imco_general_entes_todos_menu"  
+			parent="imco_general_entes_inegi_menu" 
+			sequence="1" 
+			action="imco_general_entidades_todos_action"
+			/>
+		
+		<menuitem 
+			id="imco_general_entes_estados_menu"  
+			parent="imco_general_entes_inegi_menu" 
+			sequence="1" 
+			action="imco_general_entidades_estados_action"
+			/>
+		
+		<menuitem 
+			id="imco_general_entes_municipios_menu"  
+			parent="imco_general_entes_inegi_menu" 
+			sequence="1" 
+			action="imco_general_entidades_municipios_action"
+			/>
+		
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- SEPOMEX -->
+
+		<menuitem 
+			id="imco_general_entes_sepomex_menu"  
+			parent="imco_general_entes_menu" 
+			name="SEPOMEX"
+			sequence="2" 
+			/>
+			
+		<record id="imco_general_entidades_sepomex_todos_action" model="ir.actions.act_window">
+			<field name="name">Ver todas las localidades </field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.general.entes.sepomex.localidades</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="imco_general_entes_sepomex_localidades_search" />
+		</record>
+		
+		<menuitem 
+			id="imco_general_entes_sepomex_todos_menu"  
+			parent="imco_general_entes_sepomex_menu" 
+			sequence="1" 
+			action="imco_general_entidades_sepomex_todos_action"
+			/>
+		
+		
+			
+	</data>
+</openerp>

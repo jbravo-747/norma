@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1" >
+
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ENTIDADES Revisadas -->
+		<record model="ir.module.category" id="module_category_imco_general_entidades">
+			<field name="name">IMCO  General -  Entidades Revisadas</field>
+			<field name="description">General - Entidades Revisadas</field>
+			<field name="sequence">11</field>
+		</record>
+		<record id="group_imco_general_entidades_manager" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="category_id" ref="module_category_imco_general_entidades"/>
+		</record>
+		<record id="group_imco_general_entidades_user_create" model="res.groups">
+			<field name="name">Usuario Creacion</field>
+			<field name="category_id" ref="module_category_imco_general_entidades"/>
+		</record>
+		<record id="group_imco_general_entidades_user_write" model="res.groups">
+			<field name="name">Usuario Edicion</field>
+			<field name="category_id" ref="module_category_imco_general_entidades"/>
+		</record>
+		<record id="group_imco_general_entidades_user_read" model="res.groups">
+			<field name="name">Usuario Visualizacion</field>
+			<field name="category_id" ref="module_category_imco_general_entidades"/>
+		</record>
+		<record id="group_imco_general_entidades_user_delete" model="res.groups">
+			<field name="name">Usuario Eliminacion</field>
+			<field name="category_id" ref="module_category_imco_general_entidades"/>
+		</record>
+		
+		
+	</data>
+</openerp>

@@ -1,0 +1,51 @@
+.accordion {
+	.tab {
+		position: relative;
+		margin-bottom: 1px;
+		width: 100%;
+		color: #fff;
+		overflow: hidden;
+		font-size: 27px;
+
+		> label {
+			position: relative;
+			display: block;
+			padding: 0 0 0 0.2em;
+			font-weight: bold;
+			color: @brand-primary;
+			border-bottom: 1px solid #ddd;
+			// line-height: 3;
+			cursor: pointer;
+			font-size: 27px;
+			top: -.7em;
+		}
+
+		> input {
+			position: relative;
+			top: 0.7em;
+			display: block;
+			z-index: 10;
+			width: 100%;
+			height: 1.4em;
+			opacity: 0;
+
+			&:checked ~ .tab-content {
+				height: 100%;
+			}
+		}
+
+		.tab-content {
+			height: 0;
+			overflow: hidden;
+			-webkit-transition: height 0.35s;
+			-o-transition: height 0.35s;
+			transition: height 0.35s;
+
+			label {
+				color: @gray;
+				font-weight: bold;
+				padding: 0.2em;
+			}
+		}
+	}
+}

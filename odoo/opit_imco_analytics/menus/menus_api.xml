@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<openerp>
+	<data>	
+		
+			
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<record id="imco_analitica_api_registros_action" model="ir.actions.act_window">
+			<field name="name">Registros de API</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.analitica.api</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="imco_analitica_api_search_view"/>
+		</record>
+		
+		<record id="imco_analitica_api_analitica_action" model="ir.actions.act_window">
+			<field name="name">Analítica de API</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.analitica.api</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">pivot,graph,tree,form</field>
+			<field name="search_view_id" ref="imco_analitica_api_search_view"/>
+		</record>
+		
+		<menuitem 
+			id="imco_analitica_api_registros_menu" 
+			parent="menu_analytics_root"
+			action="imco_analitica_api_registros_action" 
+			sequence="100"
+			/>
+		
+		<menuitem 
+			id="imco_analitica_api_analitica_menu" 
+			parent="menu_analytics_root"
+			action="imco_analitica_api_analitica_action" 
+			sequence="110"
+			/>
+			
+	</data>
+</openerp>	

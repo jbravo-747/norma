@@ -1,0 +1,13 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+<openerp>
+	<data>
+  
+		<menuitem 
+			name="IMCO - General" 
+			id="menu_imco_general_root" 
+			icon="fa-user"
+			web_icon="opit_imco_general,static/description/logo_imco.png"
+			sequence="11" />
+		
+	</data>
+</openerp>

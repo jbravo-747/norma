@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+	<t t-name="opit_livechat.closeChat">
+		<div class="o_livechat_close">
+			<div class="o_livechat_close_text"><h3>¿Estás seguro de querer salir?</h3></div>
+			<div class="o_livechat_close_buttons">
+				<div class="o_livechat_close_btn seguir">Seguir con el chat</div>
+				<div class="o_livechat_close_btn min">Minimizar</div>
+				<div class="o_livechat_close_btn cerrar">Cerrar chat</div>
+			</div>
+		</div>
+	</t>
+
+</templates>

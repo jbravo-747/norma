@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Configuracion  -->
+		<record model="ir.module.category" id="module_category_imco_norma_configuracion">
+			<field name="name">Norma - Configuracion</field>
+			<field name="description">Norma - Configuracion</field>
+			<field name="sequence">41</field>
+		</record>
+		<record id="group_imco_norma_configuracion_manager" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="category_id" ref="module_category_imco_norma_configuracion"/>
+		</record>
+		<record id="group_imco_norma_configuracion_user_read" model="res.groups">
+			<field name="name">Usuario Visualizacion</field>
+			<field name="category_id" ref="module_category_imco_norma_configuracion"/>
+		</record>
+		<record id="group_imco_norma_configuracion_user_write" model="res.groups">
+			<field name="name">Usuario Edicion</field>
+			<field name="category_id" ref="module_category_imco_norma_configuracion"/>
+		</record>
+		<record id="group_imco_norma_configuracion_user_create" model="res.groups">
+			<field name="name">Usuario Creacion</field>
+			<field name="category_id" ref="module_category_imco_norma_configuracion"/>
+		</record>
+		<record id="group_imco_norma_configuracion_user_delete" model="res.groups">
+			<field name="name">Usuario Eliminacion</field>
+			<field name="category_id" ref="module_category_imco_norma_configuracion"/>
+		</record>
+		
+	
+	</data>
+</openerp>

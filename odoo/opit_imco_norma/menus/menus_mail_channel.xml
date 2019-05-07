@@ -1,0 +1,47 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+<openerp>
+  <data>
+		
+		<menuitem 
+			id="imco_norma_mensajeria_mensajes_menu"  
+			parent="imco_norma_mensajeria_menu" 
+			name="Mensajes"
+			sequence="1" 
+			/>
+			
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Canales del chat de norma -->		
+		<record id="imco_norma_mail_channel_action" model="ir.actions.act_window">
+			<field name="name">Chats de Norma</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">mail.channel</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="imco_norma_mail_channel_search"/>
+			<field name="domain">[('livechat_channel_id.codigo_canal','=','norma')]</field>
+		</record>
+		<record id="action_imco_norma_mail_channel_view_tree" model="ir.actions.act_window.view">
+                        <field name="sequence" eval="1"/>
+                        <field name="view_mode">tree</field>
+                        <field name="view_id" ref="imco_norma_mail_channel_tree"/>
+                        <field name="act_window_id" ref="imco_norma_mail_channel_action"/>
+                </record>
+		<record id="action_imco_norma_mail_channel_view_form" model="ir.actions.act_window.view">
+                        <field name="sequence" eval="1"/>
+                        <field name="view_mode">form</field>
+                        <field name="view_id" ref="imco_norma_mail_channel_form"/>
+                        <field name="act_window_id" ref="imco_norma_mail_channel_action"/>
+                </record>
+	
+		<menuitem 
+			id="imco_norma_mail_channel_menu"  
+			parent="imco_norma_mensajeria_mensajes_menu" 
+			sequence="1" 
+			action="imco_norma_mail_channel_action"
+			/>
+		
+		
+	</data>
+</openerp>

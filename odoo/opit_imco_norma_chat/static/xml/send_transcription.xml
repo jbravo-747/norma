@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+	<t t-name="opit_livechat.transcriptionChat">
+		<div class="o_livechat_transcription">
+			<div class="o_livechat_transcription_text">
+				<h5>Recomendación:</h5>
+				<div class="o_livechat_recommendation"></div>
+			</div>
+			<div class="o_livechat_transcription_text">
+				<h5 style="margin-bottom:0px;">¿Quiéres recibir la transcripción y mi recomendación por correo electrónico?</h5>
+			</div>
+			<form class="form-inline">
+				<div class="form-group" id="emailForm" style="padding:0.5em">
+					<input type="email" class="form-control" id="InputEmail" placeholder="Escribe tu correo electrónico"/>
+					<span class="help-block hidden empty">No puede estar vacio el campo email</span>
+					<span class="help-block hidden invalid">No es un email válido</span>
+				</div>
+			</form>
+			<div class="o_livechat_transcription_buttons">
+				<div class="o_livechat_transcription_btn send" style="margin:0.3em 1em;">Si, envíamelo</div>
+				<div class="o_livechat_transcription_btn skip"  style="margin:0.3em 1em;">No gracias</div>
+			</div>
+		</div>
+	</t>
+
+</templates>

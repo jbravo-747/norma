@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<!--<data> -->
+	<data noupdate="1" >
+
+
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Usuarios de chat -->
+		<record model="ir.module.category" id="module_category_imco_norma_sms">
+			<field name="name">Norma - SMS </field>
+			<field name="description">Norma - SMS</field>
+			<field name="sequence">45</field>
+		</record>
+		<record id="group_imco_norma_sms_manager" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="category_id" ref="module_category_imco_norma_sms"/>
+		</record>
+		<record id="group_imco_norma_sms_user_read" model="res.groups">
+			<field name="name">Usuario Visualizacion</field>
+			<field name="category_id" ref="module_category_imco_norma_sms"/>
+		</record>
+		<record id="group_imco_norma_sms_user_write" model="res.groups">
+			<field name="name">Usuario Edicion</field>
+			<field name="category_id" ref="module_category_imco_norma_sms"/>
+		</record>
+		<record id="group_imco_norma_sms_user_create" model="res.groups">
+			<field name="name">Usuario Creacion</field>
+			<field name="category_id" ref="module_category_imco_norma_sms"/>
+		</record>
+		<record id="group_imco_norma_sms_user_delete" model="res.groups">
+			<field name="name">Usuario Eliminacion</field>
+			<field name="category_id" ref="module_category_imco_norma_sms"/>
+		</record>
+		
+	</data>
+</openerp>

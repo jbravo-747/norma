@@ -1,0 +1,134 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+<openerp>
+  <data>
+		
+		<menuitem 
+			id="imco_norma_juridico_delitos_menu"  
+			parent="imco_norma_juridico_menu" 
+			name="Delitos"
+			sequence="10" 
+			/>
+		
+		<menuitem 
+			id="imco_norma_juridico_jurisdicciones_menu"  
+			parent="imco_norma_juridico_menu" 
+			name="Jurisdicciones"
+			sequence="20" 
+			/>
+			
+		<menuitem 
+			id="imco_norma_nltk_entidades_delitos_jurisdicciones_menu"  
+			parent="imco_norma_juridico_menu" 
+			name="Entidades analizables por delitos y jurisdicción"
+			sequence="30" 
+			/>
+		
+		<menuitem 
+			id="imco_norma_juridico_configuracion_menu"  
+			parent="imco_norma_juridico_menu" 
+			name="Configuración"
+			sequence="99" 
+			/>
+			
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Jurisdicciones -->		
+		<record id="imco_norma_juridico_delitos_todos_action" model="ir.actions.act_window">
+			<field name="name">Ver todos los delitos</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.norma.delitos</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+	
+		<menuitem 
+			id="imco_norma_juridico_delitos_todos_menu"  
+			parent="imco_norma_juridico_delitos_menu" 
+			sequence="1" 
+			action="imco_norma_juridico_delitos_todos_action"
+			/>
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Jurisdicciones -->		
+		<record id="imco_norma_juridico_jurisdicciones_todos_action" model="ir.actions.act_window">
+			<field name="name">Ver todas las jurisdicciones</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.norma.jurisdiccion</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem 
+			id="imco_norma_juridico_jurisdicciones_todos_menu"  
+			parent="imco_norma_juridico_jurisdicciones_menu" 
+			sequence="1" 
+			action="imco_norma_juridico_jurisdicciones_todos_action"
+			/>
+			
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- Clasificaciones de entidades requeridas-->		
+		<record id="imco_norma_nltk_entidades_delitos_jurisdicciones_x_delito_x_juris_action" model="ir.actions.act_window">
+			<field name="name">Ver entidades x delito y jurisdicción</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.norma.delitos.jurisdiccion.entidades.requeridas</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="imco_norma_delitos_jurisdiccion_entidades_requeridas_search"/>
+			<field name="context">{'search_default_group_by_delito_id': 1,'search_default_group_by_jurisdiccion_id': 1,}</field>
+		</record>
+		<record id="imco_norma_nltk_entidades_delitos_jurisdicciones_x_delito_x_juris_action_tree" model="ir.actions.act_window.view">
+                        <field name="sequence" eval="1"/>
+                        <field name="view_mode">tree</field>
+                        <field name="view_id" ref="imco_norma_delitos_jurisdiccion_entidades_requeridas_tree"/>
+                        <field name="act_window_id" ref="imco_norma_nltk_entidades_delitos_jurisdicciones_x_delito_x_juris_action"/>
+                </record>
+		<record id="imco_norma_nltk_entidades_delitos_jurisdicciones_x_delito_x_juris_action_form" model="ir.actions.act_window.view">
+                        <field name="sequence" eval="1"/>
+                        <field name="view_mode">form</field>
+                        <field name="view_id" ref="imco_norma_delitos_jurisdiccion_entidades_requeridas_form"/>
+                        <field name="act_window_id" ref="imco_norma_nltk_entidades_delitos_jurisdicciones_x_delito_x_juris_action"/>
+                </record>
+		
+		<menuitem 
+			id="imco_norma_nltk_entidades_delitos_jurisdicciones_x_delito_x_juris_menu"  
+			parent="imco_norma_nltk_entidades_delitos_jurisdicciones_menu" 
+			sequence="1" 
+			action="imco_norma_nltk_entidades_delitos_jurisdicciones_x_delito_x_juris_action"
+			/>
+			
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- CONFIGURACION-->		
+		
+		<!-- Clasificaciones de entidades requeridas-->		
+		<record id="imco_norma_nltk_entidades_todos_action" model="ir.actions.act_window">
+			<field name="name">Catálogo de entidades factores de delitos</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.norma.nltk.entidades</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record> 
+	
+		<menuitem 
+			id="imco_norma_nltk_entidades_menu"  
+			parent="imco_norma_juridico_configuracion_menu" 
+			sequence="1" 
+			action="imco_norma_nltk_entidades_todos_action"
+			/>
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		
+		
+	</data>
+</openerp>

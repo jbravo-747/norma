@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<openerp>
+	<data>
+
+		<menuitem
+			id="imco_norma_sms_menu"
+			name="SMS"
+			parent="opit_imco_norma.menu_imco_norma_root"
+			sequence="20"/>
+
+
+		<record id="imco_norma_sms_users_action" model="ir.actions.act_window">
+			<field name="name">Usuarios SMS</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">imco.norma.sms.user</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<record id="action_imco_norma_sms_users_view_tree" model="ir.actions.act_window.view">
+			<field name="sequence" eval="1"/>
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="imco_norma_sms_users_tree"/>
+			<field name="act_window_id" ref="imco_norma_sms_users_action"/>
+		</record>
+		<record id="action_imco_norma_sms_users_view_form" model="ir.actions.act_window.view">
+			<field name="sequence" eval="1"/>
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="imco_norma_sms_users_form"/>
+			<field name="act_window_id" ref="imco_norma_sms_users_action"/>
+		</record>
+		<menuitem
+			id="imco_norma_sms_users_menu"
+			parent="imco_norma_sms_menu"
+			sequence="1"
+			action="imco_norma_sms_users_action"
+			/>
+		<menuitem id="imco_norma_sms_mensajes_menu" parent="imco_norma_sms_menu" name="Mensajes" sequence="1"/>
+
+	</data>
+</openerp>

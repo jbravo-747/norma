@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body style="margin:0px;">
+	<div style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;width:100%!important;height:100%;line-height:1.6em;margin:0px;" bgcolor="#fff">
+		<table style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;width:100%!important;margin:0px;padding:0px;" bgcolor="#fff">
+			<tr style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0px;">
+				<td style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;vertical-align:top;margin:0" valign="top"></td>
+				<td width="900" style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;vertical-align:top;display:block!important;max-width:900px!important;clear:both!important;margin:0 auto" valign="top">
+					<div style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;max-width:900px;display:block;margin:0 auto;padding:0px 20px 20px 20px">
+						<table width="100%" cellpadding="0" cellspacing="0" style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0;padding:10px;" bgcolor="#79BCD6">
+							<tr style="font-family:&#39Roboto Condensed&#39;margin:0">
+								<td style="text-align:left !important;" width="100%;">
+									<div style="text-align:left;font-family:&#39;Roboto Condensed&#39;,sans-serif;font-size:15px;font-weight:700;">
+										<h1 style="margin:0;padding-top:30px;padding-bottom:10px;padding-left: 30px;color:#fff;text-transform:uppercase;line-height:40px;">{{titulo}}</h1>
+									</div>
+								</td>
+							</tr>
+							<tr style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0;">
+								<td style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;vertical-align:top;margin:0;padding:20px;padding-left:30px;" valign="top">
+									<table cellpadding="0" cellspacing="0" style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0; max-width:900px;">
+										<tr style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0">
+											<td colspan="2" style="font-family:&#39;Roboto Condensed&#39;,sans-serif;font-size:20px;font-weight:700;font-size:14px;vertical-align:top;margin:0;padding:20px 20px 20px 20px;" valign="top">
+												<div style="">
+													<img src="http://normatuabogada.com/images_external/legal.png"
+													alt="" style="width: auto;height: 40px;float: left;">
+													<h2 style="color:#fff; padding-left: 10px; font-size:30px;font-weight:700;">Información legal</h2>
+												</div>
+												<table style="border-collapse: collapse; width:100%;">
+													<tr style="">
+														<td width="60%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:700;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;" >Delito</td>
+														<td style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">{{ delito if delito != "" else 'No hemos podido detectar el delito que te cometieron'}}</td>
+													</tr>
+													<tr>
+														<td width="60%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:700;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">Jurisdicción</td>
+														<td style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">{{ jurisdiccion if jurisdiccion != "" else 'No hemos podido detectar la jurisdicción donde ocurrió'}}</td>
+													</tr>
+													%if variante!= "":
+													<tr>
+														<td width="60%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:700;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">Variante de delito</td>
+														<td style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">{{ variante }}</td>
+													</tr>
+													%end
+													<tr>
+														<td width="60%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:700;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">Documento para descarga con <br>recomendación personalizada</td>
+														<td style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;"><a style="background-color: #FBB03B;padding: 10px; text-align: center;border-radius: 5px;color: white;font-weight: bold;text-decoration : none;" target="_blank" href="{{!url_recomendacion}}">Descargar</a></td>
+													</tr>
+													<tr>
+														<td width="60%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:700;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">Documento con tu tips para <br>presentar tu denuncia</td>
+														<td style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;"><a style="background-color: #FBB03B;padding: 10px; text-align: center;border-radius: 5px;color: white;font-weight: bold;text-decoration : none;" target="_blank" href="https://admin.imco.org.mx/mail/norma/derechos">Descargar</a></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0">
+											<td colspan="2" style="font-family:&#39;Roboto Condensed&#39;,sans-serif;font-size:20px;font-weight:700;;font-size:14px;vertical-align:top;margin:0;padding:20px 20px 20px 20px;" valign="top">
+												<div style="">
+													<img src="http://normatuabogada.com/images_external/marker.png"
+													alt="" style="width: auto;height: 40px;float: left;">
+													<h2 style="color:#fff; padding-left: 10px; font-size:30px;font-weight:700;">Ubicación Geográfica</h2>
+												</div>
+												<table style="width:100%;border-collapse: collapse;">
+													<tr>
+														<td width="60%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:700;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">Entidad Federativa</td>
+														<td width="40%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">{{ estado if estado != "" else 'No hemos podido detectar el estado donde ocurrió'}}</td>
+													<tr>
+													</tr>
+														<td width="60%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:700;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">Municipio</td>
+														<td width="40%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;border-bottom:1pt solid #4D7A8E;padding-bottom:10px; padding-top:10px;">{{ municipio if municipio != "" else 'No hemos podido detectar el municipio donde ocurrió'}}</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0">
+											<td colspan="2" style="font-family:&#39;Roboto Condensed&#39;,sans-serif;font-size:20px;font-weight:700;;font-size:14px;vertical-align:top;margin:0;padding:20px 20px 20px 20px;" valign="top">
+												<div style="">
+														<img src="http://normatuabogada.com/images_external/star.png"
+														alt="" style="width: auto;height: 40px;float: left;">
+													<h2 style="color:#fff; padding-left: 10px; font-size:30px;font-weight:700;">Recomendación rápida</h2>
+												</div>
+												<table>
+													<tr>
+														<td width="100%" style="color:#fff;font-family: &#39;Roboto&#39;, sans-serif;font-weight:100;padding-bottom:20px; padding-top:10px;">
+															{{ recomendacion}}
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;margin:0">
+											<td colspan="2" style="font-family:&#39;Roboto Condensed&#39;,sans-serif;font-size:20px;font-weight:700;;font-size:14px;vertical-align:top;margin:0;padding:0 20px 0 20px;" valign="top">
+												<div style="">
+													<img src="http://normatuabogada.com/images_external/chat.png"
+													alt="" style="width: auto;height: 40px;float: left;">
+													<h2 style="color:#fff; padding-left: 10px; font-size:30px;font-weight:700;">Transcripción de nuestra conversación</h2>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-family:&#39;Roboto Condensed&#39;,sans-serif;font-size:20px;font-weight:700;;font-size:14px;vertical-align:top;margin:0;padding:0 20px 0 20px;" valign="top">
+												<table width="100%" style="border-collapse: collapse;">
+													%for m in mensajes:
+													<tr style="border-color:#1c1e1d;">
+														%if m["remitente"] != 'Tú':
+																<th width="15%">
+																	<img src="http://normatuabogada.com/images_external/avatar_norma.png" 
+																		alt="" style="width: auto;height: 70px;float: left;" />
+																</th>
+																<th width="70%" cellpadding="0" cellspacing="0" style="text-align:left; height:100% !important;">
+																	<div style="font-size: 14px;font-family:&#39;Roboto&#39;,sans-serif;border-radius: 20px 20px 20px 20px;width:70%;padding: 10px 7px 10px 7px;background-color:#F4F1ED;color:#333333">
+																		{{m["mensaje"].replace('<p>', '').replace('</p>','')}}
+																	</div>
+																</th>
+																<th width="15%"></th>
+														%else:
+																<th width="15%"></th>
+																<th width="70%" cellpadding="0" cellspacing="0" style="text-align:right;height:100% !important; ">
+																	<div style="font-size: 14px;font-family:&#39;Roboto&#39;,sans-serif;border-radius: 20px 20px 20px 20px;width:70%;padding: 10px 7px 10px 7px;background-color:#F4F1ED;;color:#333333; margin-left:20%;">
+																		{{m["mensaje"].replace('<p>', '').replace('</p>','')}}
+																	</div>
+																</th>
+																<th width="15%">
+																	<img src="http://normatuabogada.com/images_external/avatar_user.png"
+																		alt="" style="width: auto;height: 70px;float: left;" />
+																</th>
+														%end
+													</tr>
+													%end
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td style="font-family:&#39;Helvetica Neue&#39;,Helvetica,Arial,sans-serif;font-size:14px;vertical-align:top;margin:0" valign="top"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>

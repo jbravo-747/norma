@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+	<data>
+
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		
+		<record id="imco_norma_mail_channel_sms_form" model="ir.ui.view">
+			<field name="name">imco.norma.mail.channel.sms.form</field>
+			<field name="model">mail.channel</field>
+			<field name="priority">2</field>
+			<field name="inherit_id" ref="opit_imco_norma.imco_norma_mail_channel_form" />
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='email_envio']" position="after" > 
+					<field name="user_sms_id" attrs="{'invisible':[('metodo_contacto', '!=', 'sms')]}" string="Teléfono - SMS"/>
+				</xpath>
+			</field>		
+		</record>
+
+	</data>
+</openerp>

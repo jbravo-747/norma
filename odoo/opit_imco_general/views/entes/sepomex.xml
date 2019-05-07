@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<openerp>
+	<data>	
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////  INFORMACION GEOGRAFICA  ////////////////////////////////// -->
+		
+		<record id="imco_general_entes_sepomex_localidades_search" model="ir.ui.view">
+			<field name="name">imco.general.entes.sepomex_.localidades.search</field>
+			<field name="model">imco.general.entes.sepomex.localidades</field>
+			<field name="arch" type="xml">
+				<search string="Localidades de SEPOMEX">
+					<field name="name" string="Nombre de la localidad"  filter_domain="[('name','ilike',self)]" />
+					<field name="tipo_localidad" />
+					<field name="cp" string="Código Postal"/>
+					<field name="estado_id" string="Nombre de la entidad federativa" filter_domain="[('estado_id','ilike',self)]" />
+					<field name="municipio_id" string="Nombre del municipio" filter_domain="[('municipio_id','ilike',self)]" />
+					<separator/>
+					<separator/>
+					<group expand="0" string="Agrupar por...">
+						<filter name="group_by_tipo_localidad" string="Tipo de localidad" domain="[]" context="{'group_by':'tipo_localidad'}" />
+						<filter name="group_by_estado_id" string="Entidad federativa asociada" domain="[]" context="{'group_by':'estado_id'}" />
+						<filter name="group_by_municipio_id" string="Municipio asociado" domain="[]" context="{'group_by':'municipio_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<record id="imco_general_entes_sepomex_localidades_tree" model="ir.ui.view">
+			<field name="name">imco.general.entes.sepomex.localidades.tree</field>
+			<field name="model">imco.general.entes.sepomex.localidades</field>
+			<field name="priority">2</field>
+			<field name="arch" type="xml">
+			<tree string="Localidades de SEPOMEX" >
+				<field name="estado_id" string="Nombre de la entidad federativa" />
+				<field name="municipio_id" string="Nombre del municipio" />
+				<field name="name" />
+				<field name="cp" string="Código Postal" />
+				<field name="tipo_localidad" string="Tipo de localidad" />
+				</tree>
+			</field>
+		</record>
+		
+		<record id="imco_general_entes_sepomex_localidades_form" model="ir.ui.view">
+			<field name="name">imco.general.entes.sepomex.localidades.form</field>
+			<field name="model">imco.general.entes.sepomex.localidades</field>
+			<field name="arch" type="xml">
+				<form string="Localidad de SEPOMEX">
+					<header>
+					</header>
+					<sheet>
+						 <div class="oe_title">
+							<h1>
+								<label for="name"/>
+								<field name="name" />
+							</h1>
+						</div>
+						<newline />
+						<group string="InformaciÃ³n adicional">
+							<group>
+								<field name="estado_id" options="{'no_create_edit':True}" string="Entidad federativa asociada"/>
+								<field name="municipio_id" options="{'no_create_edit':True}" string="Municipio asociado"/>
+								<field name="cp" string="Código Postal"/>
+							</group>
+							<group>
+								<field name="ciudad" string="Ciudad"/>
+								<field name="tipo_localidad" string="Tipo de localidad"/>
+							</group>
+						</group>
+						<newline />
+						<notebook>
+							<page string="Notas adicionales">
+								<field name="note" nolabel="1" />
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</openerp>

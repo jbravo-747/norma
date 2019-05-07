@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<openerp>
+	<data>	
+		
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////// -->
+		<record id="imco_norma_delitos_jurisdiccion_entidades_requeridas_search" model="ir.ui.view">
+			<field name="name">imco.norma.delitos.jurisdiccion.entidades.requeridas.search</field>
+			<field name="model">imco.norma.delitos.jurisdiccion.entidades.requeridas</field>
+			<field name="arch" type="xml">
+				<search string="Entidades requeridas">
+					<field name="name" />
+					<field name="tipo_analisis" string="Tipo de análisis"/>
+					<separator/>
+					<filter string="Análisis Interno" domain="[('tipo_analisis','=','interno')]"/>
+					<filter string="Procesador NLTK" domain="[('tipo_analisis','=','nltk_processor')]"/>
+					<separator/>
+					<group expand="0" string="Group By...">
+						<filter name="group_by_delito_id" string="Delito" domain="[]" context="{'group_by':'delito_id'}"/>
+						<filter name="group_by_jurisdiccion_id" string="Jurisdicción" domain="[]" context="{'group_by':'jurisdiccion_id'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+		
+		<record id="imco_norma_delitos_jurisdiccion_entidades_requeridas_tree" model="ir.ui.view">
+			<field name="name">imco.norma.delitos.jurisdiccion.entidades.requeridas.tree</field>
+			<field name="model">imco.norma.delitos.jurisdiccion.entidades.requeridas</field>
+			<field name="arch" type="xml">
+				<tree string="Entidades requeridas" >
+					<field name="name" invisible="1"/>
+					<field name="delito_id" />
+					<field name="jurisdiccion_id" />
+					<field name="delito_jurisdiccion_id" invisible="1"/>
+					<field name="sequence" string="Secuencia"/>
+					<field name="entidad_id" string="Entidad asociada"/>
+					<field name="tipo_analisis" string="Tipo de análisis"/>
+					<field name="funcion_analisis_interno" string="Función de análisis interna"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="imco_norma_delitos_jurisdiccion_entidades_requeridas_form" model="ir.ui.view">
+			<field name="name">imco.norma.delitos.jurisdiccion.entidades.requeridas.tree</field>
+			<field name="model">imco.norma.delitos.jurisdiccion.entidades.requeridas</field>
+			<field name="arch" type="xml">
+				<form string="Entidades requeridas del delito en la jurisdicción">
+					<header>
+					</header>
+					<sheet>
+						<div class="oe_title">
+							<h1>
+								<label for="name"/>
+								<field name="name" readonly="1" /> 
+							</h1>
+						</div>
+						<group>
+							<field name="delito_id" invisible="1"/>
+							<field name="jurisdiccion_id" invisible="1"/>
+							<field name="delito_jurisdiccion_id" invisible="1"/> 
+							<field name="sequence" string="Secuencia"/>
+							<field name="entidad_id" string="Entidad asociada"/>
+							<field name="tipo_analisis" string="Tipo de análisis"/>
+							<field name="funcion_analisis_interno" string="Funcion de análisis interno"
+								attrs="{'invisible':[('tipo_analisis','!=','interno')]}" />
+						</group>
+						<newline />
+						<notebook>
+							<page string="Preguntas disponibles">
+								<field name="preguntas_ids" 
+									context="{'default_delito_jurisdiccion_entidad_id':id,'default_delito_jurisdiccion_id':delito_jurisdiccion_id, 'default_delito_id':delito_id, 'default_jurisdiccion_id':jurisdiccion_id, 'default_entidad_id':entidad_id}">
+									<tree string="Preguntas asociadas" editable="bottom">
+										<field name="sequence" string="Secuencia"/>
+										<field name="name" string="Pregunta"/>
+										<field name="entidad_id" invisible="1"/>
+										<field name="delito_id" invisible="1"/>
+										<field name="jurisdiccion_id" invisible="1"/>
+										<field name="delito_jurisdiccion_id" invisible="1"/>
+										<field name="delito_jurisdiccion_entidad_id" invisible="1"/>
+										<field name="notas" string="Notas"/>
+									</tree>
+									<form >
+										<header>
+										</header>
+										<sheet>
+											<div class="oe_title">
+												<h1>
+													<label for="name"/>
+													<field name="name" nolabel="1" /> 
+												</h1>
+											</div>
+											<group>
+												<field name="sequence" string="Secuencia"/>
+												<field name="delito_id" invisible="1"/>
+												<field name="jurisdiccion_id" invisible="1"/>
+												<field name="delito_jurisdiccion_id" invisible="1"/> 
+												<field name="delito_jurisdiccion_entidad_id" invisible="1"/>
+												<field name="entidad_id" invisible="1"/>
+											</group>
+											<newline />
+											<notebook>
+												<page string="Notas">
+													<field name="notas" nolabel="1" />
+												</page>
+											</notebook>
+										</sheet>
+									</form>
+								</field>
+							</page>
+							<page string="Notas">
+								<field name="notas" nolabel="1" />
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+	</data>
+</openerp>

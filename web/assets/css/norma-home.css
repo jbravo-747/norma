@@ -1,0 +1,284 @@
+br {
+	display: block;
+}
+
+/* ==========================================================================
+SECCION INICIAL
+========================================================================== */
+#home-main-section {
+	background-image: url(../img/backgrounds/bg-intro_1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 640px;
+	position: relative;
+	overflow: hidden;
+}
+
+#home-main-section .main-seccion-container{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	
+}
+
+#home-main-section .main-seccion-container p{
+	margin-bottom:15px;
+}
+
+#home-main-section .contenido-main-section{
+	padding: 100px 0 0 0;
+}
+
+#home-main-section .contenido-main-section .header-button {
+	margin-top: 20px;
+	color: #222222;
+}
+
+#home-main-section .contenido-main-section .header-button .btn {
+	margin-right: 10px;
+}
+
+#home-main-section .subtitle-1{
+	padding: 30px 0 10px 0;
+}
+
+#home-main-section .img-movil{
+	display: none!important;
+}
+
+#home-main-section .btn{
+	margin-top: 20px;
+	letter-spacing: 2px;
+	padding: 10px 40px;
+	font-weight: normal !important;
+	font-size:18px;
+}
+#home-main-section .btn-main-section{
+	width: 40%;
+	display: grid;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+/* ==========================================================================
+SECCION COMO USAR
+========================================================================== */
+#como-usar-section{
+	min-height: 650px;
+	background: rgba(228, 228, 228, 0.3);
+	/*background-image: url(../img/backgrounds/bg-comousar.png);*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#como-usar-section .subtitle-2{
+	padding: 30px 0 10px 0 !important;
+}
+
+#como-usar-section .video-container img{
+	height: auto;
+	width: 50%;
+}
+
+/* ==========================================================================
+SECCION COMO TE AYUDAMOS
+========================================================================== */
+#como-ayudarte-section{
+	background-image: url(../img/backgrounds/bg-comoayuda.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 640px;
+}
+
+#como-ayudarte-section .img-movil{
+	display: none!important;
+}
+
+#como-ayudarte-section .list-como-ayudarte{
+	padding:0px 0px 30px 30px;
+}
+#como-ayudarte-section .list-como-ayudarte li{
+	list-style-type: none;
+	color: #040404;
+	font-weight:bold;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+#como-ayudarte-section .list-como-ayudarte li::before{
+	content: "\2022";
+	color: #FF3C87;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+/* ==========================================================================
+DISPOSITIVOS: PANTALLAS GRANDES
+========================================================================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+	br {
+		display: block;
+	}
+	h1{
+		text-align: center;
+	}
+	h2{
+		text-align: center;
+	}
+
+	#home-main-section .main-seccion-container{
+		grid-template-columns: 2fr 1fr;
+	}
+	#home-main-section {
+		background-image: url(../img/backgrounds/bg-intro_1.png);
+	}
+	#home-main-section .subtitle-1{
+		padding: 30px 0 10px 0;
+	}
+	#home-main-section .img-movil{
+		display: none!important;
+	}
+
+	#home-main-section h1{
+		text-align: left;
+	}
+	#home-main-section h2{
+		text-align: left;
+	}
+	#home-main-section p{
+			text-align: left;
+	}
+
+}
+
+/* ==========================================================================
+DISPOSITIVOS: TABLETS
+========================================================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+	br {
+		display: none;
+	}
+	h1{
+		text-align: center;
+	}
+	h2{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+	}
+	#home-main-section .main-seccion-container{
+		grid-template-columns: 1fr;
+	}
+	#home-main-section .contenido-main-section{
+		/* padding: 120px 0 0 0; */
+	}
+	#home-main-section {
+		background-image: url(../img/backgrounds/bg-intro.png);
+		padding-top: 50px;
+	}
+	#home-main-section .subtitle-1{
+		padding: 29px 0 10px 0;
+	}
+	#home-main-section .img-movil{
+		display: block !important;
+	}
+	#home-main-section .img-movil img{
+		max-width: 400px;
+		margin-left:20%;
+		height: auto;
+		margin-bottom:20px;
+	}
+	#home-main-section .btn-main-section{
+		width: 100%;
+	}
+
+	#como-usar-section .video-container img{
+		width: 70%;
+	}
+
+	#como-ayudarte-section {
+		background-image: url(../img/backgrounds/bg-comoayuda-mobile.png);
+	}
+	#como-ayudarte-section .list-como-ayudarte{
+		padding:0px 0px 30px 80px;
+	}
+	#como-ayudarte-section .img-movil{
+		display: block !important;
+	}
+	#como-ayudarte-section .img-movil img{
+		max-width: 400px;
+		margin-left:20%;
+		height: auto;
+		margin-bottom:20px;
+	}
+
+}
+
+/* ==========================================================================
+DISPOSITIVOS: CELULARES
+========================================================================== */
+@media (max-width: 767px) {
+	br {
+		display: none;
+	}
+	h1{
+		text-align: center;
+	}
+	h2{
+		text-align: center;
+	}
+	p{
+			text-align: center;
+	}
+	#home-main-section .main-seccion-container{
+		grid-template-columns: 1fr;
+	}
+	#home-main-section {
+		background-image: url(../img/backgrounds/bg-intro.png);
+		padding-top: 20px;
+	}
+	#home-main-section .subtitle-1{
+		padding: 29px 0 10px 0;
+	}
+	#home-main-section .img-movil{
+		display: block !important;
+	}
+	#home-main-section .img-movil img{
+		display:none;
+		max-width: 350px;
+		margin-left:15%;
+		margin-bottom:20px;
+		height: auto;
+	}
+	#home-main-section .btn-main-section{
+		width: 100%;
+	}
+
+	#como-usar-section .video-container img{
+		height: auto;
+		width: 80%;
+	}
+
+	#como-ayudarte-section {
+		background-image: url(../img/backgrounds/bg-comoayuda-mobile.png);
+	}
+	#como-ayudarte-section .img-movil{
+		display: block !important;
+	}
+	#como-ayudarte-section .img-movil img{
+		display:block;
+		max-width: 350px;
+		margin:0 auto;
+		margin-bottom:20px;
+		height: auto;
+	}
+
+}
+
+/* ==========================================================================
+	Termina Estilos Norma
+========================================================================== */

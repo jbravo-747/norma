@@ -1,0 +1,45 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+<openerp>
+  <data>
+		
+		<menuitem 
+			id="imco_norma_analisis_mensajes_menu"  
+			parent="imco_norma_analisis_menu" 
+			name="Mensajes"
+			sequence="1" 
+			/>
+			
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<record id="imco_norma_analisis_mensajes_todos_action" model="ir.actions.act_window">
+			<field name="name">Chats de Norma</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">mail.channel</field>
+			<!--<field name="view_type">form</field>-->
+			<field name="view_mode">pivot,graph</field>
+			<field name="search_view_id" ref="imco_norma_mail_channel_search"/>
+			<field name="domain">[('livechat_channel_id.codigo_canal','=','norma')]</field>
+		</record>
+		<record id="action_imco_norma_analisis_mail_channel_view_pivot" model="ir.actions.act_window.view">
+                        <field name="sequence" eval="1"/>
+                        <field name="view_mode">pivot</field>
+                        <field name="view_id" ref="imco_norma_mail_channel_pivot"/>
+                        <field name="act_window_id" ref="imco_norma_analisis_mensajes_todos_action"/>
+                </record>
+		<record id="action_imco_norma_analisis_mail_channel_view_graph" model="ir.actions.act_window.view">
+                        <field name="sequence" eval="1"/>
+                        <field name="view_mode">graph</field>
+                        <field name="view_id" ref="imco_norma_mail_channel_graph"/>
+                        <field name="act_window_id" ref="imco_norma_analisis_mensajes_todos_action"/>
+                </record>
+		
+		<menuitem 
+			id="imco_norma_analisis_mensajes_todos_menu"  
+			parent="imco_norma_analisis_menu" 
+			sequence="1" 
+			action="imco_norma_analisis_mensajes_todos_action"
+			/>
+		
+	</data>
+</openerp>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<openerp>
+	<data>
+
+		<menuitem
+			name="NORMA"
+			id="menu_imco_norma_root"
+			icon="fa-user"
+			web_icon="opit_imco_norma,static/description/logo_norma.png"
+			sequence="9" />
+
+		<menuitem id="imco_norma_mensajeria_menu"
+			name="Conversaciones"
+			parent="menu_imco_norma_root"
+			sequence="10" />
+
+		<menuitem id="imco_norma_juridico_menu"
+			name="Información Jurídica"
+			parent="menu_imco_norma_root"
+			sequence="20" />
+
+		<menuitem id="imco_norma_nltk_menu"
+			name="Análisis de contenidos"
+			parent="menu_imco_norma_root"
+			sequence="20" />
+
+		<menuitem id="imco_norma_analisis_menu"
+			name="Estadísticas de actividad"
+			parent="menu_imco_norma_root"
+			sequence="50" />
+
+
+
+	</data>
+</openerp>
