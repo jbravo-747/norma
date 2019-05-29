@@ -10,8 +10,13 @@ El repositorio contiene la información técnica relacionada al proyecto "Norma:
 * web: contiene el código de la página web pública.
 
 ## ODOO
-
+Debes tener una instancia funcionando de odoo para poder instalar esta plataforma.
 El contenido de la carpeta odoo debe colocarse en una ubicación visible para el path de Odoo.
+
+Inicia sesión como odoo y en la terminal navega hacia el directorio de este proyecto y corre:
+´´´
+pip3 install -r ./requerimientos-pip.txt
+
 
 Lo anterior puede realizarse colocando los archivos en la ubicación que utiliza Odoo por default o enviando un parámetro adicional al archivo que inicializa el servidor.
 
