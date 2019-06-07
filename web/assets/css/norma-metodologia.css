@@ -72,7 +72,7 @@ OTROS
 
 .container-norma-center{
 	text-align: center;
-	
+
 }
 
 .nav-norma-middle > .navbar-expand-md .navbar-nav .nav-item {
@@ -226,6 +226,31 @@ SECCION DESARROLLO
 #dev-norma p{
 	margin: 15px 0 !important;
 }
+/* ==========================================================================
+SECCION MAPAS
+========================================================================== */
+#map_mp{
+	background-image: url(../img/backgrounds/bg-quienesdetras.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 650px;
+	position: relative;
+	overflow: hidden;
+}
+.google-maps {
+        position: relative;
+        padding-bottom: 70%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 /* ==========================================================================
 DISPOSITIVOS: PANTALLAS GRANDES
 ========================================================================== */
