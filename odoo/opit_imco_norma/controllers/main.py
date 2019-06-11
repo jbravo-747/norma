@@ -112,7 +112,7 @@ class LivechatController(http.Controller):
 		web_path = request.env["ir.config_parameter"].sudo().search([("key","=", "web.base.url")], limit=1).value
 		url_transcripcion = web_path + "/mail/norma/transcripcion/" + uuid
 		parameters = {
-			'titulo' : "Envío de Información de Norma, la abogada de las víctimas",
+			'titulo' : "RECOMENDACIONES DE NORMA",
 			'estado' : "" if mail_channel.estado_id.id in [False, None] else mail_channel.estado_id.name,
 			'municipio' : "" if mail_channel.municipio_id.id in [False, None] else mail_channel.municipio_id.name,
 			'cp' : "" if mail_channel.cp_id.id in [False, None] else ( "(" + mail_channel.cp_id.cp + ") " + mail_channel.cp_id.name),

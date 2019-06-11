@@ -94,7 +94,7 @@
 			color:white;
 		}
 		#alcaldia table tbody tr:nth-child(even) {
-			background-color:#63207a;
+			background-color:##63207a;
 		}
 		p,ul,ol{
 			font-weight:300!important;
@@ -109,38 +109,6 @@
 			</div>
 			<hr />
 			<div class="info_conversacion">
-				<h2>LO QUE TIENES QUE SABER:</h2>
-				<p ALIGN="left">
-						Dirígete a un lugar seguro para pedir apoyo. Reporta el delito que sufriste cuanto antes al 911 o al policía más próximo y solicita atención médica o psicológica si lo necesitas.
-						<ul>
-							<li>Puedes presentar tu denuncia en cualquier Ministerio Público (MP). Ubícalo aquí.</li>
-							<li>Para agilizar la investigación, te recomendamos presentar tu denuncia en el MP más cercano al lugar de los hechos.</li>
-							<li>No necesitas ninguna identificación oficial para presentar tu denuncia.</li>
-							<li>El MP está abierto las 24 horas y deben atenderte.</li>
-							<li>En caso de un mal servicio, en cada oficina del MP hay teléfonos rojos gratuitos para presentar quejas. Además, conoce la lista de instituciones para levantar una queja en caso de no ser respetados tus derechos o ser víctima de un caso de corrupción.</li>
-							<li>Al presentar tu denuncia, las autoridades deben proporcionarte un número de carpeta de investigación para darle seguimiento.</li>
-							<li>Recuerda que tienes que regresar a los cinco días para realizar la ratificación de la denuncia, sin olvidar los documentos que te solicitaron.</li>
-							<li>Si necesitas platicar con un abogado y/o psicólogo, puedes comunicarte al Consejo Ciudadano de la CDMX (5533-5533), el cual opera todo el año las 24 horas del día. Ellos recibirán tu reporte y te canalizarán con la autoridad correspondiente. Incluso, puedes pedirles acompañamiento en el proceso de tu denuncia.</li>
-						</ul>
-				</p>
-				<p>Te invitamos a consultar las recomendaciones específicas para tu caso.</p>
-				<br />
-				<h2>Ubicación Geográfica</h2>
-				<table>
-					<tr>
-						<td><strong>Entidad Federativa</strong></td>
-						<td><p>{{ estado if estado != "" else 'No hemos podido detectar el estado donde ocurrió'}}</p></td>
-					</tr>
-					<tr>
-						<td><strong>Municipio</strong></td>
-						<td><p>{{ municipio if municipio != "" else 'No hemos podido detectar el municipio donde ocurrió'}}</p></td>
-					</tr>
-					<tr>
-						<td><strong>CP</strong></td>
-						<td><p>{{ cp if cp != "" else 'No hemos podido detectar el CP donde ocurrió. Recuerda que debes conocer el CP al momento de presentar tu denuncia'}}</p></td>
-					</tr>
-				</table>
-				<br />
 				<h2>Información Legal</h2>
 				<table>
 					<tr>
@@ -168,37 +136,93 @@
 						</td>
 					</tr>
 				</table>
-				<br />				
+				<br />
+				<h2>Ubicación Geográfica</h2>
+				<table>
+					<tr>
+						<td><strong>Entidad Federativa</strong></td>
+						<td><p>{{ estado if estado != "" else 'No hemos podido detectar el estado donde ocurrió'}}</p></td>
+					</tr>
+					<tr>
+						<td><strong>Municipio</strong></td>
+						<td><p>{{ municipio if municipio != "" else 'No hemos podido detectar el municipio donde ocurrió'}}</p></td>
+					</tr>
+					<tr>
+						<td><strong>CP</strong></td>
+						<td><p>{{ cp if cp != "" else 'No hemos podido detectar el CP donde ocurrió. Recuerda que debes conocer el CP al momento de presentar tu denuncia'}}</p></td>
+					</tr>
+				</table>
+				<br />
+				<h2>Recomendación rápida</h2>
+				<p>{{recomendacion}}</p>
 			</div>
 			<div class="contenido">
-				<h2>¿QUÉ NECESITAS PARA INICIAR TU DENUNCIA?</h2>
-				<p>Al presentar tu denuncia es muy importante que lleves contigo:
-					<ul>
-						<li>Identificación oficial con fotografía vigente (INE, licencia, pasaporte, cédula profesional, etcétera)</li>
-						<li>Elementos que ayuden a demostrar que eres propietario del objeto robado (factura, carta factura, ticket o recibo de compra, voucher, contrato de compra venta, fotografías, vídeos, testigos, etcétera).</li>
-						<li>Proporciona tus datos personales, nombre, domicilio y teléfono al MP, los cuales permitirán a las autoridades comunicarse contigo en caso de ser necesario. El MP debe proteger y reservar tus datos personales.</li>
-					</ul>
-				</p>
-				<p>En caso de no contar con estos documentos, los puedes presentar al momento de la ratificación de la denuncia (cinco días después).</p>
-				<p>Al llegar al MP:
-					<ul>
-						<li>Acércate al Módulo de Atención Oportuna (“barandilla”) y espera a ser atendido por un Orientador Jurídico para canalizarte al área correspondiente e informarte sobre tu derecho de contar con un asesor jurídico gratuito.</li>
-						<li>El asesor debe orientarte de forma clara y  accesible en todo lo relacionado con la investigación y el procedimiento penal, representarte en cualquier acto y colaborar con el MP en la investigación del delito.</li>
-						<li>Al estar frente al MP narra y describe todos los hechos, tal cual sucedieron, y exprésate con honestidad: cuándo, cómo, quién participó y dónde ocurrieron los hechos. Te pueden sancionar por mentir y presentar pruebas falsas.</li>
-						<li>Puedes apoyarte en la conversación que tuviste con Norma. Descárgala aquí.</li>
-					</ul>
-				</p>
-				<p>¡No dejes correr el tiempo, se te puede olvidar lo que pasó!</p>
-				<p>Al llegar al MP:
-					<ul>
-						<li>El MP deberá imprimir tu entrevista, la cual asegura la presentación de tu denuncia, su seguimiento y en ocasiones acredita el hecho ante un tercero.</li>
-						<li>Antes de firmarla, asegúrate de leerla, si tiene algún error solicita al MP que lo corrija.</li>
-						<li>El MP debe entregarte gratis una copia de esa entrevista, si no lo hace, solicítala inmediatamente o presenta una queja al Órgano Interno de Control o a la Visitaduría General.</li>
-						<li>En caso de necesitar una copia certificada, se te cobrará el documento.</li>
-					</ul>
-				</p>
+				<h2>¿Qué necesitas para iniciar tu denuncia?</h2>
+				<p>Denunciar un delito es el primer paso para disminuir la impunidad en México (9 de cada 10 delitos no son denunciados) y exigir que las autoridades investiguen los hechos. Te recomiendo acudir a la agencia del Ministerio Público (MP) más cercana dentro de la alcaldía donde ocurrió el delito (en la página de Norma encontrarás la lista de los Ministerios Públicos de la CDMX).</p>
+				<p>En caso de no querer ir al MP puedes utilizar el sitio web <a class="link" href="https://mpvirtual.pgj.cdmx.gob.mx/CiberDenuncia/TerminosCondiciones.aspx" target="_blank">MP Virtual</a> de la Procuraduría General de Justicia de la CDMX para presentar tu denuncia, incluso de forma anónima. Si lo que necesitas es reportar la pérdida o extravío de documentos, objetos o identificaciones, el sitio también te permite presentar un acta especial para esos casos.</p>
+				<div id="mp_tabla">
+				<table>
+					<thead>
+						<tr>
+							<th>Acción</th>
+							<th>Pros</th>
+							<th>Contras</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Acudir a agencia del MP</th>
+							<td>
+								<p ALIGN="left">
+								<ul>
+									<li>No tienes que regresar a ratificar tu denuncia.</li>
+									<li>El MP debe iniciar la investigación en cuanto presentas la denuncia.</li>
+								</ul>
+							</p>
+							</td>
+							<td>
+								<p ALIGN="left">
+								<ul>
+									<li>Tiempo de espera en ser atendido.</li>
+									<li>Puedes ser objeto de intimidación o extorsión (exigirte dinero a cambio de algún servicio).</li>
+								</ul>
+							</p>
+							</td>
+						</tr>
+						<tr>
+							<th>Utilizar MP Virtual</th>
+							<td>
+								<p ALIGN="left">
+								<ul>
+									<li>No hay tiempo de espera para ser atendido.</li>
+								</ul>
+							</p>
+							</td>
+							<td>
+								<p ALIGN="left">
+								<ul>
+									<li>El MP inicia la investigación una vez que acudes a la agencia del MP a ratificar tu denuncia (se programa cita).</li>
+									<li>Puedes ser objeto de intimidación o extorsión (exigirte dinero a cambio de algún servicio) al momento de acudir a ratificar tu denuncia.</li>
+									<li>El sitio puede presentar fallas/saturaciones.</li>
+									<li>El sitio suele manejar lenguaje jurídico especializado.</li>
+								</ul>
+							</p>
+							</td>
+						</tr>
+					</table>
 					<br />
-			</div>
+				</div>
+				<p ALIGN="left">
+					Al presentar tu denuncia es muy importante que lleves contigo:
+					<ul>
+						<li>Identificación oficial con fotografía vigente (INE, licencia, pasaporte, cédula profesional, etc.)</li>
+						<li>Elementos que ayuden a demostrar que eres propietario del objeto robado (factura, carta factura, ticket o recibo de compra, voucher, contrato de compra venta, fotografías, vídeos, testigos, etc.)</li>
+					</ul>
+				</p>
+				<p>Cuando estés en el MP acércate al Módulo de Atención Oportuna (MAO) o lo que antes se denominaba “barandilla” y espera a ser atendido por un Orientador Jurídico, quien se encargará de brindarte una atención inicial para canalizarte al área correspondiente y debe informarte de tu derecho a contar con un Asesor Jurídico gratuito para iniciar tu denuncia. Este asesor debe orientarte de forma clara y  accesible en todo lo relacionado con la investigación y el procedimiento penal, representarte en cualquier acto y colaborar con el MP en la investigación del delito.</p>
+				<p>Al estar frente al MP narra y describe con calma todos los hechos tal cual ocurrieron y exprésate con honestidad, describiendo cuándo, cómo, quién intervino y dónde ocurrieron los hechos. Te pueden sancionar por mentir y presentar pruebas falsas. ¡No dejes correr el tiempo, se te puede olvidar lo que pasó!  Recuerda mencionar a los testigos y a las autoridades que te ayudaron.</p>
+				<p>Proporciona tus datos personales (nombre, domicilio y teléfono) exactos al MP, los datos permitirán a las autoridades comunicarse contigo en caso de ser necesario. Recuerda que el MP debe proteger y reservar tus datos personales.</p>
+				<p>Después de narrar los hechos, el Ministerio Público deberá imprimir tu entrevista, la cual asegura la presentación de tu denuncia, su seguimiento y en ocasiones acredita el hecho ante un tercero. Antes de firmarla, asegúrate de leerla, si tiene algún error solicita al Ministerio Público que lo corrija. El MP debe entregarte de manera gratuita una copia de esa entrevista, si no lo hace, solicítalo inmediatamente o puedes presentar un queja al Órgano Interno de Control o a la Visitaduría General.</p>
 				<p>La copia de tu entrevista contiene el número de carpeta de investigación, el cual se identifica de la siguiente manera:</p>
 				<table>
 					<thead>
@@ -228,36 +252,47 @@
 						</tr>
 					</tbody>
 				</table>
+
 				<p>Este número te permite dar seguimiento a tu denuncia mediante el Sistema de Interoperatividad de Actuaciones Procedimentales (SIAP), al que puedes acceder en este <a class="link" href="https://consultasiap.pgj.cdmx.gob.mx/" target="_blank">sitio web</a>.</p>
-				<p>En caso de no querer ir al MP para presentar tu denuncia puedes utilizar el sitio web MP Virtual de la Procuraduría General de Justicia de la CDMX, incluso de forma anónima. Si lo que necesitas es reportar la pérdida o extravío de documentos, objetos o identificaciones, el sitio también te permite presentar un acta especial para esos casos.</p>
-				<p>Consulta los pros y contras en la página de Norma.</p>
+				<p>Si necesitas platicar con un profesional en derecho y/o psicólogo en este momento, puedes comunicarte a la Línea Ciudadana del Consejo Ciudadano de la CDMX. Marca al teléfono 55 33 55 33, el cual opera todo el año las 24 horas del día. Ellos recibirán tu reporte y te canalizarán con la autoridad correspondiente. Incluso puedes pedirles acompañamiento en el proceso de tu denuncia si así lo crees conveniente. El Consejo es un organismo de la sociedad civil que trabaja en favor de una cultura de la denuncia.</p>
+				<p>
+					En caso de sufrir alguna ilegalidad por parte de un servidor público, te recomiendo que presentes tu denuncia ante estos organismos:
+					<ul>
+						<li>Contraloría General de la CDMX ubicada en Av. Tlaxcoaque #8, Edificio Juana de Arco, Colonia Centro, Ayuntamiento Cuauhtémoc, teléfono 5627-9700. A su vez, puedes presentar una denuncia de forma remota a través de este <a class="link" href="http://www.contraloria.cdmx.gob.mx/pcontraloria/denuncia.php" target="_blank">sitio web</a>.</li>
+						<li>Dirección General de Asuntos Internos de la Secretaría de Seguridad Pública ubicada en Liverpool 136, Colonia Juárez, Ayuntamiento Cuauhtémoc, teléfono 5208-7445. La Dirección únicamente revisa la actuación de la policía de seguridad pública. También puedes presentar tu denuncia a través de este <a class="link" href="http://www.ssp.df.gob.mx/dgip_denuncia.html" target="_blank">sitio web</a>.</li>
+						<li>Visitaduría General de la Procuraduría General de Justicia de la CDMX ubicada en Calzada de la Viga No. 1174. 3er piso (entrada por Eje 5 Sur, Santa Maria Purísima), Colonia El Triunfo, Ayuntamiento Iztapalapa, teléfonos 5200-9085, 5200-9068 5200-9069, 5346-8905 y lada sin costo 01 800 0074 533. La Visitaduría revisa la actuación de policía de investigación, peritos, asesor jurídico y Ministerio Público. Sanciona si no se investiga un delito de forma diligente y con respeto a tus derechos, por ejemplo, si no quieren recibir tu denuncia sin importar a qué oficia de la Procuraduría acudas.</li>
+					</ul>
+				</p>
+				<p>Recuerda que en cada oficina de la Procuraduría existen <span class="n_text_red">Teléfonos Rojos</span> gratuitos que tienen línea directa con la Visitaduría, puedes utilizarlos en cualquier momento.</p>
 			</div>
 			<div class="contenido">
 				%if "genero" in entidades:
 				%if "femenino" in entidades["genero"]:
 				<h3 class="title">GÉNERO</h3>
-				<p>Sin importar tu género, las autoridades deben atenderte de manera respetuosa y eficaz. Si lo consideras necesario, puedes pedir que te auxilie una mujer oficial de policía. En caso de requerir una revisión médica, debe atenderte una especialista de tu mismo sexo.</p>
-				<p>Teléfonos de ayuda:
-					<ul>
-						<li>Unidad Delegacional de atención a las mujeres del Instituto de las Mujeres (Inmujeres) de la CDMX: 5512-2836 ext. 145 y 5658-1111.</li>
-						<li>Centro de Justicia para las Mujeres, donde podrás presentar una denuncia y solicitar psicoterapia, protección de emergencia y servicios jurídicos y médicos: sede Azcapotzalco (5346-8312) o Iztapalapa (5345-5730).</li>
-					</ul>				
-				</p>
+				<p>Sin importar si eres hombre o mujer, las autoridades deben de atenderte de manera respetuosa y eficaz. Si lo consideras necesario, puedes pedir que te atienda una mujer oficial de policía. En caso de requerir una revisión médica, debe atenderte una especialista de tu mismo sexo.</p>
+				<p>También puedes acercarte a la Unidad Delegacional de atención a las mujeres del Instituto de las Mujeres (Inmujeres) de la CDMX más cercana a tu domicilio para recibir atención y asesoría. Para comunicarte con el Inmujeres marca a estos números: 5512-2836 ext. 145 y 5658-1111. A su vez, puedes acudir al Centro de Justicia para las Mujeres en su sede Azcapotzalco (teléfono 53468312) o Iztapalapa (teléfono 53455730) donde podrás presentar una denuncia y solicitar psicoterapia, protección de emergencia y servicios jurídicos y médicos.</p>
 				%end
 				%end
 				%if "edad" in entidades:
 				%if "menor_edad" in entidades["edad"]:
 				<h3 class="title">EDAD</h3>
+<<<<<<< HEAD
 				<p>Si eres menor de edad puedes presentar tu denuncia sin que te acompañe un adulto, pero si lo deseas, tus padres, tutores, hermanos o representantes pueden presentar la denuncia por ti. Tu nombre, domicilio, etcétera no serán compartidos con nadie.</p>
-				<p>Si te representa tu tutor debe presentarse ante el MP con la resolución judicial en la que un juez familiar le otorga su nombramiento. En caso de que te representen tus padres o hermanos, ellos deben llevar el acta de nacimiento que pruebe su relación contigo.</p>
+=======
+				<p>Si eres menor de edad puedes presentar tu denuncia sin que te acompañe un adulto, pero si lo deseas, tus padres, tutores, hermanos o representantes pueden presentar la denuncia por ti. Tu nombre, domicilio, etcétera no serán compartidos con nadie.  </p>
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
+				<p>Si te representa tu tutor, este debe presentarse ante el MP con la resolución judicial en la que un juez familiar le otorga su nombramiento. En caso de que te representen tus padres o hermanos, ellos deben llevar el acta de nacimiento que pruebe su relación contigo.</p>
 				%end
 				%end
 				%if "discapacidad" in entidades :
 				%if "si" in entidades["discapacidad"] :
 				<h3 class="title">DISCAPACIDAD</h3>
-				<p>Si cuentas con alguna discapacidad que te imposibilite presentar tu denuncia, lo puede hacer alguien en tu representación.</p>
+				<p>Si cuentas con alguna discapacidad que te imposibilite presentar tu denuncia, alguien en tu representación lo puede hacer por ti.</p>
+<<<<<<< HEAD
+				<p>En caso de que lo necesites, tienes derecho a contar con un intérprete que te ayude a presentar tu denuncia, entender tus derechos y participar en cualquier acto de investigación o audiencia. </p>
+=======
 				<p>En caso de que lo necesites, tienes derecho a contar con un intérprete que te ayude a presentar tu denuncia, entender tus derechos y participar en cualquier acto de investigación o audiencia.</p>
-				<p>Recuerda que puedes presentar tu denuncia a través del sitio web MP Virtual.</p>
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
 				%end
 				%end
 				<h3 class="title">AGENCIAS DEL MP POR ALCALDÍA (se proporciona listado de oficinas por ayuntamiento)</h3>
@@ -1019,18 +1054,23 @@
 				%if "si" in entidades["policia"]:
 				<h3 class="title">POLICÍA</h3>
 				<p>
-						Si durante o inmediatamente después de que ocurrió el delito tuviste contacto con un policía, estas son las acciones que tuvo que realizar:
+					Si durante o inmediatamente después de que ocurrió el delito tuviste contacto con un policía, estas son las acciones que tuvo que realizar:
 					<ul>
 						<li>Proteger tu seguridad e informarte sobre tus derechos.</li>
 						<li>Recibir tu denuncia, incluso de manera anónima.</li>
-						<li>Detener al agresor y, de lograrlo, registrar su detención y llevarlo inmediatamente al MP. Resguardar el lugar del delito y evitar que se pierdan o contaminen las pruebas (la gente no puede acercarse al lugar acordonado).</li>
+						<li>Detener al agresor y, de lograrlo, registrar su detención y llevarlo inmediatamente al MP.</li>
 						<li>Resguardar el lugar del delito y evitar que se pierdan o contaminen las pruebas (la gente no puede acercarse al lugar acordonado).</li>
 						<li>Localizar y entrevistar a los posibles testigos del delito</li>
 						<li>Informar cuanto antes al MP o a la policía de investigación de todas las acciones que realizó a través de un informe.</li>
+<<<<<<< HEAD
+=======
+						<li>Debe localizar y entrevistar a los posibles testigos del delito.</li>
+						<li>Debe informar al Ministerio Público de manera inmediata de las actuaciones que haya realizado.</li>
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
 					</ul>
 				</p>
 				<p>Recuerda que tú y cualquier persona también pueden detener al agresor en dichos momentos y de lograrlo se debe dar aviso a la autoridad más pronta. En todo caso, prioriza tu integridad física.</p>
-				<p>Si el policía no cumplió con alguna de estas acciones puedes reportarlo en la Dirección General de Asuntos Internos de la Secretaría de Seguridad Pública ubicada en Liverpool #136, Col. Juárez, Cuauhtémoc, teléfono 5208-7445.</p>
+				<p>Si el policía no cumplió con alguna de estas acciones, puedes reportarlo en la Dirección General de Asuntos Internos de la Secretaría de Seguridad Pública ubicada en Liverpool #136, Col. Juárez, Cuauhtémoc, tel. 5208-7445.</p>
 				%else:
 				<h3 class="title">POLICÍA</h3>
 				<p>
@@ -1039,7 +1079,11 @@
 						<li>Proporcionarte protección y auxilio si lo necesitas.</li>
 						<li>Informarte sobre tus derechos.</li>
 						<li>Recibir tu denuncia, incluso de manera anónima.</li>
+<<<<<<< HEAD
 						<li>Procurar que recibas atención médica y/o psicológica si lo requieres.</li>
+=======
+						<li>Procurar que recibas atención médica y/o psicológica si lo necesitas</li>
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
 						<li>Informar cuanto antes al MP o a la policía de investigación de todas las acciones que realizó a través de un informe.</li>
 					</ul>
 				</p>
@@ -1047,12 +1091,18 @@
 				%end
 				%end
 				%if "violencia" in entidades:
+<<<<<<< HEAD
 				%if "si" in entidades["violencia"]:
+=======
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
 				<h3 class="title">VIOLENCIA</h3>
-				<p>Si debido a la agresión te encuentras en un centro de salud u hospital, el médico debe informarle al MP o a la policía sobre tu condición. Omitirlo puede resultar en un responsabilidad penal para el médico.</p>
+				<p>Si debido a la agresión te encuentras en un centro de salud u hospital, el médico debe informarle al MP o a la Policía sobre tu condición. Omitirlo puede resultar en una responsabilidad penal para el médico.</p>
 				<p>En caso de necesitar orientación sobre terapias, servicios de asistencia social, salud y funerarios, viáticos y medicamentos, acompañamiento, asesoría y representación jurídica, presentación de inconformidades y escritos para presentar pruebas que ayuden a la investigación, puedes acudir al Centro de Apoyo Sociojurídico a Víctimas del Delito Violento (Adevi), que es parte de la Procuraduría General de Justicia de la CDMX.</p>
-				<p>Adevi te puede orientar sobre terapias, servicios de asistencia social, salud y funerarios, viáticos y medicamentos, acompañamiento, asesoría y representación jurídica, presentación de inconformidades y escritos para presentar pruebas que ayuden a la investigación.</p>
+				<p>El Adevi está ubicado en la Calle de Mérida #255, Col. Roma, Cuauhtémoc, tel. 5345-5580 y 5345-5582 y cuenta con un horario de atención de 9 a 19 horas, de lunes a viernes.</p>
+<<<<<<< HEAD
 				%end
+=======
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
 				%end
 				%if "testigo" in entidades:
 				%if "si" in entidades["testigo"] or entidades["testigo"]  == "":
@@ -1063,17 +1113,29 @@
 				<p>Otra opción que tienes es solicitarle a un policía que conozca los hechos que entreviste a los testigos y les tome sus datos. El policía tendrá que llenar un formato denominado IPH (Informe Policial Homologado), mismo que será entregado al MP.</p>
 				%end
 				%end
+<<<<<<< HEAD
 				<h3 class="title">CÁMARA</h3>
 				<p>Contar con videograbaciones sobre los hechos ayuda a la investigación. Revisa dónde hay cámaras y pide que las casas, negocios o instituciones conserven una copia de la grabación (regularmente en el metro o cajeros hay cámaras).</p>
 				<p>Al presentar tu denuncia, pide al MP y a la Policía que soliciten por escrito a los responsables de las cámaras los videos que brinden información sobre el delito. Esto ayudará a identificar al agresor.</p>
+=======
+				<h3 class="title">CÁMARAS</h3>
+				<p>Contar con videograbaciones sobre los hechos ayuda a la investigación. Revisa dónde hay cámaras y pide que las casas, negocios o instituciones conserven una copia de la grabación (regularmente en el metro o cajeros hay cámaras).</p>
+				<p>Al presentar tu denuncia, pide al MP y a la Policía que soliciten por escrito a los responsables de las cámaras los videos que brinden información sobre el delito. Esto ayudará a identificar al agresor.</p>
+
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
 				%if "identidad-pr" in entidades:
 				%if "si" in entidades["identidad-pr"] or entidades["identidad-pr"]  == "":
 				<h3 class="title">IDENTIDAD DE PRESUNTO RESPONSABLE</h3>
 				<p>
-						Favorece a la investigación que hayas identificado a tu agresor. Solicita al MP la oportunidad de realizar un retrato hablado con la ayuda de un perito especialista en la materia. Cuando estés con el perito ten presentes los siguientes datos sobre el agresor:						
+					Si pudiste identificar a quien cometió el delito, solicita al MP que se realice un retrato hablado con la ayuda de un perito especialista en la materia. Cuando estés con el perito ten presente los siguientes datos sobre el agresor:
 					<ul>
+<<<<<<< HEAD
 						<li>Sexo, altura y edad aproximada;</li>
 						<li>Vestimenta;</li>
+=======
+						<li>Sexo, altura y edad aproximada.</li>
+						<li>Vestimenta</li>
+>>>>>>> a250a2b1d64929b1f08a5590efb00df7253a63d9
 						<li>Apodo o alias;</li>
 						<li>Características de cabello: largo (corto, mediano, largo), tipo (lacio, rizado, ondulado, crespo) y color (negro, castaño claro, castaño oscuro, rubio, rojizo, blanco).</li>
 						<li>Color de piel (blanca, amarilla, morena, negra, trigueña)</li>
@@ -1088,8 +1150,10 @@
 				%if "lugar" in entidades:
 				%if "domicilio" in entidades["lugar"] or "negocio" in entidades["lugar"]:
 				<h3 class="title">ROBO A CASA HABITACIÓN / ROBO A NEGOCIO (en cualquier modalidad)</h3>
-				<p>Procura que nadie se acerque al lugar en donde se cometió el delito y que nada sea manipulado. Es importante que el lugar permanezca sin alteraciones para que la policía y los peritos puedan realizar su investigación y recabar información para identificar a los agresores.</p>
-				<p>Si el clima o las condiciones del lugar provocan la pérdida, alteración, destrucción o contaminación de las pruebas, el policía tendrá que recolectarlas para que no se pierdan o contaminen e informar al MP.</p>
+				<p>Si necesitas que un abogado te acompañe personalmente en la presentación de tu denuncia puedes comunicarte con el Consejo Ciudadano de la CDMX al 55 33 55 33. El Consejo es un organismo de la sociedad civil que trabaja en favor de una cultura de la denuncia y puede apoyarte con una pareja de agentes ciudadanos (psicólogo y abogado) que te acompañará a interponer tu denuncia directamente con las autoridades.</p>
+				<p>Procura que nadie se acerque al lugar en donde se cometió el delito y que las cosas no sean manipuladas. Es importante que el lugar permanezca sin alteraciones para que la policía y los peritos puedan realizar su investigación y recabar información para identificar a los agresores.</p>
+				<P>Si el clima o las condiciones del lugar provocan la pérdida, alteración, destrucción o contaminación de las pruebas, el policía tendrá que recolectarlas para que no se pierdan o contaminen e informar al MP.</P>
+				<p>Si deseas que un abogado te acompañe a presentar tu denuncia puedes comunicarte con el Consejo Ciudadano de la CDMX al 5533 5533. El Consejo es un organismo que puede apoyarte con una pareja de agentes ciudadanos (psicólogo y abogado) que te acompañará a denunciar.</p>
 				%end
 				%end
 				<p>Gracias por conversar con Norma. La información que compartiste sirvió para brindarte una asesoría personalizada y ayuda a medir el desempeño de las autoridades.</p>
