@@ -59,7 +59,7 @@ class LivechatController(http.Controller):
 		file = modules_path + "opit_imco_norma/others/documento_derechos.html"
 		print(file)
 		parameters = {
-			'titulo' : "Envío de Información de Norma, la abogada de las víctimas",
+			'titulo' : "RECOMENDACIONES DE NORMA",
 			}
 		print(parameters)
 		print("---------"*30)
