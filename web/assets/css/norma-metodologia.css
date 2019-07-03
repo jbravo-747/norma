@@ -226,6 +226,24 @@ SECCION DESARROLLO
 #dev-norma p{
 	margin: 15px 0 !important;
 }
+
+/* ==========================================================================
+SECCION RECURSOS
+========================================================================== */
+#recursos{
+	padding: 20px 0px;
+	background: rgba(228, 228, 228, 0.3);
+	background-image: url(../img/backgrounds/bg-deasarrollo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:250px;
+}
+
+#recursos p{
+	margin: 15px 0 !important;
+}
+
 /* ==========================================================================
 SECCION MAPAS
 ========================================================================== */
@@ -242,15 +260,17 @@ SECCION MAPAS
         position: relative;
         padding-bottom: 45%; /* This is the aspect ratio*/
         height: 0;
-        overflow: hidden;
+				overflow: hidden;
+		
     }
-    .google-maps iframe {
+    /*.google-maps iframe {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
+				left: 20%;
+        width: 60% !important;
+				height: 100% !important;
+			
+    }*/
 /* ==========================================================================
 DISPOSITIVOS: PANTALLAS GRANDES
 ========================================================================== */
@@ -262,6 +282,14 @@ DISPOSITIVOS: PANTALLAS GRANDES
 	.nav-norma-middle{
 		margin-left: 20.7%;
 	}
+	.google-maps iframe {
+		position: absolute;
+		top: 0;
+		left: 20%;
+		width: 60% !important;
+		height: 100% !important;
+	
+}
 }
 /* Navbar laptop 1*/
 @media (min-width: 1025px) and (max-width: 1440px){
@@ -272,6 +300,14 @@ DISPOSITIVOS: PANTALLAS GRANDES
 	.nav-norma-middle{
 		margin-left: 17%;
 	}
+	.google-maps iframe {
+		position: absolute;
+		top: 0;
+		left: 20%;
+		width: 60% !important;
+		height: 100% !important;
+	
+}
 }
 /* Navbar desktops */
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -285,6 +321,16 @@ DISPOSITIVOS: PANTALLAS GRANDES
 		margin-top: -35px;
 		margin-left: 15%;
 	}
+
+	.google-maps iframe {
+		position: absolute;
+		top: 0;
+		left: 20%;
+		width: 60% !important;
+		height: 100% !important;
+	
+}
+
 }
 
 
@@ -375,6 +421,15 @@ DISPOSITIVOS: TABLETS
 		padding-bottom: 85%; /* This is the aspect ratio*/
 		height: 0;
 		overflow: hidden;
+	}
+
+	.google-maps iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	
 	}
 }
 
@@ -480,4 +535,13 @@ DISPOSITIVOS: CELULARES
 		overflow: hidden;
 	}
 	
+.google-maps iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	
+	}
+
 }
