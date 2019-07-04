@@ -228,9 +228,9 @@ SECCION DESARROLLO
 }
 
 /* ==========================================================================
-SECCION RECURSOS
+SECCION DENUNCIA
 ========================================================================== */
-#recursos{
+#denuncia{
 	padding: 20px 0px;
 	background: rgba(228, 228, 228, 0.3);
 	background-image: url(../img/backgrounds/bg-deasarrollo.png);
@@ -240,7 +240,7 @@ SECCION RECURSOS
 	min-height:250px;
 }
 
-#recursos p{
+#denuncia p{
 	margin: 15px 0 !important;
 }
 
