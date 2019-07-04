@@ -58,9 +58,10 @@ OTROS
 	padding-left: 5% !important;
 }
 
+/*
 .separacion-nav-n{
-	/* padding-right: 0px !important; */
-}
+	 padding-right: 0px !important;
+}*/
 
 .separacion-navbar{
 	padding-right: 5% !important;
@@ -233,7 +234,7 @@ SECCION DENUNCIA
 #denuncia{
 	padding: 20px 0px;
 	background: rgba(228, 228, 228, 0.3);
-	background-image: url(../img/backgrounds/bg-deasarrollo.png);
+	background-image: url(../img/backgrounds/bg-comosecreo.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -244,6 +245,56 @@ SECCION DENUNCIA
 	margin: 15px 0 !important;
 }
 
+#denuncia .list-denuncia li{
+	list-style-type: none;
+	color: #040404;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+#denuncia .list-denuncia li::before{
+	content: "\2022";
+	color:#4C37A7;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+/* ==========================================================================
+SECCION COMO CARTA
+========================================================================== */
+#carta{
+	background: rgba(228, 228, 228, 0.3);
+	background-image: url(../img/backgrounds/bg-comosecreo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 650px;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+	padding-top: 100px;
+}
+
+#carta .img-movil img{
+width:100%;
+}
+
+#carta .list-carta li{
+	list-style-type: none;
+	color: #040404;
+	
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+#carta .list-carta li::before{
+	content: "\2022";
+	color:#4C37A7;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
 /* ==========================================================================
 SECCION MAPAS
 ========================================================================== */

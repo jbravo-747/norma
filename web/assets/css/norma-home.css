@@ -173,9 +173,9 @@ DISPOSITIVOS: TABLETS
 	#home-main-section .main-seccion-container{
 		grid-template-columns: 1fr;
 	}
-	#home-main-section .contenido-main-section{
-		/* padding: 120px 0 0 0; */
-	}
+	/*#home-main-section .contenido-main-section{
+		 padding: 120px 0 0 0; 
+	}*/
 	#home-main-section {
 		background-image: url(../img/backgrounds/bg-intro.png);
 		padding-top: 50px;
