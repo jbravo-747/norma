@@ -1,0 +1,1201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en" dir="ltr">
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style media="screen">
+        .img {
+            width: 100%;
+            height: 250px;
+        }
+        
+        .n_text {
+            font-weight: bold;
+        }
+        
+        .n_text_red {
+            font-weight: bold;
+            color: red;
+        }
+        
+        .n_centrada {
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .container {
+            padding: 0 3.5em 0 3.5em;
+            text-align: justify;
+        }
+        
+        h1 {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        
+        h3 {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        
+        .resalta {
+            font-weight: bold;
+            text-align: center;
+            color: #4c37a7;
+        }
+        
+        .titles {
+            text-align: left;
+        }
+        
+        .info_conversacion {
+            margin-bottom: 50px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .contenido {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .contenido>h3 {
+            color: #ff3c87 !important;
+        }
+        
+        .link {
+            color: #4c37a7;
+        }
+        
+        table {
+            border-spacing: 0px;
+            border-collapse: separate;
+            width: 100%;
+            border: 0px;
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        .btn_norma {
+            color: white;
+            font-weight: bold;
+            background-color: #63207a;
+            width: auto;
+            padding: 8px 30px;
+        }
+        
+        .btn_norma:hover {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #e6e6e6;
+        }
+        
+        #mp_tabla table {
+            text-align: left;
+            margin-left: auto;
+        }
+        
+        #alcaldia table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        
+        #alcaldia table .dir_alcaldia {
+            text-align: justify;
+        }
+        
+        #alcaldia table thead {
+            background-color: #63207a;
+            color: white;
+        }
+        
+        #alcaldia table tbody tr:nth-child(even) {
+            background-color: #63207a;
+            color: white;
+        }
+        
+        p,
+        ul,
+        ol {
+            font-weight: 300 !important;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        strong,
+        b {
+            font-weight: bold;
+        }
+        
+        .n_centrada {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="titles">
+				<h1>{{titulo}}</h1>
+			</div>
+			<hr />
+			<div class="info_conversacion">
+              <h2>LO QUE TIENES QUE SABER:</h2>
+            <p ALIGN="left">
+                Dirígete a un lugar seguro para pedir apoyo. Reporta el delito que sufriste cuanto antes al 911 o al policía más próximo y solicita atención médica o psicológica si lo necesitas.
+                <ul>
+                    <li>Puedes presentar tu denuncia en cualquier Ministerio Público (MP).<a class="link" target="_blank" href="http://normatuabogada.com/recursos.html#map_mp">Ubícalo aquí.</a></li>
+                    <li>Para agilizar la investigación, te recomendamos presentar tu denuncia en el MP más cercano al lugar de los hechos.</li>
+                    <li>No necesitas ninguna identificación oficial para presentar tu denuncia.</li>
+                    <li>El MP está abierto las 24 horas y deben atenderte.</li>
+                    <li>En caso de un mal servicio, en cada oficina del MP hay <span class="n_text_red">Teléfonos
+							Rojos</span> gratuitos para presentar quejas. Además, conoce la lista de instituciones para levantar una queja en caso de no ser respetados tus derechos o ser víctima de un caso de corrupción.
+                    </li>
+                    <li>Al presentar tu denuncia, las autoridades deben proporcionarte un número de carpeta de investigación para darle seguimiento.</li>
+                    <li>Recuerda que tienes que regresar a los cinco días para realizar la ratificación de la denuncia, sin olvidar los documentos que te solicitaron.</li>
+                    <li>Si necesitas platicar con un abogado y/o psicólogo, puedes comunicarte al Consejo Ciudadano de la CDMX (5533-5533), el cual opera todo el año las 24 horas del día. Ellos recibirán tu reporte y te canalizarán con la autoridad correspondiente.
+                        Incluso, puedes pedirles acompañamiento en el proceso de tu denuncia.</li>
+                </ul>
+            </p>
+				<h3>Información Legal</h3>
+            <table>
+                <tr>
+                    <td><strong>Delito</strong></td>
+                    <td>
+                        <p>{{ delito if delito != "" else 'No hemos podido detectar el delito que te cometieron'}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Jurisdicción</strong></td>
+                    <td>
+                        <p>{{ jurisdiccion if jurisdiccion != "" else 'No hemos podido detectar la jurisdicción donde ocurrió'}}
+                        </p>
+                    </td>
+                </tr>
+                %if variante!= "":
+                <tr>
+                    <td><strong>Variante de delito</strong></td>
+                    <td>
+                        <p>{{variante}}</p>
+                    </td>
+                </tr>
+                %end
+                <tr>
+                    <td><strong>Documento con la transcripcion de tu conversación</strong></td>
+                    <td><a class="btn_norma" target="_blank" href="{{!url_transcripcion}}">DESCARGAR</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Documento con tu tips para presentar tu denuncia</strong></td>
+                    <td>
+                        <a class="btn_norma" target="_blank" href="https://admin.imco.org.mx/mail/norma/derechos">DESCARGAR</a>
+                    </td>
+                </tr>
+            </table>
+				<h2>Ubicación Geográfica</h2>
+            <table>
+                <tr>
+                    <td><strong>Entidad Federativa</strong></td>
+                    <td>
+                        <p>{{ estado if estado != "" else 'No hemos podido detectar el estado donde ocurrió'}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Municipio</strong></td>
+                    <td>
+                        <p>{{ municipio if municipio != "" else 'No hemos podido detectar el municipio donde ocurrió'}}
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>CP</strong></td>
+                    <td>
+                        <p>{{ cp if cp != "" else 'No hemos podido detectar el CP donde ocurrió. Recuerda que debes conocer el CP al momento de presentar tu denuncia'}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+			<div class="contenido">
+				<h2>¿Qué necesitas para iniciar tu denuncia?</h2>
+            <p>Al presentar tu denuncia es muy importante que lleves contigo:
+                <ul>
+                    <li>Identificación oficial con fotografía vigente (INE, licencia, pasaporte, cédula profesional, etcétera)
+                    </li>
+                    <li>Elementos que ayuden a demostrar que eres propietario del objeto robado (factura, carta factura, ticket o recibo de compra, voucher, contrato de compra venta, fotografías, vídeos, testigos, etcétera).
+                    </li>
+                    <li>Proporciona tus datos personales, nombre, domicilio y teléfono al MP, los cuales permitirán a las autoridades comunicarse contigo en caso de ser necesario. <b>El MP debe proteger y reservar
+							tus datos personales</b>.</li>
+                </ul>
+            </p>
+            <p><b>En caso de no contar con estos documentos, los puedes presentar al momento de la ratificación de la
+					denuncia (cinco días después).</b></p>
+            <p>Al llegar al MP:
+                <ul>
+                    <li>Acércate al Módulo de Atención Oportuna (“barandilla”) y espera a ser atendido por un Orientador Jurídico para canalizarte al área correspondiente e informarte sobre tu derecho de contar con un asesor jurídico gratuito.</li>
+                    <li>El asesor debe orientarte de forma clara y accesible en todo lo relacionado con la investigación y el procedimiento penal, representarte en cualquier acto y colaborar con el MP en la investigación del delito.</li>
+                    <li>Al estar frente al MP narra y describe todos los hechos, tal cual sucedieron, y exprésate con honestidad: cuándo, cómo, quién participó y dónde ocurrieron los hechos. Te pueden sancionar por mentir y presentar pruebas falsas.</li>
+                    <li>Puedes apoyarte en la conversación que tuviste con Norma. <a class="link" target="_blank" href="{{!url_transcripcion}}">Descárgala aquí</a>.</li>
+                </ul>
+                <span class="n_centrada">¡No dejes correr el tiempo, se te puede olvidar lo que pasó!</span>
+            </p>
+            <p>La copia de tu entrevista contiene el número de carpeta de investigación, el cual se identifica de la siguiente manera:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>CI /</th>
+                        <th>FAO /</th>
+                        <th>AO-3 /</th>
+                        <th>UI-2 /</th>
+                        <th>C/D/</th>
+                        <th>0615 /</th>
+                        <th>01-15</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> </td>
+                        <td>Carpeta de Investigación</td>
+                        <td>Fiscalía</td>
+                        <td>Agencia del MP</td>
+                        <td>Unidad de Investigación y turno</td>
+                        <td>Unidad con detenido o sin detenido</td>
+                        <td>Número progresivo de denuncia</td>
+                        <td>Mes y año de inicio</td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Este número te permite dar seguimiento a tu denuncia mediante el Sistema de Interoperatividad de Actuaciones Procedimentales (SIAP), al que puedes acceder en este <a class="link" href="https://consultasiap.pgj.cdmx.gob.mx/" target="_blank">sitio web</a>.</p>
+            <p>En caso de no querer ir al MP para presentar tu denuncia puedes utilizar el sitio web <a class="link" href="https://mpvirtual.pgj.cdmx.gob.mx/" target="_blank">MP Virtual</a> de la Procuraduría General de Justicia de la CDMX, incluso de forma
+                anónima. Si lo que necesitas es reportar la pérdida o extravío de documentos, objetos o identificaciones, el sitio también te permite presentar un acta especial para esos casos.</p>
+            <p>Consulta los pros y contras en la página de Norma.</p>
+        </div>
+			<div class="contenido">
+				%if "genero" in entidades:
+			%if "femenino" in entidades["genero"]:
+			<h3 class="title">GÉNERO</h3>
+			<p>Sin importar tu género, las autoridades deben atenderte de manera respetuosa y eficaz. Si lo consideras
+				necesario, puedes pedir que te auxilie una mujer oficial de policía. En caso de requerir una revisión
+				médica, debe atenderte una especialista de tu mismo sexo.</p>
+			<p>Teléfonos de ayuda:
+				<ul>
+					<li>Unidad Delegacional de atención a las mujeres del Instituto de las Mujeres (Inmujeres) de la
+						CDMX: 5512-2836 ext. 145 y 5658-1111.</li>
+					<li>Centro de Justicia para las Mujeres, donde podrás presentar una denuncia y solicitar
+						psicoterapia, protección de emergencia y servicios jurídicos y médicos: sede Azcapotzalco
+						(5346-8312) o Iztapalapa (5345-5730).</li>
+				</ul>
+			</p>
+			%end
+			%end
+			%if "edad" in entidades:
+			%if "menor_edad" in entidades["edad"]:
+			<h3 class="title">EDAD</h3>
+			<p>Si eres menor de edad puedes presentar tu denuncia sin que te acompañe un adulto, pero si lo deseas, tus
+				padres, tutores, hermanos o representantes pueden presentar la denuncia por ti. Tu nombre, domicilio,
+				etcétera no serán compartidos con nadie.</p>
+			<p>Si te representa tu tutor, este debe presentarse ante el MP con la resolución judicial en la que un juez
+				familiar le otorga su nombramiento. En caso de que te representen tus padres o hermanos, ellos deben
+				llevar el acta de nacimiento que pruebe su relación contigo.</p>
+			%end
+			%end
+				%if "discapacidad" in entidades :
+			%if "si" in entidades["discapacidad"] :
+			<h3 class="title">DISCAPACIDAD</h3>
+			<p>Si cuentas con alguna discapacidad que te imposibilite presentar tu denuncia, lo puede hacer alguien en
+				tu representación.</p>
+			<p>En caso de que lo necesites, tienes derecho a contar con un intérprete que te ayude a presentar tu
+				denuncia, entender tus derechos y participar en cualquier acto de investigación o audiencia.</p>
+			<p><b>Recuerda que puedes presentar tu denuncia a través del sitio web <a class="link" target="_blank"
+						href="https://mpvirtual.pgj.cdmx.gob.mx/">MP Virtual</a>.</b></p>
+			%end
+			%end
+				<h3 class="title">AGENCIAS DEL MP POR ALCALDÍA (se proporciona listado de oficinas por ayuntamiento)</h3>
+				%if entidades["municipio"] == "Álvaro Obregón":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Álvaro Obregón, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Azcapotzalco":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Azcapotzalco, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Benito Juárez":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Benito Juárez, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "coyoacán":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Coyoacán, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Cuajimalpa":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Cuajimalpa, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Cuauhtémoc":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Cuauhtémoc, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Gustavo A. Madero":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Gustavo A. Madero, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Iztacalco":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Iztacalco, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Iztapalapa":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Iztapalapa, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Magdalena Contreras":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Magdalena Contreras, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Miguel Hidalgo":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Miguel Hidalgo, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Milpa Alta":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Milpa Alta, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Tláhuac":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Tláhuac, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Tlalpan":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Tlalpan, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Venustiano Carranza":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Venustiano Carranza, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "Xochimilco":
+				<p>
+					Ya que el delito ocurrió en la Alcaldía Xochimilco, te comparto un listado de las agencias del Ministerio Público que corresponden a esa alcaldía. Sin embargo, recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la CDMX.
+				</p>
+				%end
+				%if entidades["municipio"] == "":
+				<p>
+				Recuerda que puedes presentar tu denuncia en cualquiera de las oficinas de la Procuraduría en la
+				CDMX.<br />
+				Te presentamos un listado de todas las oficinas de la Ciudad de México
+				<li>Puedes presentar tu denuncia en cualquier Ministerio Público (MP).<a class="link"
+						href="http://normatuabogada.com/metodologia.html#map_mp" target="_blank">Ubícalo aquí.</a></li>
+			</p>
+				%end
+				<div id="alcaldia">
+					%if entidades["municipio"] in ["Álvaro Obregón",""]:
+					<h4>Álvaro Obregón</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>AO-1</td>
+								<td>Batallón de San Patricio esq. Escuadrón 201, Col. Cristo Rey, CP 01150</td>
+								<td>5200-9580</td>
+								<td><a class="link" href="https://goo.gl/maps/EYWSNtSJKUz">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>AO-2</td>
+								<td>Camino Real a Tolica s/n entre Paralelo 2 y Paralelo 3, Col. José María Pino Suárez, CP 0140</td>
+								<td>5200-9587</td>
+								<td><a class="link" href="https://goo.gl/maps/4jcmYKkVDhr">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>AO-3</td>
+								<td>Av. México y Av. Toluca #10, Col. Progreso Tizapan, CP 01080</td>
+								<td>5200-9552 <br/>5200-9551</td>
+								<td><a class="link" href="https://goo.gl/maps/7hwo53q8bZx">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>AO-4</td>
+								<td>Av. México y Av. Toluca #10, Col. Progreso Tizapan, CP 01080</td>
+								<td>5200-9582</td>
+								<td><a class="link" href="https://goo.gl/maps/7hwo53q8bZx">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Azcapotzalco",""]:
+					<h4>Azcapotzalco</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>AZ-1</td>
+								<td>Av. De las Culturas y Eje 5 Norte, Col. San Martín Xochinahuac, CP 02110</td>
+								<td>5346-8383</td>
+								<td><a class="link" href="https://goo.gl/maps/7JqhrFy74Hr">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>AZ-2</td>
+								<td>Av. 22 de Febrero esq. Castilla Oriente, Col. Del Maestro, CP 02040</td>
+								<td>5346-8353</td>
+								<td><a class="link" href="https://goo.gl/maps/fqasFoNBtyy">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>AZ-3</td>
+								<td>Av. 22 de Febrero esq. Castilla Oriente, Col. Del Maestro, CP 02040</td>
+								<td>5346-8373</td>
+								<td><a class="link" href="https://goo.gl/maps/fqasFoNBtyy">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>AZ-4</td>
+								<td>Av. 22 de Febrero esq. Castilla Oriente, Col. Del Maestro, CP 02040</td>
+								<td>5346-8360</td>
+								<td><a class="link" href="https://goo.gl/maps/fqasFoNBtyy">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Benito Juárez",""]:
+					<h4>Benito Juárez</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>BJ-1</td>
+								<td>Av. División del Norte #1611, entre Municipio Libre y Miguel Laurent, Col. Santa Cruz Atoyac, CP 03310</td>
+								<td>5200-9522 5200-9500</td>
+								<td><a class="link" href="https://goo.gl/maps/oErNzxFtrdy">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>BJ-2</td>
+								<td>Av. División del Norte #1611, entre Municipio Libre y Miguel Laurent, Col. Santa Cruz Atoyac, CP 03310</td>
+								<td>5200-9541</td>
+								<td><a class="link" href="https://goo.gl/maps/oErNzxFtrdy">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>BJ-3</td>
+								<td>Calz. Obrero Mundial y Av. Cuauhtemoc s/n, Col. Piedad Narvarte, CP 03020</td>
+								<td>5200-9626</td>
+								<td><a class="link" href="https://goo.gl/maps/e6SenG2DGTQ2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>BJ-4</td>
+								<td>Calz. Obrero Mundial y Av. Cuauhtemoc s/n, Col. Piedad Narvarte, CP 03020</td>
+								<td>5200-9626</td>
+								<td><a class="link" href="https://goo.gl/maps/e6SenG2DGTQ2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>BJ-5</td>
+								<td>Calle Orinoco s/n esq. Bretaña, Col. Portales Norte, CP 03570</td>
+								<td>5200-9638</td>
+								<td><a class="link" href="https://goo.gl/maps/RdxVXy5x9NG2">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Coyoacán",""]:
+					<h4>Coyoacán</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>COY-1</td>
+								<td>Calle Tecualiapan y Zompantitla s/n, Col. Romero de Terreros, CP 04320</td>
+								<td>5200-9380 5200-9389</td>
+								<td><a class="link" href="https://goo.gl/maps/dAKe6QFRfs92">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>COY-2</td>
+								<td>Calle Tecualiapan y Zompantitla s/n, Col. Romero de Terreros, CP 04320</td>
+								<td>5200-9360 5200-9357</td>
+								<td><a class="link" href="https://goo.gl/maps/dAKe6QFRfs92">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>COY-3</td>
+								<td>Av. De los Apaches s/n casi esq. Eje 3 Oriente, Col. San Francisco Culhuacán, </td>
+								<td>5200-9373 5200-9375</td>
+								<td><a class="link" href="https://goo.gl/maps/BaDCG8JJfDz">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>COY-4</td>
+								<td>Calle Chichimecas s/n y Rey Meconetzin, Col. Ajusco, CP 04300</td>
+								<td>5200-9363</td>
+								<td><a class="link" href="https://goo.gl/maps/2dWzkzoLQc52">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>COY-5</td>
+								<td>Calle Laura Méndez de Cuenca s/n, esq. Candelaria Perez, Col. CTM Culhuacán, CP 04480</td>
+								<td>5200-9397 5200-9396</td>
+								<td><a class="link" href="https://goo.gl/maps/us3i4Qjcwa22">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Cuajimalpa",""]:
+					<h4>Cuajimalpa</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>CUJ-1</td>
+								<td>Cerrada de Ramírez y Castillo Ledón s/n, Col. Cuajimalpa Centro, CP 05000</td>
+								<td>5346-8793 5346-8788</td>
+								<td><a class="link" href="https://goo.gl/maps/aw3JV3TQFbv">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUJ-2</td>
+								<td>Cerrada de Ramírez y Castillo Ledón s/n, Col. Cuajimalpa Centro, CP 05000</td>
+								<td>5346-8790 5346-8798</td>
+								<td><a class="link" href="https://goo.gl/maps/aw3JV3TQFbv">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Cuahutémoc",""]:
+					<h4>Cuahutémoc</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>CUH-1</td>
+								<td>Prolongación Lerdo #322, entre Eje 2 Norte y  San Simón, Col. San Simón Tolnahuac, CP 06300</td>
+								<td>5782-5236 5782-3669 5346-8715</td>
+								<td><a class="link" href="https://goo.gl/maps/FYWvegUW9jR2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUH-2</td>
+								<td>Calle Juan Aldama esq. Luis Donaldo Colosio s/n, Col. Buenavista, CP 06350</td>
+								<td>5346-8121 5346-8120</td>
+								<td><a class="link" href="https://goo.gl/maps/EdeDaXJMoLL2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUH-3</td>
+								<td>Calle Peralvillo #122, esq. Av. Reforma, Col. Morelos, entre Reforma y Eje 1 Norte, CP 06200</td>
+								<td>5346-8726 5346-8746</td>
+								<td><a class="link" href="https://goo.gl/maps/5wKsY4ncYGt">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUH-4</td>
+								<td>Calle República de Paraguay #35 esq. República de Brasil, Col. Centro, CP 0600</td>
+								<td>5346-8704 5346-8541</td>
+								<td><a class="link" href="https://goo.gl/maps/4sRDVyz1jQT2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUH-5</td>
+								<td>Calle Santa María la Ribera No.35, Col. Santa María La Ribera, CP 06400</td>
+								<td>5346-8733 5346-8732</td>
+								<td><a class="link" href="https://goo.gl/maps/EKYMw47iR5F2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUH-6</td>
+								<td>Calle Victoria No.76, Col. Centro, CP 06000</td>
+								<td>5346-8881 5512-9878</td>
+								<td><a class="link" href="https://goo.gl/maps/pCk5cMD5vek">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUH-7</td>
+								<td>Av. Álvaro Obregón s/n, esq. Valladolid, Col. Roma, 06700</td>
+								<td>5346-8706 5207-1619</td>
+								<td><a class="link" href="https://goo.gl/maps/VApCG5Q5Gmq">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>CUH-8</td>
+								<td>Av. Chimalpopoca No.100, Col. Obrera, CP 06080</td>
+								<td>5346-8714 5346-8711</td>
+								<td><a class="link" href="https://goo.gl/maps/wBPvtKre7r32">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Gustavo A. Madero",""]:
+					<h4>Gustavo A. Madero</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>GAM-1</td>
+								<td>Av. Emiliano Zapata y Guadalupe Victoria s/n, Col. Cuautepec Barrio Bajo, CP 07220</td>
+								<td>5346-8062 5346-8066 5303-9343</td>
+								<td><a class="link" href="https://goo.gl/maps/UcYGqZ6KCLs">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>GAM-2</td>
+								<td>Eje 2 Ote Av. H. Congreso de la Unión s/n entre Oriente 71 y Av. Talisman, CP 07460</td>
+								<td>5346-8055</td>
+								<td><a class="link" href="https://goo.gl/maps/qX9kNesAic12">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>GAM-3</td>
+								<td>Cerrada Sur de los 100 metros s/n, Col. Nueva Vallejo, CP 07750</td>
+								<td>5346-8082 5346-8083</td>
+								<td><a class="link" href="https://goo.gl/maps/GQfgyWSC7fD2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>GAM-4</td>
+								<td>Calle 5 de Febrero y Vicente Villada, Col. Aragón La Villa, CP 07050</td>
+								<td>5346-8055 5346-8059 5346-8072</td>
+								<td><a class="link" href="https://goo.gl/maps/yDt2aRVHKnM2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>GAM-5</td>
+								<td>Av. Loreto Fabela y Av. 416,  Col. San Juan de Aragón,  CP 07910</td>
+								<td>5346-8090 5346-8940</td>
+								<td><a class="link" href="https://goo.gl/maps/3ywfmDqzzkA2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>GAM-6</td>
+								<td>Calle Francisco Novoa esq. Netzahualcóyotl, Col. Aragón La Villa, CP 07050</td>
+								<td>5346-8946 5346-8944</td>
+								<td><a class="link" href="https://goo.gl/maps/HL5k2pTUupJ2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>GAM-7</td>
+								<td>Av. 661, entre Av. 604-A y Av. 606, Col. San Juan de Aragón, CP 07979</td>
+								<td>5346-8078</td>
+								<td><a class="link" href="https://goo.gl/maps/fvEusycjGJ72">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>GAM-8</td>
+								<td>Av. 661, entre Av. 604-A y Av. 606, Col. San Juan de Aragón, CP 07979</td>
+								<td>5346-8038</td>
+								<td><a class="link" href="https://goo.gl/maps/fvEusycjGJ72">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Iztacalco",""]:
+					<h4>Iztacalco</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>IZC-1</td>
+								<td>Av. Congreso de la Unión y Canal Nacional S/N, Col. Santa Anita, CP 08300</td>
+								<td>5200-9180 5200-9185</td>
+								<td><a class="link" href="https://goo.gl/maps/Lzd66bCdSXr">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZC-2</td>
+								<td>Calle Sur 157 y Av. Té s/n, Col. Gabriel Ramos Millán, CP 08730</td>
+								<td>5200-9441 5200-9428 5200-9402</td>
+								<td><a class="link" href="https://goo.gl/maps/BiwsvRrpqKB2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZC-3</td>
+								<td>Calle Sur 157 y Av. Té s/n, Col. Gabriel Ramos Millán, CP 08730</td>
+								<td>5200-9430 5200-9435 5200-9400</td>
+								<td><a class="link" href="https://goo.gl/maps/BiwsvRrpqKB2">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Iztapalapa",""]:
+					<h4>Iztapalapa</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>IZP-1</td>
+								<td>Av. 5 de Mayo y Callejón Victoria, Barrio de San Lucas, CP 09000</td>
+								<td>5345-5670 y 5345-5681</td>
+								<td><a class="link" href="https://goo.gl/maps/CnVnRYjfb9S2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-2</td>
+								<td>Callejón de Circunvalación y Ermita Iztapalapa, Barrio Santa Barbará, CP 09000</td>
+								<td>5345-5673 y 5345-5674</td>
+								<td><a class="link" href="https://goo.gl/maps/S6TjURSrAQk">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-3</td>
+								<td>Av. Rio Churubusco y Calle Militares s/n, Col. Área Federal Central de Abastos CP 09040</td>
+								<td>5345-5655 y 5345-5679</td>
+								<td><a class="link" href="https://goo.gl/maps/LspAvRijiD92">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-4</td>
+								<td>Av. 5 de Mayo y Callejón Victoria, Barrio de San Lucas, CP 09000</td>
+								<td>5200-5680 y 5200-5681</td>
+								<td><a class="link" href="https://goo.gl/maps/CnVnRYjfb9S2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-5</td>
+								<td>Av. Campaña del Ébano s/n esq. Revolución Social, Col. Vicente Guerrero, CP 09200</td>
+								<td>5345-5685 y 5691-7717</td>
+								<td><a class="link" href="https://goo.gl/maps/HCqWGwfKha22">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-6</td>
+								<td>Av. Telecomunicaciones y Calle 3 s/n, Col. Tepalcates, CP 09210</td>
+								<td>5345-5633 y 5345-5617</td>
+								<td><a class="link" href="https://goo.gl/maps/AAPD8LTAk6s">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-7</td>
+								<td>Av. San Lorenzo Tezonco #310, Col. San Lorenzo Tezoncon, CP 09839</td>
+								<td>5345-5690, 5613-9751 y 5345-5688</td>
+								<td><a class="link" href="https://goo.gl/maps/tAF8CU8jqKx">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-8</td>
+								<td>Av. Zacatlán s/n entre Av. Tláhuac y Zempasuchil, Col. Área Federal Panteón San Lorenzo Tezonco, CP 09790</td>
+								<td>5345-5644</td>
+								<td><a class="link" href="https://goo.gl/maps/rKiMdnRm8Cu">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-9</td>
+								<td>Av. Ermita Iztapalapa s/n esq. Zacatepec, Col. Santa Martha Acatitla, CP 09130</td>
+								<td>5345-5697</td>
+								<td><a class="link" href="https://goo.gl/maps/XWJtXepx2AE2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>IZP-10</td>
+								<td>Av. Ermita Iztapalapa s/n esq. Zacatepec, Col. Santa Martha Acatitla, CP 09130</td>
+								<td>5345-5671</td>
+								<td><a class="link" href="https://goo.gl/maps/XWJtXepx2AE2">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Magdalena Contreras",""]:
+					<h4>Magdalena Contreras</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>MC-1</td>
+								<td>Av. San Jerónimo #2625 esq. Soledad, Col. San Bernabé Ocotepec, CP 10300</td>
+								<td>5346-8511 y 5346-8513</td>
+								<td><a class="link" href="https://goo.gl/maps/rfSvULZRTyt">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>MC-2</td>
+								<td>Calle Álvaro Obregón 20, Col. Barranca Seca, CP 10580</td>
+								<td>5346-8523 y 5346-8532</td>
+								<td><a class="link" href="https://goo.gl/maps/upFY1HgytvC2">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Miguel Hidalgo",""]:
+					<h4>Miguel Hidalgo</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>MH-1</td>
+								<td>Calle Mar Arábigo y Calzada México Tacuba s/n, Col. Tacuba, CP 11410</td>
+								<td>5346-8233 y 5346-8210</td>
+								<td><a class="link" href="https://goo.gl/maps/Zg8raUE6Kqj">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>MH-2</td>
+								<td>Calle Lago Erne s/n y Lago Colín, Col. Pénsil, CP 11430</td>
+								<td>5399-7590 y 5346-8221</td>
+								<td><a class="link" href="https://goo.gl/maps/VJfmMuDtRuj">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>MH-3</td>
+								<td>Calle Monte Altais y Alpes, Col. Lomas de Chapultepec, CP 11000</td>
+								<td>5202-4138 y 5346-8244</td>
+								<td><a class="link" href="https://goo.gl/maps/BS7JEvmpdqv">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>MH-4</td>
+								<td>Privada Gral. Sóstenes Rocha s/n, esq. Parque Lira Col. Ampliación Daniel Garza, CP 11840</td>
+								<td>5346-8282 y 5346-8235</td>
+								<td><a class="link" href="https://goo.gl/maps/Phcfhehxc7E2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>MH-5</td>
+								<td>Privada Gral. Sóstenes Rocha s/n, esq. Parque Lira Col. Ampliación Daniel Garza, CP 11840</td>
+								<td>5346-8282 y 5346-8236</td>
+								<td><a class="link" href="https://goo.gl/maps/Phcfhehxc7E2">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Milpa Alta",""]:
+					<h4>Milpa Alta</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>MIL-1</td>
+								<td>Av. Jalisco S/N  Esq. Avenida México, Col. Villa Milpa Alta, CP 12000</td>
+								<td>5200-9119 y 5200-9125</td>
+								<td><a class="link" href="https://goo.gl/maps/qAqyQiysR5o">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>MIL-2</td>
+								<td>Av. 5 de Mayo Ote. s/n, esq. Prolongación Zaragoza, Col. San Antonio Tecómitl, CP 12100</td>
+								<td>5200-9120 y 5847-6716</td>
+								<td><a class="link" href="https://goo.gl/maps/UDqdYgYX1Zp">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Tláhuac",""]:
+					<h4>Tláhuac</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>TLH-1</td>
+								<td>Av. Leandro Valle s/n, entre Av. Piraña y Langosta, Col. Del Mar, CP 13270</td>
+								<td>5850-5857 y 5859-3074</td>
+								<td><a class="link" href="https://goo.gl/maps/sMY5nUrwaS82">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>TLH-2</td>
+								<td>Calle Nicolás Bravo s/n, esq. Cuitlahuac, Col. Barrio La Asunción, CP 13000</td>
+								<td>5345-5705 y 5345-5711</td>
+								<td><a class="link" href="https://goo.gl/maps/w5oodcvtJPo">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Tlalpan",""]:
+					<h4>Tlalpan</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>TLP-1</td>
+								<td>Carretera Picacho Ajusco Km 5.5 s/n, Col. Ampliación Miguel Hidalgo, CP 14260</td>
+								<td>5644-4205, 5200-9337 y 5200-9338</td>
+								<td><a class="link" href="https://goo.gl/maps/UxoRnR6PcCA2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>TLP-2</td>
+								<td>Calle Matamoros y Jojutla s/n, Col. La Joya, CP 14090</td>
+								<td>5200-9336 y 5200-9310</td>
+								<td><a class="link" href="https://goo.gl/maps/tmu5jgFqzwz">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>TLP-3</td>
+								<td>Calle Matamoros y Jojutla s/n, Col. La Joya, CP 14090</td>
+								<td>5200-9314 y 5200-9300</td>
+								<td><a class="link" href="https://goo.gl/maps/tmu5jgFqzwz">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>TLP-4</td>
+								<td>Periférico Sur y Canal Nacional, Col. Granjas Coapa, CP 14330</td>
+								<td>5594-2768 y 5200-9319</td>
+								<td><a class="link" href="https://goo.gl/maps/QckdUz3Amw22">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Venustiano Carranza",""]:
+					<h4>Venustiano Carranza</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>VCA-1</td>
+								<td>Calle San Ciprián, casi esq. General Anaya, Col. Merced Balbuena, CP 15810</td>
+								<td>5345-6690 y 5345-6691</td>
+								<td><a class="link" href="https://goo.gl/maps/meewqCNuLvS2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>VCA-2</td>
+								<td>Blvd. Puerto Aéreo esq. Norte 13, Col. Moctezuma 2ª Sección, CP 15530</td>
+								<td>5345-5827, 5345-5840 y 5345-5836</td>
+								<td><a class="link" href="https://goo.gl/maps/61pLgawMGmv">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>VCA-3</td>
+								<td>Fray Servando Teresa De Mier #219, esq. Francisco del Paso y Troncoso, Col. Jardín Balbuena, 15900 </td>
+								<td>5345-5809 y 5345-5828</td>
+								<td><a class="link" href="https://goo.gl/maps/eMCUvpqV9FR2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>VCA-4</td>
+								<td>Antiguo Cauce De Río Churubusco y Circunvalación, Col. Arenal, CP 15600</td>
+								<td>5345-5853 y 5345-5842</td>
+								<td><a class="link" href="https://goo.gl/maps/5wNvYSbaHPB2">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>VCA-5</td>
+								<td>Antiguo Cauce De Río Churubusco y Circunvalación, Col. Arenal, CP 15600</td>
+								<td>5345-5834 y 5345-5802</td>
+								<td><a class="link" href="https://goo.gl/maps/5wNvYSbaHPB2">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+					%if entidades["municipio"] in ["Xochimilco",""]:
+					<h4>Xochimilco</h4>
+					<table>
+						<thead>
+							<tr>
+								<td>Agencia</strong></td>
+								<td>Dirección</td>
+								<td>Teléfono</td>
+								<td>Ubicación</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>XO-1</td>
+								<td>Circuito Lic. Martínez de Castro s/n, Col. San Mateo Xalpa (Reclusorio Sur), CP 16800</td>
+								<td>5200-9450 y 5200-9468</td>
+								<td><a class="link" href="https://goo.gl/maps/61pLgawMGmv">Ver en Google Maps</a></td>
+							</tr>
+							<tr>
+								<td>XO-2</td>
+								<td>Calle Gladiolas s/n, esq. Cuitláhuac, Col. San Pedro, CP 16090</td>
+								<td>5200-9150 y 5200-9659</td>
+								<td><a class="link" href="https://goo.gl/maps/3AuZpfSPRF12">Ver en Google Maps</a></td>
+							</tr>
+						</tbody>
+					</table>
+					%end
+                    %if entidades["cp"] in ["",""]:
+					<p>{{ cp if cp != "" else 'Puedes presentar tu denuncia en cualquier Ministerio Público (MP) sin embargo te recomendamos presentar tu denuncia en el MP más cercano al lugar de los hechos.'}}<a class="link" target="_blank" href="http://normatuabogada.com/recursos.html#map_mp">Ubícalo aquí.</a></p>
+					%end
+				</div>
+				%if "policia" in entidades:
+			%if "si" in entidades["policia"]:
+			 <h3 class="title">POLICÍA</h3>
+            <p>
+                Si durante o inmediatamente después de que ocurrió el delito tuviste contacto con un policía, estas son las acciones que tuvo que realizar:
+                <ul>
+                    <li>Proteger tu seguridad e informarte sobre tus derechos.</li>
+                    <li>Recibir tu denuncia, incluso de manera anónima.</li>
+                    <li>Detener al agresor y, de lograrlo, registrar su detención y llevarlo inmediatamente al MP. Resguardar el lugar del delito y evitar que se pierdan o contaminen las pruebas (la gente no puede acercarse al lugar acordonado).</li>
+                    <li>Resguardar el lugar del delito y evitar que se pierdan o contaminen las pruebas (la gente no puede acercarse al lugar acordonado).</li>
+                    <li>Localizar y entrevistar a los posibles testigos del delito</li>
+                    <li>Informar cuanto antes al MP o a la policía de investigación de todas las acciones que realizó a través de un informe.</li>
+                </ul>
+            </p>
+            <p>Recuerda que tú y cualquier persona también pueden detener al agresor en dichos momentos y de lograrlo se debe dar aviso a la autoridad más pronta. En todo caso, prioriza tu integridad física.</p>
+            <p>Si el policía no cumplió con alguna de estas acciones puedes reportarlo en la Dirección General de Asuntos Internos de la Secretaría de Seguridad Pública ubicada en Liverpool #136, Col. Juárez, Cuauhtémoc, teléfono 5208-7445.</p>
+            %else:
+            <h3 class="title">POLICÍA</h3>
+            <p>
+                Si después de cometerse el delito tuviste contacto con un policía, estas son las acciones que tuvo que realizar:
+                <ul>
+                    <li>Proporcionarte <b>protección y auxilio</b> si lo necesitas.</li>
+                    <li>Informarte sobre tus <b>derechos</b>.</li>
+                    <li>Recibir tu <b>denuncia</b>, incluso de manera anónima.</li>
+                    <li>Procurar que recibas <b>atención médica y/o psicológica</b> si lo requieres.</li>
+                    <li><b>Informar</b> cuanto antes al MP o a la policía de investigación de todas las acciones que realizó a través de un informe.</li>
+                </ul>
+            </p>
+            <p>Si el policía no cumplió con alguna de estas acciones, puedes reportarlo en la Dirección General de Asuntos Internos de la Secretaría de Seguridad Pública ubicada en Liverpool #136, Col. Juárez, Cuauhtémoc, tel. 5208-7445.</p>
+			%end
+			%end
+				%if "violencia" in entidades:
+			%if "si" in entidades["violencia"]:
+			<h3 class="title">VIOLENCIA</h3>
+            <p>Si debido a la agresión te encuentras en un centro de salud u hospital, el médico debe informarle al MP o a la policía sobre tu condición. Omitirlo puede resultar en un responsabilidad penal para el médico.</p>
+            <p>En caso de necesitar orientación sobre terapias, servicios de asistencia social, salud y funerarios, viáticos y medicamentos, acompañamiento, asesoría y representación jurídica, presentación de inconformidades y escritos para presentar pruebas
+                que ayuden a la investigación, puedes acudir al Centro de Apoyo Sociojurídico a Víctimas del Delito Violento (Adevi), que es parte de la Procuraduría General de Justicia de la CDMX.</p>
+            <p>Adevi te puede orientar sobre terapias, servicios de asistencia social, salud y funerarios, viáticos y medicamentos, acompañamiento, asesoría y representación jurídica, presentación de inconformidades y escritos para presentar pruebas que
+                ayuden a la investigación.</p>
+			%end
+			%end
+				%if "testigo" in entidades:
+			%if "si" in entidades["testigo"] or entidades["testigo"] == "":
+			<h3 class="title">TESTIGO</h3>
+			<p>Contar con uno o varios testigos es un elemento para fortalecer la investigación. Su testimonio refuerza
+				tu declaración porque confirma el delito, cómo ocurrió y quién lo cometió.</p>
+			<p>Si no cuentas con un testigo conocido, identifica a las personas que observaron los hechos. Ejemplo:
+				conductor de Uber, tendero, comerciante, vecino, etcétera. Solicita su apoyo para que te acompañen a la
+				agencia y sean entrevistados por el MP. Toma nota de sus nombres, domicilio y un teléfono para que
+				puedas localizarlos después.</p>
+			<p>Si los testigos no quieren acompañarte puedes proporcionar sus datos al MP para que les envíe un
+				citatorio y acudan a la agencia a ser entrevistados.</p>
+			<p>Otra opción que tienes es solicitarle a un policía que conozca los hechos que entreviste a los testigos y
+				les tome sus datos. El policía tendrá que llenar un formato denominado IPH (Informe Policial
+				Homologado), mismo que será entregado al MP.</p>
+			%end
+			%end
+				<h3 class="title">CÁMARA</h3>
+			<p>Contar con videograbaciones sobre los hechos ayuda a la investigación. Revisa dónde hay cámaras y pide
+				que las casas, negocios o instituciones conserven una copia de la grabación (regularmente en el metro o
+				cajeros hay cámaras).</p>
+			<p>Al presentar tu denuncia, pide al MP y a la Policía que soliciten por escrito a los responsables de las
+				cámaras los videos que brinden información sobre el delito. Esto ayudará a identificar al agresor.</p>
+				%if "identidad-pr" in entidades:
+			%if "si" in entidades["identidad-pr"] or entidades["identidad-pr"] == "":
+			<h3 class="title">IDENTIDAD DE PRESUNTO RESPONSABLE</h3>
+			<p>
+				Favorece a la investigación que hayas identificado a tu agresor. Solicita al Ministerio Público la
+				oportunidad de realizar un retrato hablado con la ayuda de un perito especialista en la materia. Cuando
+				estes con el perito ten presente los siguiente datos sobre el agresor:
+				<ul>
+					<li>Sexo, altura y edad aproximada;</li>
+					<li>Vestimenta;</li>
+					<li>Apodo o alias;</li>
+					<li>Características de cabello: largo (corto, mediano, largo), tipo (lacio, rizado, ondulado,
+						crespo) y color (negro, castaño claro, castaño oscuro, rubio, rojizo, blanco);</li>
+					<li>Color de piel (blanca, amarilla, morena, negra, trigueña);</li>
+					<li>Color de ojos (negros, azules, verdes, aceituna, cafe oscuro, cafe claro);</li>
+					<li>Barba (candado, poblada, sin barba, cerrada);</li>
+					<li>Acento (norteño, sureño, costeño), y</li>
+					<li>Otros rasgos distintivos como lunares, acné, deformaciones, cicatrices, tatuajes, etc.</li>
+				</ul>
+			</p>
+			%end
+			%end
+				%if "lugar" in entidades:
+			%if "domicilio" in entidades["lugar"] or "negocio" in entidades["lugar"]:
+			<h3 class="title">ROBO A CASA HABITACIÓN / ROBO A NEGOCIO (en cualquier modalidad)</h3>
+			<p>Si necesitas que un abogado te acompañe personalmente en la presentación de tu denuncia puedes
+				comunicarte con el Consejo Ciudadano de la CDMX al 55 33 55 33. El Consejo es un organismo de la
+				sociedad civil que trabaja en favor de una cultura de la denuncia y puede apoyarte con una pareja de
+				agentes ciudadanos (psicólogo y abogado) que te acompañará a interponer tu denuncia directamente con las
+				autoridades.</p>
+			<p>Procura que nadie se acerque al lugar en donde se cometió el delito y que las cosas no sean manipuladas.
+				Es importante que el lugar permanezca sin alteraciones para que la policía y los peritos puedan realizar
+				su investigación y recabar información para identificar a los agresores.</p>
+			<P>Si el clima o las condiciones del lugar provocan la pérdida, alteración, destrucción o contaminación de
+				las pruebas, el policía tendrá que recolectarlas para que no se pierdan o contaminen e informar al MP.
+			</P>
+			<p>Si deseas que un abogado te acompañe a presentar tu denuncia puedes comunicarte con el Consejo Ciudadano
+				de la CDMX al 5533 5533. El Consejo es un organismo que puede apoyarte con una pareja de agentes
+				ciudadanos (psicólogo y abogado) que te acompañará a denunciar.</p>
+			%end
+			%end
+			</div>
+		</div>
+	</body>
+</html>
