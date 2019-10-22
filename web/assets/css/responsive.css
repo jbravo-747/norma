@@ -374,11 +374,7 @@
 		margin-bottom: 30px;
 	}
 
-	/* Chat norma */
-	.o_chat_window{
-		/* width: 50% !important;
-		max-height: 50% !important; */
-	}
+	
 	.logo-toggler{
 		display: grid !important;
 		grid-template-columns: 3fr 1fr !important;
