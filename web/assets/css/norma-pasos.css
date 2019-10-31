@@ -11,12 +11,29 @@
 }
 
 #pasos h1 {
+  color: #F63854;
   text-align: center;
   padding: 30px 0 0 0;
 }
 
+#pasos h2 {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
+#pasos h3 {
+  color: #F63854;
+  font-weight: bold;
+  font-size: 1.0em;
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
 #pasos h4 {
+  color: black;
   font-size: 1.2em;
+  font-weight: bold;
   text-align: center;
   padding: 0 0 30px 0;
 }
@@ -67,6 +84,31 @@
           box-shadow: 1px 2px 80px 0 rgba(0, 0, 0, 0.1);
 }
 
+#pasos .timeline > li .panel #sumary-resalt {
+  display: block;
+  color: #F63854;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 0px;
+  -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-property: margin, background;
+  transition-property: margin, background;
+  font-weight: 600;
+}
+
+#pasos .timeline > li .panel #sumary-resalt::-webkit-details-marker {
+  display: none;
+}
+
+#pasos .timeline > li .panel #sumary-resalt:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 #pasos .timeline > li .panel summary {
   display: block;
   -webkit-user-select: none;
@@ -83,6 +125,10 @@
   font-weight: 600;
 }
 
+#pasos .timeline > li .panel summary #resalta {
+  color: #F63854;
+}
+
 #pasos .timeline > li .panel summary::-webkit-details-marker {
   display: none;
 }
@@ -93,6 +139,16 @@
 
 #pasos .timeline > li .panel p {
   padding: 0 20px 10px;
+}
+
+#pasos .timeline > li .panel a {
+  color: #4B2B99;
+  text-decoration: underline;
+}
+
+#pasos .timeline > li .panel span {
+  font-size: 18px;
+  color: red;
 }
 
 #pasos .timeline > li .panel[open] summary {
