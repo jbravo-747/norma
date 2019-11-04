@@ -383,7 +383,25 @@ PASOS
         width: 100%;
     }
     
+/* ==========================================================================
+RECOMENDACIONES
+========================================================================== */
+#pagina-recomendaciones {
+    background: rgba(228, 228, 228, 0.3);
+    background-image: url(../img/backgrounds/bg-comosecreo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
 
+#pagina-recomendaciones .img-movil img {
+    width: 100%;
+}
 
 /* ==========================================================================
 DISPOSITIVOS: PANTALLAS GRANDES
@@ -666,6 +684,14 @@ DISPOSITIVOS: CELULARES
         height: 100% !important;
     }
     #pagina-pasos {
+        padding-top: 40px;
+        background-image: url(../img/backgrounds/bg-deasarrollo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
+    #pagina-recomendaciones {
         padding-top: 40px;
         background-image: url(../img/backgrounds/bg-deasarrollo.png);
         background-position: center center;
