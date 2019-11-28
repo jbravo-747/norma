@@ -192,7 +192,7 @@
 }
 
 #pasos .timeline > li > .icon:before {
-  content: "\e91b";
+  content: "\e94b";
 }
 
 @media (min-width: 576px) {
@@ -206,7 +206,7 @@
 }
 
 #pasos .timeline > li > .icon.done:before {
-  content: "\e923";
+  content: "\e94c";
 }
 
 #pasos .timeline > li > .icon.working {
@@ -214,6 +214,6 @@
 }
 
 #pasos .timeline > li > .icon.working:before {
-  content: "\e940";
+  content: "\e903";
 }
 /*# sourceMappingURL=norma-pasos.css.map */
