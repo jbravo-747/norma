@@ -1,4 +1,5 @@
 @import url("font_face.css");
+
 body {
     z-index: 0;
     font-family: 'Seravek';
@@ -151,7 +152,7 @@ SECCION INICIAL
 }
 
 #metodologia-main-section .img-movil {
-    display: none!important;
+    display: none !important;
 }
 
 #metodologia-main-section .btn {
@@ -355,34 +356,23 @@ SECCION MAPAS
 }
 
 
-/*.google-maps iframe {
-        position: absolute;
-        top: 0;
-				left: 20%;
-        width: 60% !important;
-				height: 100% !important;
-			
-    }*/
 /* ==========================================================================
 PASOS
 ========================================================================== */
 #pagina-pasos {
-        background: rgba(228, 228, 228, 0.3);
-        background-image: url(../img/backgrounds/bg-comosecreo.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 650px;
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 20px;
-        padding-top: 100px;
-    }
-    
-    #pagina-pasos .img-movil img {
-        width: 100%;
-    }
-    
+    background-image: url(../img/backgrounds/bg-quienesdetras.png);
+    background-position: center center;
+    background-repeat:repeat;
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#pagina-recomendaciones .img-movil img {
+    width: 100%;
+}
+
 /* ==========================================================================
 RECOMENDACIONES
 ========================================================================== */
@@ -414,9 +404,11 @@ DISPOSITIVOS: PANTALLAS GRANDES
     #metodologia-main-section {
         min-height: 700px;
     }
+
     .nav-norma-middle {
         margin-left: 20.7%;
     }
+
     .google-maps iframe {
         position: absolute;
         top: 0;
@@ -433,9 +425,11 @@ DISPOSITIVOS: PANTALLAS GRANDES
     #metodologia-main-section {
         min-height: 670px;
     }
+
     .nav-norma-middle {
         margin-left: 17%;
     }
+
     .google-maps iframe {
         position: absolute;
         top: 0;
@@ -452,6 +446,7 @@ DISPOSITIVOS: PANTALLAS GRANDES
     #metodologia-main-section {
         min-height: 670px;
     }
+
     .nav-norma-middle {
         position: absolute;
         z-index: 1;
@@ -459,6 +454,7 @@ DISPOSITIVOS: PANTALLAS GRANDES
         margin-top: -35px;
         margin-left: 15%;
     }
+
     .google-maps iframe {
         position: absolute;
         top: 0;
@@ -474,6 +470,7 @@ DISPOSITIVOS: TABLETS
 ========================================================================== */
 
 @media (max-width: 991px) {
+
     h1,
     h2,
     h3,
@@ -482,71 +479,91 @@ DISPOSITIVOS: TABLETS
     p {
         text-align: center;
     }
+
     #metodologia-main-section {
         padding-top: 50px;
     }
+
     .nav-norma-middle {
         display: none !important;
     }
+
     #metodologia-header .logo_header_normal {
         display: block;
     }
+
     #metodologia-header .logo_header_blanco {
         display: none;
     }
+
     #metodologia-main-section .main-seccion-container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-columns: none;
     }
+
     #metodologia-main-section {
         background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
     }
+
     #metodologia-main-section .subtitle-1 {
         padding: 29px 0 10px 0;
     }
+
     #metodologia-main-section .img-movil {
         display: block !important;
         text-align: center;
         padding: 20px 0px;
     }
+
     #metodologia-main-section .img-movil img {
         width: 400px;
         height: auto;
     }
+
     #metodologia-main-section .btn-main-section {
         width: 100%;
     }
+
     #create-norma {
         padding-top: 40px;
     }
+
     #create-norma .img-movil {
         text-align: center;
     }
+
     #create-norma .img-movil img {
         width: 60%;
     }
+
     #back-norma .img-movil {
         text-align: center;
     }
+
     #back-norma .img-movil img {
         width: 60%;
     }
+
     .div-reverse {
         display: block;
         flex-flow: none;
     }
+
     .container-norma-center {
         /* text-align: justify; */
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
+
     .container-norma-text-vcenter {
         padding-top: 20px;
     }
+
     .separacion-navbar {
         padding-right: 0 !important;
     }
+
     .google-maps {
         position: relative;
         padding-bottom: 85%;
@@ -554,12 +571,16 @@ DISPOSITIVOS: TABLETS
         height: 0;
         overflow: hidden;
     }
+
     .google-maps iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100% !important;
         height: 100% !important;
+    }
+    #pagina-pasos {
+        background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
     }
 }
 
@@ -569,6 +590,7 @@ DISPOSITIVOS: CELULARES
 ========================================================================== */
 
 @media (max-width: 767px) {
+
     h1,
     h2,
     h3,
@@ -577,44 +599,57 @@ DISPOSITIVOS: CELULARES
     p {
         text-align: center;
     }
+
     #metodologia-header .logo_header_normal {
         display: block;
     }
+
     #metodologia-header .logo_header_blanco {
         display: none;
     }
+
     #metodologia-main-section .main-seccion-container {
         grid-template-columns: 1fr;
     }
+
     #metodologia-main-section .contenido-main-section {
         grid-column-start: 1;
     }
+
     #metodologia-main-section {
         background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
         padding-top: 20px;
     }
+
     #metodologia-main-section .subtitle-1 {
         padding: 29px 0 10px 0;
     }
+
     #metodologia-main-section .img-movil {
         display: block !important;
     }
+
     #metodologia-main-section .img-movil img {
         width: 320px;
         height: auto;
     }
+
     #metodologia-main-section .btn-main-section {
         width: 100%;
     }
+
     #create-norma {
         padding-top: 40px;
     }
+
     #create-norma .img-movil {
         text-align: center;
     }
+
     #create-norma .img-movil img {
         width: 60%;
     }
+
     #back-norma {
         background-image: url(../img/backgrounds/bg-quienesdetras.png);
         background-position: center center;
@@ -626,12 +661,15 @@ DISPOSITIVOS: CELULARES
         padding-bottom: 20px;
         padding-top: 40px;
     }
+
     #back-norma .img-movil {
         text-align: center;
     }
+
     #back-norma .img-movil img {
         width: 60%;
     }
+
     #dev-norma {
         padding-top: 40px;
         background-image: url(../img/backgrounds/bg-deasarrollo.png);
@@ -640,21 +678,26 @@ DISPOSITIVOS: CELULARES
         background-size: cover;
         padding-bottom: 20px;
     }
+
     .div-reverse {
         display: block;
         flex-flow: none;
     }
+
     .container-norma-center {
         /* text-align: justify; */
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
+
     .container-norma-text-vcenter {
         padding-top: 20px;
     }
+
     .separacion-navbar {
         padding-right: 0 !important;
     }
+
     .google-maps {
         position: relative;
         padding-bottom: 75%;
@@ -662,6 +705,7 @@ DISPOSITIVOS: CELULARES
         height: 0;
         overflow: hidden;
     }
+
     .google-maps iframe {
         position: absolute;
         top: 0;
@@ -669,6 +713,7 @@ DISPOSITIVOS: CELULARES
         width: 100% !important;
         height: 100% !important;
     }
+
     .google-cam {
         position: relative;
         padding-bottom: 75%;
@@ -676,6 +721,7 @@ DISPOSITIVOS: CELULARES
         height: 0;
         overflow: hidden;
     }
+
     .google-cam iframe {
         position: absolute;
         top: 0;
@@ -683,6 +729,7 @@ DISPOSITIVOS: CELULARES
         width: 100% !important;
         height: 100% !important;
     }
+
     #pagina-pasos {
         padding-top: 40px;
         background-image: url(../img/backgrounds/bg-deasarrollo.png);
@@ -691,6 +738,7 @@ DISPOSITIVOS: CELULARES
         background-size: cover;
         padding-bottom: 20px;
     }
+
     #pagina-recomendaciones {
         padding-top: 40px;
         background-image: url(../img/backgrounds/bg-deasarrollo.png);

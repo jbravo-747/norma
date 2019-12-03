@@ -8,6 +8,7 @@
 
 #pasos body {
   background: #fafafa;
+  background-image: image-url("../img/backgrounds/bg-comosecreo.png", false, false);
 }
 
 #pasos h1 {
