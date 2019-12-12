@@ -321,9 +321,444 @@ SECCION COMO CARTA
     width: 1em;
     margin-left: -1em;
 }
-
-
 /* ==========================================================================
+SECCION RECOMENDACIONES
+========================================================================== */
+#No3 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No3 .list-No3 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No3 .list-No3 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No4 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No4 .list-No4 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No4 .list-No4 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No5 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No6 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No6 .list-No6 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No6 .list-No6 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No7 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No7 .list-No7 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No7 .list-No7 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #No11 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No11 .list-No11 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No11 .list-No11 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No12 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No12 .list-No12 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No12 .list-No12 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No13 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No13 b {
+    color: #4C37A7;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #No13 .list-No13 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No13 .list-No13 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No14 span {
+    margin: 14px 0 !important;
+    border: ridge #4C37A7 3px;
+  }
+  
+  #No14 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No15 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No15 .list-No15 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No15 .list-No15 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No16 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No16 .list-No16 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No16 .list-No16 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No17 span {
+    margin: 14px 0 !important;
+    border: ridge #4C37A7 3px;
+  }
+  
+  #No18 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No18 .list-No18 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No18 .list-No18 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No19 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No19 .list-No19 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No19 .list-No19 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No20 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No20 .list-No20 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No20 .list-No20 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No21 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No21 .list-No21 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No21 .list-No21 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No22 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No22 .list-No22 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No22 .list-No22 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No24 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No24 .list-No24 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No24 .list-No24 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No25 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No25 .list-No25 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No25 .list-No25 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No27 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No27 .list-No27 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No27 .list-No27 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No30 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No30 .list-No30 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No30 .list-No30 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No31 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No31 .list-No31 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No31 .list-No31 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+/*========================================================================
 SECCION MAPAS
 ========================================================================== */
 
