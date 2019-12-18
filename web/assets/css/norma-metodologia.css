@@ -813,7 +813,7 @@ RECOMENDACIONES
 ========================================================================== */
 #pagina-recomendaciones {
     background: rgba(228, 228, 228, 0.3);
-    background-image: url(../img/backgrounds/bg-comosecreo.png);
+    background-image: url(../img/backgrounds/norma-back.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1167,7 +1167,7 @@ DISPOSITIVOS: CELULARES
 
     #pagina-pasos {
         padding-top: 40px;
-        background-image: url(../img/backgrounds/bg-deasarrollo.png);
+        background-image: url(../img/backgrounds/norma-back.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1176,7 +1176,7 @@ DISPOSITIVOS: CELULARES
 
     #pagina-recomendaciones {
         padding-top: 40px;
-        background-image: url(../img/backgrounds/bg-deasarrollo.png);
+        background-image: url(../img/backgrounds/norma-back.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
