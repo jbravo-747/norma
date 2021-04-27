@@ -1,443 +1,1185 @@
 @import url("font_face.css");
 
-body{
-	z-index:0;
-	font-family: 'Seravek';
+body {
+    z-index: 0;
+    font-family: 'Seravek';
 }
+
 
 /* ==========================================================================
 OTROS
 ========================================================================== */
 
-.nav-norma-padding{
-	padding: 20px !important;
+.nav-norma-padding {
+    padding: 20px !important;
 }
 
-.nav-norma-middle a{
-	color: #fff !important;
-	font-weight: bold !important;
-	font-size: 18px;
-}
-.line-right{
-	border-right: 2px solid white;
-	padding-right: 50px !important;
+.nav-norma-middle a {
+    color: #fff !important;
+    font-weight: bold !important;
+    font-size: 18px;
 }
 
-.norma-center{
-	text-align: center;
+.line-right {
+    border-right: 2px solid white;
+    padding-right: 50px !important;
 }
 
-.container-norma-text-vcenter{
-	padding-top: 10px;
+.norma-center {
+    text-align: center;
 }
 
-.p-intro{
-	padding: 20px;
+.container-norma-text-vcenter {
+    padding-top: 10px;
 }
 
-.div-reverse{
-	display: flex;
-	flex-flow: row-reverse  wrap-reverse;
+.p-intro {
+    padding: 20px;
 }
 
-.home-reverse{
-	display: flex;
-  flex-flow: row-reverse  wrap-reverse;
+.div-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
 }
 
-.nav-norma-middle > .navbar-expand-md .navbar-nav .active > .nav-link, .navbar-expand-md .navbar-nav .nav-link.active, .navbar-expand-md .navbar-nav .nav-link.open, .navbar-expand-md .navbar-nav .open > .nav-link{
-	color: #fff !important
+.home-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.nav-norma-middle>.navbar-expand-md .navbar-nav .active>.nav-link,
+.navbar-expand-md .navbar-nav .nav-link.active,
+.navbar-expand-md .navbar-nav .nav-link.open,
+.navbar-expand-md .navbar-nav .open>.nav-link {
+    color: #fff !important
+}
+
+.separacion-nav>.navbar-expand-md .navbar-nav .nav-item {
+    padding-left: 0 !important;
+}
+
+.separacion-nav {
+    padding-left: 5% !important;
 }
 
 
-.separacion-nav > .navbar-expand-md .navbar-nav .nav-item {
-	padding-left: 0 !important;
-}
-
-.separacion-nav{
-	padding-left: 5% !important;
-}
-
+/*
 .separacion-nav-n{
-	/* padding-right: 0px !important; */
+	 padding-right: 0px !important;
+}*/
+
+.separacion-navbar {
+    padding-right: 5% !important;
 }
 
-.separacion-navbar{
-	padding-right: 5% !important;
+#copyright>.container {
+    margin-left: 5px !important;
 }
 
-#copyright > .container{
-	margin-left: 5px !important;
+.container-norma-center {
+    text-align: center;
 }
 
-.container-norma-center{
-	text-align: center;
-	
+.nav-norma-middle>.navbar-expand-md .navbar-nav .nav-item {
+    padding-left: 2px !important;
 }
 
-.nav-norma-middle > .navbar-expand-md .navbar-nav .nav-item {
-	padding-left: 2px !important;
-}
 
 /* ==========================================================================
 HEADER
 ========================================================================== */
 
+
 /* Color cuando el navbar está en top */
-#metodologia-header  .nav-link {
- color: #4C37A7 !important;
+
+#metodologia-header .nav-link {
+    color: #4C37A7 !important;
 }
 
-#metodologia-header .logo_header_normal{
-	display:none;
+#metodologia-header .logo_header_normal {
+    display: none;
 }
 
-#metodologia-header .logo_header_blanco{
-	display:block;
+#metodologia-header .logo_header_blanco {
+    display: block;
 }
 
-#metodologia-header.top-nav-collapse  .logo_header_normal{
-	display:block;
+#metodologia-header.top-nav-collapse .logo_header_normal {
+    display: block;
 }
 
-#metodologia-header.top-nav-collapse  .logo_header_blanco{
-	display:none;
+#metodologia-header.top-nav-collapse .logo_header_blanco {
+    display: none;
 }
+
 
 /* ==========================================================================
 SECCION INICIAL
 ========================================================================== */
+
 #metodologia-main-section {
-	background-image: url(../img/backgrounds/bg-metodologia.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 600px;
-	position: relative;
-	overflow: hidden;
+    background-image: url(../img/backgrounds/bg-metodologia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
 }
 
-#metodologia-main-section .main-seccion-container{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+#metodologia-main-section .main-seccion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#metodologia-main-section .contenido-main-section{
-	padding: 100px 0 0 0;
-	grid-column-start: 2;
-	grid-column-end: 3;
+#metodologia-main-section .contenido-main-section {
+    padding: 100px 0 0 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 #metodologia-main-section .contenido-main-section .header-button {
-	margin-top: 20px;
-	color: #222222;
+    margin-top: 20px;
+    color: #222222;
 }
 
 #metodologia-main-section .contenido-main-section .header-button .btn {
-	margin-right: 10px;
-}
-#metodologia-main-section .subtitle-1{
-	padding: 30px 0 10px 0;
-}
-#metodologia-main-section .img-movil{
-	display: none!important;
+    margin-right: 10px;
 }
 
-#metodologia-main-section .btn{
-	margin-top: 20px;
-	letter-spacing: 2px;
-	padding: 10px 40px;
-	font-weight: bold !important;
+#metodologia-main-section .subtitle-1 {
+    padding: 30px 0 10px 0;
 }
-#metodologia-main-section .btn-main-section{
-	width: 40%;
-	display: grid;
-	align-items: center;
-	padding-bottom: 30px;
+
+#metodologia-main-section .img-movil {
+    display: none !important;
 }
+
+#metodologia-main-section .btn {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    font-weight: bold !important;
+}
+
+#metodologia-main-section .btn-main-section {
+    width: 40%;
+    display: grid;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
 
 /* ==========================================================================
 MENU INTERMEDIO
 ========================================================================== */
-.ul-norma{
-	justify-content: center !important;
+
+.ul-norma {
+    justify-content: center !important;
 }
 
-.nav-norma-middle{
-	position: absolute;
-	z-index: 1;
-	border-radius: 15px;
-	margin-top: -35px;
-	margin-left: 17%;
-	width: 70%;
-	max-width: 880px;
-	text-align: center;
+.nav-norma-middle {
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+    margin-top: -35px;
+    margin-left: 17%;
+    width: 70%;
+    max-width: 880px;
+    text-align: center;
 }
+
+
 /* ==========================================================================
 SECCION COMO FUE CREADA
 ========================================================================== */
-#create-norma{
-		background: rgba(228, 228, 228, 0.3);
-		background-image: url(../img/backgrounds/bg-comosecreo.png);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		min-height: 650px;
-		position: relative;
-		overflow: hidden;
-		padding-bottom: 20px;
-		padding-top: 100px;
+
+#create-norma {
+    background: rgba(228, 228, 228, 0.3);
+    background-image: url(../img/backgrounds/bg-comosecreo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 100px;
 }
 
-#create-norma .img-movil img{
-	width:100%;
+#create-norma .img-movil img {
+    width: 100%;
 }
+
 
 /* ==========================================================================
 SECCION QUIEN ESTA DETRAS
 ========================================================================== */
-#back-norma{
-		background-image: url(../img/backgrounds/bg-quienesdetras.png);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		min-height: 650px;
-		position: relative;
-		overflow: hidden;
+
+#back-norma {
+    background-image: url(../img/backgrounds/bg-quienesdetras.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
 }
 
-#back-norma .img-movil img{
-	width:100%;
+#back-norma .img-movil img {
+    width: 100%;
 }
+
 
 /* ==========================================================================
 SECCION DESARROLLO
 ========================================================================== */
-#dev-norma{
-	padding: 20px 0px;
-	background: rgba(228, 228, 228, 0.3);
-	background-image: url(../img/backgrounds/bg-deasarrollo.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height:250px;
+
+#dev-norma {
+    padding: 20px 0px;
+    background: rgba(228, 228, 228, 0.3);
+    background-image: url(../img/backgrounds/bg-deasarrollo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
 }
 
-#dev-norma p{
-	margin: 15px 0 !important;
+#dev-norma p {
+    margin: 15px 0 !important;
 }
+
+
+/* ==========================================================================
+SECCION DENUNCIA
+========================================================================== */
+
+#denuncia {
+    padding: 20px 0px;
+    background: rgba(228, 228, 228, 0.3);
+    background-image: url(../img/backgrounds/bg-comosecreo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+}
+
+#denuncia p {
+    margin: 15px 0 !important;
+}
+
+#denuncia .list-denuncia li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#denuncia .list-denuncia li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+/* ==========================================================================
+SECCION COMO CARTA
+========================================================================== */
+
+#carta {
+    background: rgba(228, 228, 228, 0.3);
+    background-image: url(../img/backgrounds/bg-comosecreo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+#carta .img-movil img {
+    width: 100%;
+}
+
+#carta .list-carta li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#carta .list-carta li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+/* ==========================================================================
+SECCION RECOMENDACIONES
+========================================================================== */
+#No3 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No3 .list-No3 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No3 .list-No3 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No4 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No4 .list-No4 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No4 .list-No4 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No5 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No6 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No6 .list-No6 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No6 .list-No6 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No7 p {
+    margin: 15px 0 !important;
+  }
+  
+  #No7 .list-No7 li {
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No7 .list-No7 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #No11 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No11 .list-No11 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No11 .list-No11 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No12 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No12 .list-No12 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No12 .list-No12 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No13 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No13 b {
+    color: #4C37A7;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #No13 .list-No13 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No13 .list-No13 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No14 span {
+    margin: 14px 0 !important;
+    border: ridge #4C37A7 3px;
+  }
+  
+  #No14 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No15 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No15 .list-No15 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No15 .list-No15 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No16 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No16 .list-No16 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No16 .list-No16 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No17 span {
+    margin: 14px 0 !important;
+    border: ridge #4C37A7 3px;
+  }
+  
+  #No18 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No18 .list-No18 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No18 .list-No18 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No19 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No19 .list-No19 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No19 .list-No19 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No20 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No20 .list-No20 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No20 .list-No20 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No21 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No21 .list-No21 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No21 .list-No21 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No22 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No22 .list-No22 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No22 .list-No22 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No24 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No24 .list-No24 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No24 .list-No24 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No25 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No25 .list-No25 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No25 .list-No25 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No27 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No27 .list-No27 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No27 .list-No27 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No30 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No30 .list-No30 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No30 .list-No30 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #No31 p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  
+  #No31 .list-No31 li {
+    padding-left: 10px;
+    list-style-type: none;
+    color: #040404;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  #No31 .list-No31 li::before {
+    content: "\2022";
+    color: #4C37A7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+/*========================================================================
+SECCION MAPAS
+========================================================================== */
+
+#map_mp {
+    background-image: url(../img/backgrounds/bg-quienesdetras.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+#map_cam {
+    background-image: url(../img/backgrounds/bg-quienesdetras.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 45%;
+    /* This is the aspect ratio*/
+    height: 0;
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+PASOS
+========================================================================== */
+#pagina-pasos {
+    background-image: url(../img/backgrounds/bg-quienesdetras.png);
+    background-position: center center;
+    background-repeat:repeat;
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#pagina-recomendaciones .img-movil img {
+    width: 100%;
+}
+
+/* ==========================================================================
+RECOMENDACIONES
+========================================================================== */
+#pagina-recomendaciones {
+    background: rgba(228, 228, 228, 0.3);
+    background-image: url(../img/backgrounds/bg-comosecreo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+#pagina-recomendaciones .img-movil img {
+    width: 100%;
+}
+
 /* ==========================================================================
 DISPOSITIVOS: PANTALLAS GRANDES
 ========================================================================== */
-/* Navbar laptop 2*/
-@media (min-width: 1441px){
-	#metodologia-main-section {
-		min-height: 700px;
-	}
-	.nav-norma-middle{
-		margin-left: 20.7%;
-	}
-}
-/* Navbar laptop 1*/
-@media (min-width: 1025px) and (max-width: 1440px){
-	#metodologia-main-section {
-		min-height: 670px;
-	}
 
-	.nav-norma-middle{
-		margin-left: 17%;
-	}
+
+/* Navbar laptop 2*/
+
+@media (min-width: 1441px) {
+    #metodologia-main-section {
+        min-height: 700px;
+    }
+
+    .nav-norma-middle {
+        margin-left: 20.7%;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        width: 60% !important;
+        height: 100% !important;
+    }
 }
+
+
+/* Navbar laptop 1*/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #metodologia-main-section {
+        min-height: 670px;
+    }
+
+    .nav-norma-middle {
+        margin-left: 17%;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        width: 60% !important;
+        height: 100% !important;
+    }
+}
+
+
 /* Navbar desktops */
+
 @media (min-width: 992px) and (max-width: 1024px) {
-	#metodologia-main-section {
-		min-height: 670px;
-	}
-	.nav-norma-middle{
-		position: absolute;
-		z-index: 1;
-		border-radius: 15px;
-		margin-top: -35px;
-		margin-left: 15%;
-	}
+    #metodologia-main-section {
+        min-height: 670px;
+    }
+
+    .nav-norma-middle {
+        position: absolute;
+        z-index: 1;
+        border-radius: 15px;
+        margin-top: -35px;
+        margin-left: 15%;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        width: 60% !important;
+        height: 100% !important;
+    }
 }
 
 
 /* ==========================================================================
 DISPOSITIVOS: TABLETS
 ========================================================================== */
+
 @media (max-width: 991px) {
-	h1, h2, h3, h4, h5, p{
-		text-align: center;
-	}
-	#metodologia-main-section {
-		padding-top: 50px;
-	}
-	.nav-norma-middle{
-		display: none !important;
-	}
 
-	#metodologia-header .logo_header_normal{
-		display:block;
-	}
-	#metodologia-header .logo_header_blanco{
-		display:none;
-	}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        text-align: center;
+    }
 
-	#metodologia-main-section .main-seccion-container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-columns: none;
-	}
-	#metodologia-main-section {
-		background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
-	}
-	#metodologia-main-section .subtitle-1{
-		padding: 29px 0 10px 0;
-	}
-	#metodologia-main-section .img-movil{
-		display: block !important;
-		text-align:center;
-		padding:20px 0px;
-	}
-	#metodologia-main-section .img-movil img{
-		width: 400px;
-		height: auto;
-	}
-	#metodologia-main-section .btn-main-section{
-		width: 100%;
-	}
+    #metodologia-main-section {
+        padding-top: 50px;
+    }
 
-	#create-norma{
-		padding-top: 40px;
-	}
+    .nav-norma-middle {
+        display: none !important;
+    }
 
-	#create-norma .img-movil {
-		text-align:center;
-	}
+    #metodologia-header .logo_header_normal {
+        display: block;
+    }
 
-	#create-norma .img-movil img{
-		width:60%;
-	}
+    #metodologia-header .logo_header_blanco {
+        display: none;
+    }
 
-	#back-norma .img-movil {
-		text-align:center;
-	}
+    #metodologia-main-section .main-seccion-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: none;
+    }
 
-	#back-norma .img-movil img{
-		width:60%;
-	}
+    #metodologia-main-section {
+        background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
+    }
 
-	.div-reverse{
-		display: block;
-		flex-flow: none;
-	}
-	.container-norma-center{
-		/* text-align: justify; */
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-	}
-	.container-norma-text-vcenter{
-		padding-top: 20px;
-	}
+    #metodologia-main-section .subtitle-1 {
+        padding: 29px 0 10px 0;
+    }
 
-	.separacion-navbar{
-		padding-right: 0 !important;
-	}
+    #metodologia-main-section .img-movil {
+        display: block !important;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    #metodologia-main-section .img-movil img {
+        width: 400px;
+        height: auto;
+    }
+
+    #metodologia-main-section .btn-main-section {
+        width: 100%;
+    }
+
+    #create-norma {
+        padding-top: 40px;
+    }
+
+    #create-norma .img-movil {
+        text-align: center;
+    }
+
+    #create-norma .img-movil img {
+        width: 60%;
+    }
+
+    #back-norma .img-movil {
+        text-align: center;
+    }
+
+    #back-norma .img-movil img {
+        width: 60%;
+    }
+
+    .div-reverse {
+        display: block;
+        flex-flow: none;
+    }
+
+    .container-norma-center {
+        /* text-align: justify; */
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .container-norma-text-vcenter {
+        padding-top: 20px;
+    }
+
+    .separacion-navbar {
+        padding-right: 0 !important;
+    }
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 85%;
+        /* This is the aspect ratio*/
+        height: 0;
+        overflow: hidden;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    #pagina-pasos {
+        background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
+    }
 }
+
 
 /* ==========================================================================
 DISPOSITIVOS: CELULARES
 ========================================================================== */
+
 @media (max-width: 767px) {
-	h1, h2, h3, h4, h5, p{
-		text-align: center;
-	}
-	#metodologia-header .logo_header_normal{
-		display:block;
-	}
-	#metodologia-header .logo_header_blanco{
-		display:none;
-	}
-	#metodologia-main-section .main-seccion-container{
-		grid-template-columns: 1fr;
-	}
-	#metodologia-main-section .contenido-main-section {
-		grid-column-start: 1;
-	}
-	#metodologia-main-section {
-		background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
-		padding-top: 20px;
-	}
-	#metodologia-main-section .subtitle-1{
-		padding: 29px 0 10px 0;
-	}
-	#metodologia-main-section .img-movil{
-		display: block !important;
-	}
-	#metodologia-main-section .img-movil img{
-		width: 320px;
-		height: auto;
-	}
-	#metodologia-main-section .btn-main-section{
-		width: 100%;
-	}
 
-	#create-norma{
-		padding-top: 40px;
-	}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        text-align: center;
+    }
 
-	#create-norma .img-movil {
-		text-align:center;
-	}
+    #metodologia-header .logo_header_normal {
+        display: block;
+    }
 
-	#create-norma .img-movil img{
-		width:60%;
-	}
+    #metodologia-header .logo_header_blanco {
+        display: none;
+    }
 
-	#back-norma{
-		background-image: url(../img/backgrounds/bg-quienesdetras.png);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		min-height: 650px;
-		position: relative;
-		overflow: hidden;
-		padding-bottom: 20px;
-		padding-top: 40px;
-	}
+    #metodologia-main-section .main-seccion-container {
+        grid-template-columns: 1fr;
+    }
 
-	#back-norma .img-movil {
-		text-align:center;
-	}
+    #metodologia-main-section .contenido-main-section {
+        grid-column-start: 1;
+    }
 
-	#back-norma .img-movil img{
-		width:60%;
-	}
+    #metodologia-main-section {
+        background-image: url(../img/backgrounds/bg-metodologia-mobile.png);
+        padding-top: 20px;
+    }
 
-	#dev-norma{
-		padding-top: 40px;
-		background-image: url(../img/backgrounds/bg-deasarrollo.png);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding-bottom: 20px;
-	}
+    #metodologia-main-section .subtitle-1 {
+        padding: 29px 0 10px 0;
+    }
 
-	.div-reverse{
-		display: block;
-		flex-flow: none;
-	}
-	.container-norma-center{
-		/* text-align: justify; */
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-	}
-	.container-norma-text-vcenter{
-		padding-top: 20px;
-	}
+    #metodologia-main-section .img-movil {
+        display: block !important;
+    }
 
-	.separacion-navbar{
-		padding-right: 0 !important;
-	}
+    #metodologia-main-section .img-movil img {
+        width: 320px;
+        height: auto;
+    }
+
+    #metodologia-main-section .btn-main-section {
+        width: 100%;
+    }
+
+    #create-norma {
+        padding-top: 40px;
+    }
+
+    #create-norma .img-movil {
+        text-align: center;
+    }
+
+    #create-norma .img-movil img {
+        width: 60%;
+    }
+
+    #back-norma {
+        background-image: url(../img/backgrounds/bg-quienesdetras.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 650px;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    #back-norma .img-movil {
+        text-align: center;
+    }
+
+    #back-norma .img-movil img {
+        width: 60%;
+    }
+
+    #dev-norma {
+        padding-top: 40px;
+        background-image: url(../img/backgrounds/bg-deasarrollo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
+
+    .div-reverse {
+        display: block;
+        flex-flow: none;
+    }
+
+    .container-norma-center {
+        /* text-align: justify; */
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .container-norma-text-vcenter {
+        padding-top: 20px;
+    }
+
+    .separacion-navbar {
+        padding-right: 0 !important;
+    }
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        /* This is the aspect ratio*/
+        height: 0;
+        overflow: hidden;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .google-cam {
+        position: relative;
+        padding-bottom: 75%;
+        /* This is the aspect ratio*/
+        height: 0;
+        overflow: hidden;
+    }
+
+    .google-cam iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #pagina-pasos {
+        padding-top: 40px;
+        background-image: url(../img/backgrounds/bg-deasarrollo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
+
+    #pagina-recomendaciones {
+        padding-top: 40px;
+        background-image: url(../img/backgrounds/bg-deasarrollo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
 }

@@ -2,344 +2,452 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>NORMA</title>
-	<link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon"/>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<!-- Icon -->
-	<link rel="stylesheet" href="assets/fonts/line-icons.css">
-	<!-- Owl carousel -->
-	<!--
+    <title>NORMA</title>
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/fonts/line-icons.css">
+    <!-- Owl carousel -->
+    <!--
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.css">
 	-->
 
-	<!-- Animate -->
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<!-- Main Style -->
-	<link rel="stylesheet" href="assets/css/main.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-	<!-- Norma Styles -->
-	<link rel="stylesheet" href="assets/css/style-norma.css">
-	<link rel="stylesheet" href="./assets/css/header-norma.css">
-	<link rel="stylesheet" href="assets/css/norma-home.css">
-	<link rel="stylesheet" href="./assets/css/footer-norma.css">
-	<!-- Responsive Style -->
-	<link rel="stylesheet" href="assets/css/responsive.css">
-	<!-- NORMA -->
-	<link rel="stylesheet" href="https://admin.imco.org.mx/im_livechat/norma/external_lib.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Norma Styles -->
+    <link rel="stylesheet" href="assets/css/style-norma.css">
+    <link rel="stylesheet" href="./assets/css/header-norma.css">
+    <link rel="stylesheet" href="assets/css/float_menu.css">
+    <link rel="stylesheet" href="assets/css/norma-home.css">
+    <link rel="stylesheet" href="./assets/css/footer-norma.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- NORMA -->
+    <link rel="stylesheet" href="https://admin.imco.org.mx/im_livechat/norma/external_lib.css" />
+    <!--<link rel="stylesheet" href="http://admin.imco.opit.mx/im_livechat/norma/external_lib.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
-		<!-- Navbar Start -->
-		<nav id="home-header"  class="navbar  navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-			<div class="container navbar-norma">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="logo-toggler">
-					<a href="" class="navbar-brand"><img src="./assets/img/logos/logo.svg" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-						<i class="lni-menu"></i>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-						<li class="nav-item separacion-navbar d-none">
-							<a class="nav-link text-center" href="#home-main-section">
-								¿Cómo usar?
-							</a>
-						</li>
-						<li class="nav-item separacion-navbar">
-							<a class="nav-link text-center" href="#como-usar-section">
-								¿Cómo usar?
-							</a>
-						</li>
-						<li class="nav-item separacion-navbar">
-							<a class="nav-link text-center" href="#como-ayudarte-section">
-								¿Cómo te ayudamos?
-							</a>
-						</li>
-						<li class="nav-item btn-chat button-chat-norma text-center">
+
+    <!-- Navbar Start -->
+    <nav id="home-header" class="navbar  navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container navbar-norma">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="logo-toggler">
+                <a href="" class="navbar-brand"><img src="./assets/img/logos/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="lni-menu"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item separacion-navbar d-none">
+                        <a class="nav-link text-center" href="#home-main-section">
+                            ¿Cómo usar el chat?
+                        </a>
+                    </li>
+                    <li class="nav-item separacion-navbar">
+                        <a class="nav-link text-center" href="#como-ayudarte-section">
+                            ¿Cómo usar el chat?
+                        </a>
+                    </li>
+                    <li class="nav-item separacion-navbar">
+                        <a class="nav-link text-center" href="pasos.html">
+                            Pasos para denunciar
+                        </a>
+                    </li>
+                    <li class="nav-item btn-chat button-chat-norma text-center">
+                        <input type="text" class="text-center" id="newChatMenu" style="cursor:pointer;" size="11"
+                            value="Chatea aquí">
+                    </li>
+                    <!--<li class="nav-item btn-chat button-chat-norma text-center">
 							<input type="text" class="text-center" id="newChatMenu"
 								style="cursor:pointer;"
 								size="11"
 								value="Chatea aquí">
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- Navbar End -->
+						</li>-->
+                </ul>
+            </div>
+        </div>
+        <!--Float-menu-->
+        <section class="flotante">
+            <div class="float-menu" position="nw">
+                <div class="indicator"></div>
 
-		<!-- Hero Area Start -->
-		<div id="home-main-section" class="">
-			<div class="container main-seccion-container">
-				<div class="contenido-main-section">
-					<div class="">
-						<h1 class="color-norma-1">
-							¿Fuiste víctima de robo en la Ciudad de México?
-						</h1>
-						<h2 class="color-norma-4 subtitle-1">
-							Norma te ayuda sin costo a denunciar.
-						</h2>
-					</div>
-				<div class="home-inicio">
-					<p class="">
-						Chatea, responde las preguntas y recibe las<br />
-						recomendaciones que te orientarán para presentar<br />
-						tu denuncia.
-					</p>
-					<p>
-						Entre más detallada sea la información, <br />
-						mejor será la asesoría.
-					</p>
-				</div>
-				<div class="center">
-					<div class="img-movil align-items-center">
-						<img src="assets/img/images/personas_home.svg" alt="">
-					</div>
-				</div>
-				<div class="">
-					<p class="color-norma-1 text-norma-bold">
-						¡Callar no es más fácil!
-					</p>
-					<div class="btn-main-section" id="newChatButton">
-						<!--
+                <div class="content links">
+                    <a href="recursos.html">
+                        Herramientas
+                    </a>
+                    <a href="metodologia.html">
+                        Metodología
+                    </a>
+                    <a href="pasos.html">
+                        Proceso
+                    </a>
+                    <a href="recomendaciones.html">
+                        Recomendaciones
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Float-menu End-->
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- Hero Area Start -->
+    <div id="home-main-section" class="">
+        <div class="container main-seccion-container">
+            <div class="contenido-main-section">
+                <div class="">
+                    <h1 class="color-norma-1">
+                        ¿Fuiste víctima de robo en la Ciudad de México?
+                    </h1>
+                    <h2 class="color-norma-4 subtitle-1">
+                        Norma te ayuda a denunciar sin costo.
+                    </h2>
+                </div>
+                <div class="home-inicio">
+                    <p class="">
+                        Chatea, responde las preguntas y recibe orientación para <br>
+                        presentar tu denuncia o conoce los <a href="./pasos.html">pasos para denunciar</a>.
+                    </p>
+                </div>
+                <div class="center">
+                    <div class="img-movil align-items-center">
+                        <img src="assets/img/images/personas_home.svg" alt="">
+                    </div>
+                </div>
+                <div class="">
+                    <p class="color-norma-1 text-norma-bold">
+                        ¡Callar no es más fácil!
+                    </p>
+                    <div class="btn-main-section" id="newChatButton">
+                        <!--
 						<input type="text" class="text-center"   class="startChatButton"
 							style="cursor:pointer;"
 							size="20"
 							value="Chatea con nosotros">
 						-->
-						<a href="#" class="btn btn-common ">Chatea con nosotros</a>
-					</div>
-				</div>
+                        <a href="#" class="btn btn-common ">Chatea con nosotros</a>
+                    </div>
+                </div>
 
-				</div>
+            </div>
 
-		</div>
-	</div>
-		<!-- Hero Area End -->
-
-	<!-- Header Area wrapper End -->
-
-	<!-- Services Section Start -->
-	<section id="como-usar-section" class="section-padding">
-		<div class="container">
-			<div class="text-center">
-				<h1 class="color-norma-2  wow fadeInDown" data-wow-delay="0.3s">¿Cómo usar?</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-lg-12 col-xs-12 text-center">
-					<h2 class="color-norma-4 subtitle-2">
-						Chatea o envía un mensaje sms al (999) 319 1926.
-					</h2>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<div class="col-md-12 col-lg-12 col-xs-12">
-					<div class="wow fadeInRight" data-wow-delay="0.3s">
-						<p class="text-center">
-							Responde las preguntas y recibe recomendaciones personalizadas para
-							presentar tu denuncia ante el Ministerio Público.
-						</p>
-					</div>
-				</div>
-				<!-- Video item -->
-				<div class="col-md-12 col-lg-12 col-xs-12">
-					<div class=" wow fadeInRight video-container text-center" data-wow-delay="0.3s">
-						<img src="assets/img/images/norma-mock-01.png" alt="Smiley face">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Services Section End -->
-
-	<!-- About Section start -->
-	<div id="como-ayudarte-section" class="about-area section-padding bg-gray">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-12 col-md-12 col-xs-12 info">
-					<div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-						<div>
-							<div class="text-center">
-								<h1 class="color-norma-2 wow fadeInDown" data-wow-delay="0.3s">¿Cómo te ayudamos?</h1>
-							</div>
-							<div class="content text-center">
-								<p class="">
-									Norma es una abogada virtual que brinda atención gratuita y personalizada, y te
-									orienta para presentar tu denuncia por robo:
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-md-12 col-xs-12 info">
-					<div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-						<div>
-							<div class="content">
-								<ul class="list-como-ayudarte">
-									<li>¿A dónde acudir?</li>
-									<li>¿Qué exigir?</li>
-									<li>¿Cómo ejercer tus derechos como <br> víctima de un delito?</li>
-								</ul>
-								<p class="">
-									Con estas acciones, Norma busca eliminar <br> las barreras que obstaculizan la denuncia.
-								</p>
-								<p class="color-norma-1 text-norma-bold">
-									¡Callar no es más fácil!
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="img-movil col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-					<img src="./assets/img/images/personas_ayuda.svg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<!-- About Section End -->
-
-	<!-- Footer Section Start -->
-	<footer id="footer" class="footer-area section-padding">
-		<div class="container">
-			<div class="container color-norma-7">
-				<div class="row first-part-footer">
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-footer">
-						<div class="title-footer">
-							<h3 class="text-center link-norma-1">Inicio</h3>
-						</div>
-						<ul class="footer-link list-footer">
-							<li class="text-n"><a href="index.html#home-main-section">¿Cómo te podemos asesorar?</a></li>
-							<li class="text-n"><a href="index.html#como-usar-section">¿Cómo usar?</a></li>
-							<li class="text-n"><a href="index.html#como-ayudarte-section">¿Cómo te ayudamos?</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-footer">
-						<div class="title-footer">
-							<h3 class="text-center link-norma-1">Metodología</h3>
-						</div>
-						<ul class="footer-link list-footer">
-							<li class="text-n"><a href="metodologia.html">¿Por qué te hacemos estas preguntas?</a></li>
-							<li class="text-n"><a href="metodologia.html#create-norma">¿Cómo fue creada Norma?</a></li>
-							<li class="text-n"><a href="metodologia.html#back-norma">¿Quién está detrás de Norma?</a></li>
-							<li class="text-n"><a href="metodologia.html#dev-norma">Desarrollo</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-footer">
-						<div class="title-footer">
-							<h3 class="text-center link-norma-1">Adicionales</h3>
-						</div>
-						<ul class="footer-link list-footer">
-							<li class="text-n"><a target="_blank" href="http://imco.org.mx/justiciapenal/blog/homepage/">Blog</a></li>
-							<li class="text-n"><a target="_blank" href="http://imco.org.mx/justiciapenal/blog/glosario/">Glosario ciudadano</a></li>
-							<li class="text-n"><a target="_blank" href="pdfs/Norma_Listado_de_preguntas.pdf">Lista de preguntas</a></li>
-							<li class="text-n"><a target="_blank" href="pdfs/Norma_Aviso_de_privacidad.pdf">Aviso de privacidad</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 norma-color-7 text-center padding-footer footer-border">
-						 <p class="text-r">Envía tus sugerencias y comentarios a:</p>
-						 <p class="link-norma-1">norma@imco.org.mx</p>
-						 <p class="apoyo">Con el apoyo de:</p>
-						 <div class="row">
-								 <div class="apoyo-container">
-									 <div class="container-cudc-logo">
-										<a target="_blank" href="https://www.mucd.org.mx/" >
-											<img class="cudc-logo" src="./assets/img/logos/mucd_logo.png" alt="">
-										</a>
-									 </div>
-									 <div class="container-consejo-logo">
-										<a target="_blank" href="http://consejociudadanomx.org/" >
-											<img class="consejo-logo" src="./assets/img/logos/cccm_logo_color.png" alt="" style="height:90px;">
-										</a>
-									 </div>
-									 <div class="container-cudc-logo">
-										<a target="_blank" href="http://onc.org.mx/" >
-											<img class="cudc-logo" src="./assets/img/logos/logo_observatorio.png" alt="" >
-										</a>
-									 </div>
-									 <div class="container-cudc-logo">
-										<a target="_blank" href="http://www.fbma.org.mx/" >
-											<img class="cudc-logo" src="./assets/img/logos/logo_fbm.png" alt="" >
-										</a>
-									 </div>
-								 </div>
-						 </div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-footer">
-						<div class="widget text-center text-w">
-							 <a href="http://imco.org.mx" target="_blank"><img class="imco-logo" src="./assets/img/logos/imco_logo.png" alt=""></a>
-							 <p class="text-r border-bottom-n">Síguenos en nuestras redes:</p>
-							 <div class="social-icon" id="social-icons">
-								<a class="facebook" target="_blank" href="https://www.facebook.com/imcomx"><i class="lni-facebook-filled"></i></a>
-								<a class="twitter" target="_blank" href="https://twitter.com/imcomx"><i class="lni-twitter-filled"></i></a>
-								<a class="instagram" target="_blank" href="https://www.instagram.com/imco_mx/"><i class="lni-instagram-filled"></i></a>
-								<a class="youtube" target="_blank" href="https://www.youtube.com/user/imcomexico"><i class="lni-youtube"></i></a>
-							 </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="copyright-content">
-							<p>Copyright © 2019 <a rel="nofollow" target="_blank" href="http://imco.org.mx">IMCO</a> | Powered by <a rel="nofollow" target="_blank" href="http://opit.mx">OPIT</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer Section End -->
-	<!-- Go to Top Link -->
-	<a href="#" class="back-to-top">
-		<i class="lni-arrow-up"></i>
-	</a>
-
-	<!-- Preloader -->
-	<div id="preloader">
-                <div class="loader" id="loader-1"></div>
         </div>
+    </div>
+    <!-- Hero Area End -->
 
-        <!-- End Preloader -->
+    <!-- Header Area wrapper End -->
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <!-- xx
-        -->
-        <script src="assets/js/jquery-min.js"></script>
-        <script type="text/javascript" src="https://imco.sevac.mx/im_livechat/norma/external_lib.js"></script>
-        <script type="text/javascript" src="https://imco.sevac.mx/im_livechat/norma/loader/2"></script>
-        <script type="text/javascript">
-           if (typeof jQuery == 'undefined') {
-                   var oScriptElem = document.createElement("script");
-                   oScriptElem.type = "text/javascript";
-                   oScriptElem.src = "https://code.jquery.com/jquery-3.0.0.min.js";
-                   document.head.insertBefore(oScriptElem, document.head.getElementsByTagName("script")[0])
-           }
-        </script>
-        <!-- xxx
-        -->
-        <script src="./assets/js/bootstrap.min.js"></script>
-        <script src="./assets/js/wow.js"></script>
-        <script src="./assets/js/jquery.nav.js"></script>
-        <script src="./assets/js/scrolling-nav.js"></script>
-        <script src="./assets/js/jquery.easing.min.js"></script>
-        <script src="./assets/js/main.js"></script>
+    <!-- Services Section Start 
+    <section id="como-usar-section" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="color-norma-2  wow fadeInDown" data-wow-delay="0.3s">¿Cómo usar?</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xs-12 text-center">
+                    <h2 class="color-norma-4 subtitle-2">
+                        Chatea o envía un mensaje sms al (999) 319 1926.
+                    </h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-12 col-xs-12">
+                    <div class="wow fadeInRight" data-wow-delay="0.3s">
+                        <p class="text-center">
+                            Responde las preguntas y recibe recomendaciones personalizadas para presentar tu denuncia
+                            ante el Ministerio Público.
+                        </p>
+                    </div>
+                </div>
+               
+                <div class="col-md-12 col-lg-12 col-xs-12">
+                    <div class=" wow fadeInRight video-container text-center" data-wow-delay="0.3s">
+                        <img src="assets/img/images/norma-mock-01.png" alt="Smiley face">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    Services Section End -->
+
+    <!-- About Section start
+    <div id="como-ayudarte-section" class="about-area section-padding bg-gray">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12 col-xs-12 info">
+                    <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+                        <div>
+                            <div class="text-center">
+                                <h1 class="color-norma-2 wow fadeInDown" data-wow-delay="0.3s">¿Cómo te ayudamos?</h1>
+                            </div>
+                            <div class="content text-center">
+                                <p class="">
+                                    Norma es una abogada virtual que brinda atención gratuita y personalizada, y te
+                                    orienta para presentar tu denuncia por robo:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12 info">
+                    <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+                        <div>
+                            <div class="content">
+                                <ul class="list-como-ayudarte">
+                                    <li>¿A dónde acudir?</li>
+                                    <li>¿Qué exigir?</li>
+                                    <li>¿Cómo ejercer tus derechos como <br> víctima de un delito?</li>
+                                </ul>
+                                <p class="">
+                                    Con estas acciones, Norma busca eliminar <br> las barreras que obstaculizan la
+                                    denuncia.
+                                </p>
+                                <p class="color-norma-1 text-norma-bold">
+                                    ¡Callar no es más fácil!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-movil col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <img src="./assets/img/images/personas_ayuda.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  About Section End -->
+    <!-- About seccion omologada -->
+    <div id="como-ayudarte-section" class="about-area section-padding bg-gray">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12 col-xs-12 info">
+                    <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+                        <div>
+                            <div class="text-center">
+                                <h1 class="color-norma-2 wow fadeInDown" data-wow-delay="0.3s">¿Cómo usar el chat?</h1>
+                            </div>
+                            <div class="content text-center">
+                                <p class="text-center">
+                                    Responde las preguntas y recibe recomendaciones personalizadas para presentar tu
+                                    denuncia
+                                    ante el Ministerio Público.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12 info">
+                    <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+                        <div>
+                            <h2 class="color-norma-4 subtitle-1">
+                                Chatea o envía un mensaje sms al (999) 319 1926 con la palabra norma
+                            </h2>
+                            <div class="content">
+                                <p class="">
+                                    Norma es una abogada virtual que brinda <br> atención gratuita y personalizada, y te
+                                    orienta para presentar tu denuncia por robo:
+                                </p>
+                                <ul class="list-como-ayudarte">
+                                    <li>¿A dónde acudir?</li>
+                                    <li>¿Qué exigir?</li>
+                                    <li>¿Cómo ejercer tus derechos como <br> víctima de un delito?</li>
+                                </ul>
+                                <p class="color-norma-1 text-norma-bold">
+                                    ¡Callar no es más fácil!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-movil col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <img src="./assets/img/images/personas_ayuda.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- About Section End -->
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer-area section-padding">
+        <div class="container">
+            <div class="container color-norma-7">
+                <div class="row first-part-footer">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding-footer">
+                        <div class="title-footer">
+                            <h3 class="text-center link-norma-1">Inicio</h3>
+                        </div>
+                        <ul class="footer-link list-footer">
+                            <li class="text-n"><a href="index.html#como-ayudarte-section">¿Cómo usar el chat?</a></li>
+                            <li class="text-n"><a href="pasos.html">Pasos para denunciar</a></li>
+                            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding-footer">
+                        <div class="title-footer">
+                            <h3 class="text-center link-norma-1">Metodología</h3>
+                        </div>
+                        <ul class="footer-link list-footer">
+                            <li class="text-n"><a href="metodologia.html">¿Por qué te hacemos estas preguntas?</a></li>
+                            <li class="text-n"><a href="metodologia.html#create-norma">¿Cómo fue creada Norma?</a></li>
+                            <li class="text-n"><a href="metodologia.html#back-norma">¿Quién está detrás de Norma?</a>
+                            </li>
+                            <li class="text-n"><a href="metodologia.html#dev-norma">Desarrollo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding-footer">
+                        <div class="title-footer">
+                            <h3 class="text-center link-norma-1">Adicionales</h3>
+                        </div>
+                        <ul class="footer-link list-footer">
+                            <li class="text-n"><a target="_blank"
+                                    href="http://imco.org.mx/justiciapenal/blog/homepage/">Blog</a></li>
+                            <li class="text-n"><a target="_blank"
+                                    href="http://imco.org.mx/justiciapenal/blog/glosario/">Glosario ciudadano</a></li>
+                            <li class="text-n"><a target="_blank" href="pdfs/Norma_Listado_de_preguntas.pdf">Lista de
+                                    preguntas</a></li>
+                            <li class="text-n"><a target="_blank" href="pdfs/Norma_Aviso_de_privacidad.pdf">Aviso de
+                                    privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding-footer">
+                        <div class="title-footer">
+                            <h3 class="text-center link-norma-1">Herramientas</h3>
+                        </div>
+                        <ul class="footer-link list-footer">
+                            <li class="text-n"><a href="recursos.html#denuncia">¿Qué necesitas para iniciar tu
+                                    denuncia?</a></li>
+                            <li class="text-n"><a href="recursos.html#map_mp">Ubica tu MP mas cercano</a></li>
+                            <li class="text-n"><a href="recursos.html#carta">Carta de derechos</a></li>
+                            <li class="text-n"><a href="recursos.html#map_cam">Ubicación de cámaras</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="col-lg-6 col-md-6 col-sm-12 col-xs-12 norma-color-7 text-center padding-footer footer-border">
+                        <p class="text-r">Envía tus sugerencias y comentarios a:</p>
+                        <p class="link-norma-1">norma@imco.org.mx</p>
+                        <p class="apoyo">Con el apoyo de:</p>
+                        <div class="row">
+                            <div class="apoyo-container">
+                                <div class="container-cudc-logo">
+                                    <a target="_blank" href="https://www.mucd.org.mx/">
+                                        <img class="cudc-logo" src="./assets/img/logos/mucd_logo.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="container-consejo-logo">
+                                    <a target="_blank" href="http://consejociudadanomx.org/">
+                                        <img class="consejo-logo" src="./assets/img/logos/cccm_logo_color.png" alt=""
+                                            style="height:90px;">
+                                    </a>
+                                </div>
+                                <div class="container-cudc-logo">
+                                    <a target="_blank" href="http://onc.org.mx/">
+                                        <img class="cudc-logo" src="./assets/img/logos/logo_observatorio.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="container-cudc-logo">
+                                    <a target="_blank" href="http://www.fbma.org.mx/">
+                                        <img class="cudc-logo" src="./assets/img/logos/logo_fbm.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-footer">
+                        <div class="widget text-center text-w">
+                            <a href="http://imco.org.mx" target="_blank"><img class="imco-logo"
+                                    src="./assets/img/logos/imco_logo.png" alt=""></a>
+                            <p class="text-r border-bottom-n">Síguenos en nuestras redes:</p>
+                            <div class="social-icon" id="social-icons">
+                                <a class="facebook" target="_blank" href="https://www.facebook.com/imcomx"><i
+                                        class="lni-facebook-filled"></i></a>
+                                <a class="twitter" target="_blank" href="https://twitter.com/imcomx"><i
+                                        class="lni-twitter-filled"></i></a>
+                                <a class="instagram" target="_blank" href="https://www.instagram.com/imco_mx/"><i
+                                        class="lni-instagram-filled"></i></a>
+                                <a class="youtube" target="_blank" href="https://www.youtube.com/user/imcomexico"><i
+                                        class="lni-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-content">
+                            <p>Copyright © 2019 <a rel="nofollow" target="_blank" href="http://imco.org.mx">IMCO</a> |
+                                Powered by <a rel="nofollow" target="_blank" href="http://opit.mx">OPIT</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+        <i class="lni-arrow-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- xx
+	   -->
+    <script src="assets/js/jquery-min.js"></script>
+<!--
+    <script type="text/javascript" src="http://admin.imco.opit.mx/im_livechat/norma/external_lib.js"></script>
+    <script type="text/javascript" src="http://admin.imco.opit.mx/im_livechat/norma/loader/2"></script>
+-->
+    <script type="text/javascript" src="https://admin.imco.org.mx/im_livechat/norma/external_lib.js"></script>
+    <script type="text/javascript" src="https://admin.imco.org.mx/im_livechat/norma/loader/2"></scrip->
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            var oScriptElem = document.createElement("script");
+            oScriptElem.type = "text/javascript";
+            oScriptElem.src = "https://code.jquery.com/jquery-3.0.0.min.js";
+            document.head.insertBefore(oScriptElem, document.head.getElementsByTagName("script")[0])
+        }
+    </script>
+    <!-- xxx
+	  -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/wow.js"></script>
+    <script src="./assets/js/jquery.nav.js"></script>
+    <script src="./assets/js/scrolling-nav.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </body>
 

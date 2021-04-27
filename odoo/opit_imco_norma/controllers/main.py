@@ -59,7 +59,7 @@ class LivechatController(http.Controller):
 		file = modules_path + "opit_imco_norma/others/documento_derechos.html"
 		print(file)
 		parameters = {
-			'titulo' : "Envío de Información de Norma, la abogada de las víctimas",
+			'titulo' : "RECOMENDACIONES DE NORMA",
 			}
 		print(parameters)
 		print("---------"*30)
@@ -112,7 +112,7 @@ class LivechatController(http.Controller):
 		web_path = request.env["ir.config_parameter"].sudo().search([("key","=", "web.base.url")], limit=1).value
 		url_transcripcion = web_path + "/mail/norma/transcripcion/" + uuid
 		parameters = {
-			'titulo' : "Envío de Información de Norma, la abogada de las víctimas",
+			'titulo' : "RECOMENDACIONES DE NORMA",
 			'estado' : "" if mail_channel.estado_id.id in [False, None] else mail_channel.estado_id.name,
 			'municipio' : "" if mail_channel.municipio_id.id in [False, None] else mail_channel.municipio_id.name,
 			'cp' : "" if mail_channel.cp_id.id in [False, None] else ( "(" + mail_channel.cp_id.cp + ") " + mail_channel.cp_id.name),
@@ -134,16 +134,22 @@ class LivechatController(http.Controller):
 				'mensaje' : m.body if ";;;" not in m.body else m.body.split(";;;")[-1],
 				})
 		#Inicializa en vacio todas las entidades asociadas al delito-jurisdiccion
+		print(mail_channel.delito_jurisdiccion_id.entidades_requeridas_ids)
 		for en in mail_channel.delito_jurisdiccion_id.entidades_requeridas_ids:
 			if en.entidad_id.codigo not in parameters["entidades"]:
 				parameters["entidades"][en.entidad_id.codigo] = ""
 		#Asigna las variables de las entidades reconocidas
 		i = 0
+		print(parameters["entidades"])
+		print(mail_channel.messages_analisis_entidades_ids)
 		for en in mail_channel.messages_analisis_entidades_ids:
-			if i == 0: 
-				parameters["entidades"][en.entidad_id.codigo] += "," 
-			parameters["entidades"][en.entidad_id.codigo] += en.valor
-			i += 1
+			print(en.entidad_id)
+			print(en.entidad_id.codigo)
+			if en.entidad_id.codigo in parameters["entidades"]:
+				if i == 0: 
+					parameters["entidades"][en.entidad_id.codigo] += "," 
+				parameters["entidades"][en.entidad_id.codigo] += en.valor
+				i += 1
 		if "municipio" not in parameters["entidades"]:
 			parameters["entidades"]["municipio"] = ""
 		pprint.pprint(parameters)

@@ -99,7 +99,7 @@ class MailChannel(models.Model):
 					mailgun_api,
 					auth=("api", mailgun_key),
 					data={
-						"from": "Norma, La abogada de las victimas <postmaster@mail.sevac.mx>",
+						"from": "Norma, La abogada de las victimas <postmaster@mail.imco.org.mx>",
 						"to": e,
 						"subject": "Envio de informacion de Norma, La abogada de las victimas",
 						"html": html
